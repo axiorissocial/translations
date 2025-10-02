@@ -113,7 +113,11 @@
     "report": "Report",
     "delete": "Delete",
     "edit": "Edit",
-    "copyLink": "Copy link"
+    "copyLink": "Copy link",
+    "reactionsPicker": {
+      "add": "React with {{emoji}}",
+      "remove": "Remove your {{emoji}} reaction"
+    }
   },
   "home": {
     "documentTitle": "Home - {{app}}",
@@ -494,6 +498,8 @@
         "alt": "Current profile picture",
         "upload": "Upload",
         "remove": "Remove",
+        "description": "Upload a custom avatar or choose one of our gradients.",
+        "gradientTitle": "Choose a default avatar gradient",
         "removeModal": {
           "title": "Remove profile picture",
           "description": "Are you sure you want to remove your profile picture? This action cannot be undone.",
@@ -503,6 +509,23 @@
       "statuses": {
         "uploading": "Uploading...",
         "removing": "Removing..."
+      },
+      "gradients": {
+        "none": "No gradient"
+      },
+      "banner": {
+        "title": "Profile banner",
+        "alt": "Current profile banner",
+        "placeholder": "No banner selected",
+        "description": "Upload your own banner or select one of the gradients below.",
+        "upload": "Upload banner",
+        "remove": "Remove banner",
+        "gradientTitle": "Choose a default banner gradient",
+        "removeModal": {
+          "title": "Remove profile banner",
+          "description": "Are you sure you want to remove your banner image?",
+          "cta": "Remove banner"
+        }
       },
       "fields": {
         "displayName": {
@@ -532,7 +555,8 @@
       },
       "errors": {
         "invalidImageType": "Please select an image file",
-        "invalidImageSize": "Image must be smaller than 5MB"
+        "invalidImageSize": "Image must be smaller than 5MB",
+        "invalidBannerSize": "Banner must be smaller than 8MB"
       },
       "feedback": {
         "updateSuccess": "Profile updated successfully!",
@@ -540,7 +564,17 @@
         "avatarUploadSuccess": "Profile picture updated successfully!",
         "avatarUploadError": "Failed to upload profile picture",
         "avatarRemoveSuccess": "Profile picture removed successfully!",
-        "avatarRemoveError": "Failed to remove profile picture"
+        "avatarRemoveError": "Failed to remove profile picture",
+        "bannerUploadSuccess": "Profile banner updated successfully!",
+        "bannerUploadError": "Failed to upload profile banner",
+        "bannerRemoveSuccess": "Profile banner removed successfully!",
+        "bannerRemoveError": "Failed to remove profile banner",
+        "avatarGradientApplied": "Gradient applied to your avatar.",
+        "avatarGradientCleared": "Avatar gradient removed.",
+        "avatarGradientError": "Failed to update avatar gradient.",
+        "bannerGradientApplied": "Gradient applied to your banner.",
+        "bannerGradientCleared": "Banner gradient removed.",
+        "bannerGradientError": "Failed to update banner gradient."
       }
     },
     "appearance": {
@@ -548,12 +582,19 @@
       "fields": {
         "theme": "Theme"
       },
+      "actions": {
+        "saveLanguage": "Save language"
+      },
       "options": {
         "light": "Light",
         "dark": "Dark"
       },
       "status": {
         "applying": "Applying theme..."
+      },
+      "feedback": {
+        "languageSuccess": "Language updated successfully!",
+        "languageError": "Failed to update language"
       }
     },
     "notifications": {

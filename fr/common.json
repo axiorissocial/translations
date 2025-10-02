@@ -8,7 +8,9 @@
       "posts": "Publications",
       "users": "Utilisateurs"
     },
-    "status": {
+      "remove": "Supprimer",
+      "description": "Upload a custom avatar or choose one of our gradients.",
+      "gradientTitle": "Choose a default avatar gradient",
       "searchingUsers": "Recherche d'utilisateurs..."
     },
     "emptyUsers": {
@@ -19,13 +21,29 @@
       "loadMoreUsers": "Charger plus d'utilisateurs"
     },
     "emptyState": {
+      "gradients": {
+        "none": "No gradient"
+      },
+      "banner": {
+        "title": "Profile banner",
+        "alt": "Current profile banner",
+        "placeholder": "No banner selected",
+        "description": "Upload your own banner or select one of the gradients below.",
+        "upload": "Upload banner",
+        "remove": "Remove banner",
+        "gradientTitle": "Choose a default banner gradient",
+        "removeModal": {
+          "title": "Remove profile banner",
+          "description": "Are you sure you want to remove your banner image?",
+          "cta": "Remove banner"
+        }
+      },
       "title": "Commencer la recherche",
       "subtitle": "Entrez un mot-clé pour rechercher des publications et des utilisateurs"
     },
     "errors": {
       "searchFailed": "Échec de la recherche d'utilisateurs"
-    }
-  },
+    },
   "app": {
     "name": "Axioris",
     "logoAlt": "Logo {{app}}"
@@ -113,7 +131,11 @@
     "report": "Signaler",
     "delete": "Supprimer",
     "edit": "Modifier",
-    "copyLink": "Copier le lien"
+    "copyLink": "Copier le lien",
+    "reactionsPicker": {
+      "add": "Réagir avec {{emoji}}",
+      "remove": "Retirer votre réaction {{emoji}}"
+    }
   },
   "home": {
     "documentTitle": "Accueil - {{app}}",
@@ -232,15 +254,26 @@
     },
     "editor": {
       "supports": "Prend en charge **markdown**, :emojis:, et @mentions",
-      "charCount": "{{count}}/{{limit}} caractères",
-      "replyPlaceholder": "Répondre à {{name}}..."
+        "invalidImageSize": "L'image doit faire moins de 5 Mo",
+        "invalidBannerSize": "Banner must be smaller than 8MB",
+        "replyPlaceholder": "Répondre à {{name}}..."
     },
     "statuses": {
       "replying": "Réponse en cours..."
     },
     "time": {
       "justNow": "À l'instant",
-      "minutes": "il y a {{count}}m",
+      "avatarRemoveError": "Échec de la suppression de la photo de profil",
+      "bannerUploadSuccess": "Profile banner updated successfully!",
+      "bannerUploadError": "Failed to upload profile banner",
+      "bannerRemoveSuccess": "Profile banner removed successfully!",
+      "bannerRemoveError": "Failed to remove profile banner",
+      "avatarGradientApplied": "Gradient applied to your avatar.",
+      "avatarGradientCleared": "Avatar gradient removed.",
+      "avatarGradientError": "Failed to update avatar gradient.",
+      "bannerGradientApplied": "Gradient applied to your banner.",
+      "bannerGradientCleared": "Banner gradient removed.",
+      "bannerGradientError": "Failed to update banner gradient.",
       "hours": "il y a {{count}}h",
       "days": "il y a {{count}}j",
       "edited": "(modifié)"
@@ -494,6 +527,8 @@
         "alt": "Photo de profil actuelle",
         "upload": "Télécharger",
         "remove": "Supprimer",
+        "description": "Upload a custom avatar or choose one of our gradients.",
+        "gradientTitle": "Choose a default avatar gradient",
         "removeModal": {
           "title": "Supprimer la photo de profil",
           "description": "Êtes-vous sûr de vouloir supprimer votre photo de profil ? Cette action ne peut pas être annulée.",
@@ -503,6 +538,23 @@
       "statuses": {
         "uploading": "Téléchargement...",
         "removing": "Suppression..."
+      },
+      "gradients": {
+        "none": "No gradient"
+      },
+      "banner": {
+        "title": "Profile banner",
+        "alt": "Current profile banner",
+        "placeholder": "No banner selected",
+        "description": "Upload your own banner or select one of the gradients below.",
+        "upload": "Upload banner",
+        "remove": "Remove banner",
+        "gradientTitle": "Choose a default banner gradient",
+        "removeModal": {
+          "title": "Remove profile banner",
+          "description": "Are you sure you want to remove your banner image?",
+          "cta": "Remove banner"
+        }
       },
       "fields": {
         "displayName": {
@@ -532,7 +584,8 @@
       },
       "errors": {
         "invalidImageType": "Veuillez sélectionner un fichier image",
-        "invalidImageSize": "L'image doit faire moins de 5 Mo"
+        "invalidImageSize": "L'image doit faire moins de 5 Mo",
+        "invalidBannerSize": "Banner must be smaller than 8MB"
       },
       "feedback": {
         "updateSuccess": "Profil mis à jour avec succès !",
@@ -540,7 +593,17 @@
         "avatarUploadSuccess": "Photo de profil mise à jour avec succès !",
         "avatarUploadError": "Échec du téléchargement de la photo de profil",
         "avatarRemoveSuccess": "Photo de profil supprimée avec succès !",
-        "avatarRemoveError": "Échec de la suppression de la photo de profil"
+        "avatarRemoveError": "Échec de la suppression de la photo de profil",
+        "bannerUploadSuccess": "Profile banner updated successfully!",
+        "bannerUploadError": "Failed to upload profile banner",
+        "bannerRemoveSuccess": "Profile banner removed successfully!",
+        "bannerRemoveError": "Failed to remove profile banner",
+        "avatarGradientApplied": "Gradient applied to your avatar.",
+        "avatarGradientCleared": "Avatar gradient removed.",
+        "avatarGradientError": "Failed to update avatar gradient.",
+        "bannerGradientApplied": "Gradient applied to your banner.",
+        "bannerGradientCleared": "Banner gradient removed.",
+        "bannerGradientError": "Failed to update banner gradient."
       }
     },
     "appearance": {
@@ -548,12 +611,19 @@
       "fields": {
         "theme": "Thème"
       },
+      "actions": {
+        "saveLanguage": "Enregistrer la langue"
+      },
       "options": {
         "light": "Clair",
         "dark": "Sombre"
       },
       "status": {
         "applying": "Application du thème..."
+      },
+      "feedback": {
+        "languageSuccess": "Langue mise à jour avec succès !",
+        "languageError": "Échec de la mise à jour de la langue"
       }
     },
     "notifications": {

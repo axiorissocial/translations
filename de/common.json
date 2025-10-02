@@ -12,7 +12,9 @@
       "searchingUsers": "Suche Benutzer..."
     },
     "emptyUsers": {
-      "title": "Keine Benutzer gefunden",
+        "remove": "Entfernen",
+        "description": "Upload a custom avatar or choose one of our gradients.",
+        "gradientTitle": "Choose a default avatar gradient",
       "subtitle": "Versuchen Sie die Suche mit anderen Stichwörtern"
     },
     "actions": {
@@ -23,6 +25,23 @@
       "subtitle": "Geben Sie ein Stichwort ein, um nach Beiträgen und Benutzern zu suchen"
     },
     "errors": {
+      "gradients": {
+        "none": "No gradient"
+      },
+      "banner": {
+        "title": "Profile banner",
+        "alt": "Current profile banner",
+        "placeholder": "No banner selected",
+        "description": "Upload your own banner or select one of the gradients below.",
+        "upload": "Upload banner",
+        "remove": "Remove banner",
+        "gradientTitle": "Choose a default banner gradient",
+        "removeModal": {
+          "title": "Remove profile banner",
+          "description": "Are you sure you want to remove your banner image?",
+          "cta": "Remove banner"
+        }
+      },
       "searchFailed": "Benutzersuche fehlgeschlagen"
     }
   },
@@ -113,7 +132,11 @@
     "report": "Melden",
     "delete": "Löschen",
     "edit": "Bearbeiten",
-    "copyLink": "Link kopieren"
+    "copyLink": "Link kopieren",
+    "reactionsPicker": {
+      "add": "Mit {{emoji}} reagieren",
+      "remove": "Deine {{emoji}}-Reaktion entfernen"
+    }
   },
   "home": {
     "documentTitle": "Startseite - {{app}}",
@@ -232,15 +255,26 @@
     },
     "editor": {
       "supports": "Unterstützt **Markdown**, :Emojis: und @Erwähnungen",
-      "charCount": "{{count}}/{{limit}} Zeichen",
-      "replyPlaceholder": "Antwort an {{name}}..."
+        "invalidImageSize": "Das Bild muss kleiner als 5 MB sein",
+        "invalidBannerSize": "Banner must be smaller than 8MB",
+        "replyPlaceholder": "Antwort an {{name}}..."
     },
     "statuses": {
       "replying": "Antwortet..."
     },
     "time": {
       "justNow": "Gerade eben",
-      "minutes": "vor {{count}}m",
+      "avatarRemoveError": "Profilbild konnte nicht entfernt werden",
+      "bannerUploadSuccess": "Profile banner updated successfully!",
+      "bannerUploadError": "Failed to upload profile banner",
+      "bannerRemoveSuccess": "Profile banner removed successfully!",
+      "bannerRemoveError": "Failed to remove profile banner",
+      "avatarGradientApplied": "Gradient applied to your avatar.",
+      "avatarGradientCleared": "Avatar gradient removed.",
+      "avatarGradientError": "Failed to update avatar gradient.",
+      "bannerGradientApplied": "Gradient applied to your banner.",
+      "bannerGradientCleared": "Banner gradient removed.",
+      "bannerGradientError": "Failed to update banner gradient.",
       "hours": "vor {{count}}h",
       "days": "vor {{count}}d",
       "edited": "(bearbeitet)"
@@ -494,6 +528,8 @@
         "alt": "Aktuelles Profilbild",
         "upload": "Hochladen",
         "remove": "Entfernen",
+        "description": "Upload a custom avatar or choose one of our gradients.",
+        "gradientTitle": "Choose a default avatar gradient",
         "removeModal": {
           "title": "Profilbild entfernen",
           "description": "Sind Sie sicher, dass Sie Ihr Profilbild entfernen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
@@ -503,6 +539,23 @@
       "statuses": {
         "uploading": "Hochladen...",
         "removing": "Entfernen..."
+      },
+      "gradients": {
+        "none": "No gradient"
+      },
+      "banner": {
+        "title": "Profile banner",
+        "alt": "Current profile banner",
+        "placeholder": "No banner selected",
+        "description": "Upload your own banner or select one of the gradients below.",
+        "upload": "Upload banner",
+        "remove": "Remove banner",
+        "gradientTitle": "Choose a default banner gradient",
+        "removeModal": {
+          "title": "Remove profile banner",
+          "description": "Are you sure you want to remove your banner image?",
+          "cta": "Remove banner"
+        }
       },
       "fields": {
         "displayName": {
@@ -532,7 +585,8 @@
       },
       "errors": {
         "invalidImageType": "Bitte wählen Sie eine Bilddatei",
-        "invalidImageSize": "Das Bild muss kleiner als 5MB sein"
+        "invalidImageSize": "Das Bild muss kleiner als 5MB sein",
+        "invalidBannerSize": "Banner must be smaller than 8MB"
       },
       "feedback": {
         "updateSuccess": "Profil erfolgreich aktualisiert!",
@@ -540,7 +594,17 @@
         "avatarUploadSuccess": "Profilbild erfolgreich aktualisiert!",
         "avatarUploadError": "Profilbild konnte nicht hochgeladen werden",
         "avatarRemoveSuccess": "Profilbild erfolgreich entfernt!",
-        "avatarRemoveError": "Profilbild konnte nicht entfernt werden"
+        "avatarRemoveError": "Profilbild konnte nicht entfernt werden",
+        "bannerUploadSuccess": "Profile banner updated successfully!",
+        "bannerUploadError": "Failed to upload profile banner",
+        "bannerRemoveSuccess": "Profile banner removed successfully!",
+        "bannerRemoveError": "Failed to remove profile banner",
+        "avatarGradientApplied": "Gradient applied to your avatar.",
+        "avatarGradientCleared": "Avatar gradient removed.",
+        "avatarGradientError": "Failed to update avatar gradient.",
+        "bannerGradientApplied": "Gradient applied to your banner.",
+        "bannerGradientCleared": "Banner gradient removed.",
+        "bannerGradientError": "Failed to update banner gradient."
       }
     },
     "appearance": {
@@ -548,12 +612,19 @@
       "fields": {
         "theme": "Design"
       },
+      "actions": {
+        "saveLanguage": "Sprache speichern"
+      },
       "options": {
         "light": "Hell",
         "dark": "Dunkel"
       },
       "status": {
         "applying": "Design wird angewendet..."
+      },
+      "feedback": {
+        "languageSuccess": "Sprache wurde erfolgreich aktualisiert!",
+        "languageError": "Sprache konnte nicht aktualisiert werden"
       }
     },
     "notifications": {

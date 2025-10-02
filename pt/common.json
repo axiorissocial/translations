@@ -13,6 +13,8 @@
     },
     "emptyUsers": {
       "title": "Nenhum usuário encontrado",
+        "description": "Upload a custom avatar or choose one of our gradients.",
+        "gradientTitle": "Choose a default avatar gradient",
       "subtitle": "Tente pesquisar com palavras-chave diferentes"
     },
     "actions": {
@@ -23,6 +25,23 @@
       "subtitle": "Digite uma palavra-chave para pesquisar posts e usuários"
     },
     "errors": {
+      "gradients": {
+        "none": "No gradient"
+      },
+      "banner": {
+        "title": "Profile banner",
+        "alt": "Current profile banner",
+        "placeholder": "No banner selected",
+        "description": "Upload your own banner or select one of the gradients below.",
+        "upload": "Upload banner",
+        "remove": "Remove banner",
+        "gradientTitle": "Choose a default banner gradient",
+        "removeModal": {
+          "title": "Remove profile banner",
+          "description": "Are you sure you want to remove your banner image?",
+          "cta": "Remove banner"
+        }
+      },
       "searchFailed": "Falha ao pesquisar usuários"
     }
   },
@@ -113,7 +132,11 @@
     "report": "Denunciar",
     "delete": "Excluir",
     "edit": "Editar",
-    "copyLink": "Copiar link"
+    "copyLink": "Copiar link",
+    "reactionsPicker": {
+      "add": "Reagir com {{emoji}}",
+      "remove": "Remover sua reação {{emoji}}"
+    }
   },
   "home": {
     "documentTitle": "Início - {{app}}",
@@ -232,7 +255,8 @@
     },
     "editor": {
       "supports": "Suporta **markdown**, :emojis: e @menções",
-      "charCount": "{{count}}/{{limit}} caracteres",
+      "invalidImageSize": "A imagem deve ter menos de 5 MB",
+      "invalidBannerSize": "Banner must be smaller than 8MB",
       "replyPlaceholder": "Responder para {{name}}..."
     },
     "statuses": {
@@ -240,7 +264,17 @@
     },
     "time": {
       "justNow": "Agora mesmo",
-      "minutes": "{{count}}m atrás",
+      "avatarRemoveError": "Falha ao remover a foto de perfil",
+      "bannerUploadSuccess": "Profile banner updated successfully!",
+      "bannerUploadError": "Failed to upload profile banner",
+      "bannerRemoveSuccess": "Profile banner removed successfully!",
+      "bannerRemoveError": "Failed to remove profile banner",
+      "avatarGradientApplied": "Gradient applied to your avatar.",
+      "avatarGradientCleared": "Avatar gradient removed.",
+      "avatarGradientError": "Failed to update avatar gradient.",
+      "bannerGradientApplied": "Gradient applied to your banner.",
+      "bannerGradientCleared": "Banner gradient removed.",
+      "bannerGradientError": "Failed to update banner gradient.",
       "hours": "{{count}}h atrás",
       "days": "{{count}}d atrás",
       "edited": "(editado)"
@@ -548,12 +582,19 @@
       "fields": {
         "theme": "Tema"
       },
+      "actions": {
+        "saveLanguage": "Salvar idioma"
+      },
       "options": {
         "light": "Claro",
         "dark": "Escuro"
       },
       "status": {
         "applying": "Aplicando tema..."
+      },
+      "feedback": {
+        "languageSuccess": "Idioma atualizado com sucesso!",
+        "languageError": "Falha ao atualizar idioma"
       }
     },
     "notifications": {

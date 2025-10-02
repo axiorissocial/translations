@@ -1,0 +1,808 @@
+{
+  "search": {
+    "documentTitle": "Recherche - {{app}}",
+    "heading": "Recherche",
+    "subheading": "Trouvez des publications et des utilisateurs",
+    "placeholder": "Rechercher des publications ou des utilisateurs...",
+    "tabs": {
+      "posts": "Publications",
+      "users": "Utilisateurs"
+    },
+    "status": {
+      "searchingUsers": "Recherche d'utilisateurs..."
+    },
+    "emptyUsers": {
+      "title": "Aucun utilisateur trouvé",
+      "subtitle": "Essayez de rechercher avec des mots-clés différents"
+    },
+    "actions": {
+      "loadMoreUsers": "Charger plus d'utilisateurs"
+    },
+    "emptyState": {
+      "title": "Commencer la recherche",
+      "subtitle": "Entrez un mot-clé pour rechercher des publications et des utilisateurs"
+    },
+    "errors": {
+      "searchFailed": "Échec de la recherche d'utilisateurs"
+    }
+  },
+  "app": {
+    "name": "Axioris",
+    "logoAlt": "Logo {{app}}"
+  },
+  "nav": {
+    "home": "Accueil",
+    "search": "Recherche",
+    "notifications": "Notifications",
+    "messages": "Messages",
+    "profile": "Profil",
+    "settings": "Paramètres",
+    "admin": "Administration",
+    "createPost": "Créer une publication",
+    "login": "Se connecter",
+    "signUp": "S'inscrire"
+  },
+  "mobile": {
+    "pageTitle": "Installer l'PWA Axioris",
+    "browserTitle": "Installer Axioris PWA",
+    "message": "Axioris fonctionne parfaitement en tant qu'application web progressive. Installez-la pour rester connecté en déplacement sans rien télécharger depuis un magasin.",
+    "errorCode": "Code d'erreur : {{code}}",
+    "installCta": "Installer l'PWA",
+    "continue": "Continuer sur le site web",
+    "modalTitle": "Comment installer sur votre téléphone",
+    "intro": "Ajoutez Axioris à votre écran d'accueil pour qu'elle se comporte comme une application native. Cela ne prend que quelques secondes :",
+    "iosTitle": "Sur iPhone ou iPad (Safari)",
+    "iosSteps": [
+      "Appuyez sur l'icône <strong>Partager</strong> dans la barre d'outils du navigateur.",
+      "Sélectionnez <strong>Ajouter à l'écran d'accueil</strong>.",
+      "Confirmez en appuyant sur <strong>Ajouter</strong>."
+    ],
+    "androidTitle": "Sur Android (Chrome)",
+    "androidSteps": [
+      "Appuyez sur le menu <strong>⋮</strong> en haut à droite.",
+      "Choisissez <strong>Installer l'application</strong> ou <strong>Ajouter à l'écran d'accueil</strong>.",
+      "Confirmez l'invitation pour terminer."
+    ],
+    "closing": "Une fois installée, ouvrez Axioris depuis votre écran d'accueil pour une expérience plein écran et sans distraction.",
+    "close": "Fermer",
+    "confirm": "Compris"
+  },
+  "common": {
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "submit": "Soumettre",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "loadMore": "Charger plus",
+    "loading": "Chargement...",
+    "error": "Quelque chose s'est mal passé",
+    "language": "Langue",
+    "languages": {
+      "en": "Anglais",
+      "es": "Espagnol",
+      "fr": "Français",
+      "de": "Allemand",
+      "pt": "Portugais",
+      "it": "Italien"
+    },
+    "viewMore": "Afficher plus",
+    "viewLess": "Afficher moins",
+    "statuses": {
+      "saving": "Enregistrement...",
+      "deleting": "Suppression...",
+      "replying": "Réponse...",
+      "posting": "Publication...",
+      "updating": "Mise à jour...",
+      "loading": "Chargement...",
+      "yes": "Oui",
+      "no": "Non"
+    }
+  },
+  "feed": {
+    "empty": "Aucune publication à afficher pour le moment.",
+    "retry": "Réessayer",
+    "newPost": "Nouvelle publication"
+  },
+  "post": {
+    "created": "Publié {{time}}",
+    "edited": "Modifié {{time}}",
+    "mediaAlt": "Élément média {{index}}",
+    "comments": "Commentaires",
+    "reactions": "Réactions",
+    "share": "Partager",
+    "report": "Signaler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "copyLink": "Copier le lien"
+  },
+  "home": {
+    "documentTitle": "Accueil - {{app}}",
+    "heading": "Accueil",
+    "subtitle": "Rattrapez-vous avec les dernières nouvelles des personnes que vous suivez."
+  },
+  "postPage": {
+    "meta": {
+      "defaultTitle": "Publication sans titre",
+      "documentTitle": "{{title}} - {{app}}",
+      "defaultDocumentTitle": "Publication - {{app}}"
+    },
+    "errors": {
+      "notFound": "Cette publication n'a pas pu être trouvée.",
+      "loadFailed": "Nous n'avons pas pu charger cette publication."
+    },
+    "navigation": {
+      "backToHome": "Retour à l'accueil",
+      "backToProfile": "Retour au profil",
+      "backToSearch": "Retour aux résultats de recherche",
+      "genericBack": "Retour"
+    },
+    "comments": {
+      "title": "{{count}} Commentaires",
+      "placeholder": "Partagez vos pensées...",
+      "actions": {
+        "submit": "Commenter"
+      },
+      "status": {
+        "posting": "Publication..."
+      },
+      "validation": {
+        "tooLong": "Les commentaires ne doivent pas dépasser {{limit}} caractères."
+      },
+      "empty": "Aucun commentaire pour le moment. Soyez le premier à en laisser un !"
+    }
+  },
+  "profilePage": {
+    "documentTitle": "{{name}} - {{app}}",
+    "loading": "Chargement du profil...",
+    "redirecting": "Redirection...",
+    "errors": {
+      "notFound": "Profil non trouvé",
+      "loadFailed": "Échec du chargement du profil"
+    },
+    "error": {
+      "title": "Nous n'avons pas pu charger ce profil",
+      "description": "Veuillez réessayer plus tard ou revenir en arrière.",
+      "back": "Retour"
+    },
+    "media": {
+      "bannerAlt": "Bannière de profil de {{name}}",
+      "avatarAlt": "Avatar de {{name}}"
+    },
+    "level": "Niveau {{level}}",
+    "actions": {
+      "createPost": "Créer une publication",
+      "editProfile": "Modifier le profil",
+      "follow": "Suivre",
+      "unfollow": "Ne plus suivre",
+      "sendMessage": "Envoyer un message"
+    },
+    "statuses": {
+      "messaging": "Envoi du message..."
+    },
+    "stats": {
+      "posts": "Publications",
+      "followers": "Abonnés",
+      "following": "Abonnements"
+    },
+    "meta": {
+      "joined": "Rejoint le {{date}}"
+    },
+    "tabs": {
+      "posts": "Publications",
+      "about": "À propos"
+    },
+    "about": {
+      "title": "À propos de {{name}}",
+      "details": {
+        "username": "Nom d'utilisateur",
+        "location": "Localisation",
+        "website": "Site web",
+        "memberSince": "Membre depuis",
+        "level": "Niveau",
+        "lastActive": "Dernière activité"
+      },
+      "values": {
+        "username": "@{{username}}",
+        "noBio": "Aucune biographie disponible pour le moment.",
+        "unknown": "Inconnu"
+      }
+    }
+  },
+  "comment": {
+    "placeholder": "Écrire un commentaire...",
+    "submit": "Commenter",
+    "reply": "Répondre",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "loadReplies": "Voir les réponses",
+    "hideReplies": "Masquer les réponses",
+    "edited": "Modifié",
+    "avatarAlt": "Avatar de {{name}}",
+    "prompts": {
+      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce commentaire ?"
+    },
+    "errors": {
+      "delete": "Échec de la suppression du commentaire. Veuillez réessayer.",
+      "update": "Échec de la mise à jour du commentaire. Veuillez réessayer.",
+      "replyFailed": "Échec de la publication de la réponse. Veuillez réessayer."
+    },
+    "validation": {
+      "tooLong": "Le commentaire est trop long. Maximum {{limit}} caractères autorisés.",
+      "replyTooLong": "La réponse est trop longue. Maximum {{limit}} caractères autorisés."
+    },
+    "editor": {
+      "supports": "Prend en charge **markdown**, :emojis:, et @mentions",
+      "charCount": "{{count}}/{{limit}} caractères",
+      "replyPlaceholder": "Répondre à {{name}}..."
+    },
+    "statuses": {
+      "replying": "Réponse en cours..."
+    },
+    "time": {
+      "justNow": "À l'instant",
+      "minutes": "il y a {{count}}m",
+      "hours": "il y a {{count}}h",
+      "days": "il y a {{count}}j",
+      "edited": "(modifié)"
+    }
+  },
+  "createPost": {
+    "documentTitle": "Créer une publication - {{app}}",
+    "title": "Créer une publication",
+    "subtitle": "Partagez ce qui vous préoccupe avec la communauté.",
+    "placeholder": "Que se passe-t-il ?",
+    "mediaLimit": "Vous pouvez joindre jusqu'à 5 fichiers multimédias.",
+    "submit": "Publier",
+    "fields": {
+      "titlePlaceholder": "Titre (optionnel)",
+      "contentPlaceholder": "Entrez le contenu de votre publication (prend en charge Markdown) ici..."
+    },
+    "tabs": {
+      "write": "Écrire",
+      "preview": "Aperçu"
+    },
+    "upload": {
+      "heading": "Téléchargement de fichiers :",
+      "status": {
+        "uploading": "{{progress}}%",
+        "processing": "Traitement...",
+        "complete": "Terminé",
+        "error": "Erreur"
+      },
+      "attached": "Médias joints ({{count}}/{{limit}})",
+      "videoLabel": "Vidéo"
+    },
+    "actions": {
+      "cancel": "Annuler",
+      "submit": "Publier",
+      "posting": "Publier",
+      "postingStatus": "Publication...",
+      "uploading": "Téléchargement..."
+    },
+    "charCount": "{{count}}/1000",
+    "mobileTitle": "Créer une publication",
+    "errors": {
+      "contentLength": "Votre publication doit contenir entre 1 et 1000 caractères.",
+      "fileTooLarge": "Le fichier {{file}} est trop volumineux (max 50 Mo)",
+      "invalidType": "Le fichier {{file}} n'est pas une image ou vidéo valide",
+      "maxFiles": "Maximum {{limit}} fichiers multimédias autorisés par publication",
+      "uploadFailed": "Échec du téléchargement",
+      "network": "Erreur réseau",
+      "createFailed": "Échec de la création de la publication",
+      "createGeneric": "Une erreur s'est produite lors de la création de la publication"
+    }
+  },
+  "editPost": {
+    "title": "Modifier la publication",
+    "submit": "Enregistrer les modifications"
+  },
+  "report": {
+    "title": "Signaler le contenu",
+    "description": "Faites-nous savoir ce qui s'est passé pour que notre équipe puisse l'examiner.",
+    "placeholders": {
+      "reason": "Sélectionnez une raison",
+      "details": "Détails supplémentaires (optionnel)"
+    },
+    "submit": "Envoyer le signalement",
+    "success": "Merci ! Votre signalement a été soumis."
+  },
+  "messages": {
+    "new": "Nouveau message",
+    "placeholder": "Tapez un message...",
+    "empty": "Sélectionnez une conversation ou commencez-en une nouvelle.",
+    "emoji": "Ajouter un emoji"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "Vous êtes à jour !"
+  },
+  "notificationsCenter": {
+    "documentTitle": "Notifications - {{app}}",
+    "documentTitleWithCount": "Notifications ({{count}}) - {{app}}",
+    "title": "Notifications",
+    "subtitle": {
+      "active": "Restez au courant de votre activité",
+      "archived": "Consultez les éléments que vous avez rangés"
+    },
+    "views": {
+      "ariaLabel": "Sélecteur de vue des notifications",
+      "active": "Actives",
+      "archived": "Archivées"
+    },
+    "actions": {
+      "markAll": "Tout marquer comme lu",
+      "marking": "Marquage...",
+      "tooltips": {
+        "archive": "Archiver la notification",
+        "delete": "Supprimer la notification",
+        "restore": "Restaurer la notification"
+      }
+    },
+    "loading": "Chargement des notifications...",
+    "empty": {
+      "active": {
+        "title": "Aucune notification pour le moment",
+        "message": "Lorsque les gens interagissent avec vos publications ou vous suivent, vous verrez des notifications ici."
+      },
+      "archived": {
+        "title": "Rien d'archivé pour le moment",
+        "message": "Archivez n'importe quelle notification pour la ranger. Vos éléments sauvegardés apparaîtront ici."
+      }
+    },
+    "preview": "\"{{snippet}}\"",
+    "badges": {
+      "archived": "Archivé"
+    },
+    "timestamps": {
+      "archived": "Archivé {{time}}"
+    },
+    "loadMore": {
+      "label": "Charger plus de notifications",
+      "loading": "Chargement..."
+    },
+    "modals": {
+      "archive": {
+        "title": "Archiver la notification",
+        "description": "Archiver la notification \"{{content}}\" ?",
+        "helper": "Les éléments archivés sortent de votre liste active mais restent disponibles dans l'onglet Archivés.",
+        "fallback": "Archiver cette notification ?",
+        "status": {
+          "archiving": "Archivage..."
+        },
+        "confirm": "Archiver"
+      },
+      "delete": {
+        "title": "Supprimer la notification",
+        "description": "Cela supprimera définitivement \"{{content}}\".",
+        "helper": "Vous ne pourrez pas la restaurer plus tard.",
+        "fallback": "Supprimer cette notification ?",
+        "status": {
+          "deleting": "Suppression..."
+        },
+        "confirm": "Supprimer"
+      }
+    },
+    "errors": {
+      "fetch": "Échec du chargement des notifications",
+      "archive": "Échec de l'archivage de la notification",
+      "delete": "Échec de la suppression de la notification",
+      "restore": "Échec de la restauration de la notification"
+    },
+    "authRequired": "Veuillez vous connecter pour voir les notifications",
+    "unknownSender": "Quelqu'un",
+    "types": {
+      "like": "{{name}} a aimé votre publication",
+      "comment": "{{name}} a commenté votre publication",
+      "mention": "{{name}} vous a mentionné dans une publication",
+      "follow": "{{name}} a commencé à vous suivre",
+      "reply": "{{name}} a répondu à votre commentaire",
+      "commentLike": "{{name}} a aimé votre commentaire",
+      "message": "{{name}} vous a envoyé un message",
+      "generic": "Nouvelle notification"
+    }
+  },
+  "messagesCenter": {
+    "documentTitle": "Messages - {{app}}",
+    "authRequired": "Veuillez vous connecter pour voir les messages",
+    "loading": "Chargement des messages...",
+    "sidebar": {
+      "title": "Messages"
+    },
+    "empty": {
+      "title": "Aucune conversation pour le moment",
+      "subtitle": "Commencez une conversation en visitant le profil de quelqu'un"
+    },
+    "status": {
+      "online": "En ligne",
+      "offline": "Hors ligne",
+      "typing": "En train d'écrire…",
+      "deleting": "Suppression du message…",
+      "deleteAction": "Supprimer le message",
+      "deleteFailure": "Échec de la suppression du message"
+    },
+    "unknownUser": "Utilisateur inconnu",
+    "conversation": {
+      "defaultTitle": "Conversation",
+      "selectTitle": "Sélectionnez une conversation",
+      "selectSubtitle": "Choisissez une conversation dans la barre latérale pour commencer à échanger",
+      "youPrefix": "Vous : ",
+      "avatarAlt": "Avatar de {{name}}"
+    },
+    "input": {
+      "placeholder": "Tapez un message...",
+      "showEmoji": "Afficher le sélecteur d'emoji",
+      "hideEmoji": "Masquer le sélecteur d'emoji",
+      "send": "Envoyer le message"
+    },
+    "typingIndicator": "En train d'écrire…",
+    "timestamps": {
+      "edited": "(modifié)"
+    }
+  },
+  "settings": {
+    "documentTitle": "Paramètres - {{app}}",
+    "title": "Paramètres",
+    "languageLabel": "Langue de l'interface",
+    "languageHelper": "Choisissez la langue que vous préférez pour Axioris.",
+    "tabs": {
+      "account": "Compte",
+      "profile": "Profil",
+      "appearance": "Apparence",
+      "notifications": "Notifications"
+    },
+    "account": {
+      "sectionTitle": "Paramètres du compte",
+      "changePassword": "Changer le mot de passe",
+      "fields": {
+        "username": {
+          "label": "Nom d'utilisateur",
+          "placeholder": "Entrez votre nom d'utilisateur"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Entrez votre email"
+        },
+        "currentPassword": {
+          "label": "Mot de passe actuel",
+          "placeholder": "Entrez le mot de passe actuel pour effectuer des modifications"
+        },
+        "newPassword": {
+          "label": "Nouveau mot de passe (optionnel)",
+          "placeholder": "Entrez un nouveau mot de passe"
+        },
+        "confirmPassword": {
+          "label": "Confirmer le nouveau mot de passe",
+          "placeholder": "Confirmez le nouveau mot de passe"
+        }
+      },
+      "actions": {
+        "save": "Enregistrer les modifications du compte"
+      },
+      "feedback": {
+        "success": "Compte mis à jour avec succès !",
+        "error": "Échec de la mise à jour du compte"
+      },
+      "validation": {
+        "passwordMismatch": "Les nouveaux mots de passe ne correspondent pas",
+        "passwordLength": "Le nouveau mot de passe doit contenir au moins 6 caractères"
+      }
+    },
+    "profile": {
+      "sectionTitle": "Paramètres du profil",
+      "picture": {
+        "title": "Photo de profil",
+        "alt": "Photo de profil actuelle",
+        "upload": "Télécharger",
+        "remove": "Supprimer",
+        "removeModal": {
+          "title": "Supprimer la photo de profil",
+          "description": "Êtes-vous sûr de vouloir supprimer votre photo de profil ? Cette action ne peut pas être annulée.",
+          "cta": "Supprimer la photo"
+        }
+      },
+      "statuses": {
+        "uploading": "Téléchargement...",
+        "removing": "Suppression..."
+      },
+      "fields": {
+        "displayName": {
+          "label": "Nom d'affichage",
+          "placeholder": "Entrez votre nom d'affichage",
+          "count": "{{count}}/{{limit}} caractères"
+        },
+        "bio": {
+          "label": "Bio",
+          "placeholder": "Écrivez quelque chose sur vous...",
+          "count": "{{count}}/{{limit}} caractères"
+        },
+        "location": {
+          "label": "Localisation",
+          "placeholder": "Entrez votre localisation"
+        },
+        "website": {
+          "label": "Site web",
+          "placeholder": "https://votresite.com"
+        },
+        "birthDate": {
+          "label": "Date de naissance"
+        }
+      },
+      "actions": {
+        "save": "Enregistrer les modifications du profil"
+      },
+      "errors": {
+        "invalidImageType": "Veuillez sélectionner un fichier image",
+        "invalidImageSize": "L'image doit faire moins de 5 Mo"
+      },
+      "feedback": {
+        "updateSuccess": "Profil mis à jour avec succès !",
+        "updateError": "Échec de la mise à jour du profil",
+        "avatarUploadSuccess": "Photo de profil mise à jour avec succès !",
+        "avatarUploadError": "Échec du téléchargement de la photo de profil",
+        "avatarRemoveSuccess": "Photo de profil supprimée avec succès !",
+        "avatarRemoveError": "Échec de la suppression de la photo de profil"
+      }
+    },
+    "appearance": {
+      "sectionTitle": "Apparence",
+      "fields": {
+        "theme": "Thème"
+      },
+      "options": {
+        "light": "Clair",
+        "dark": "Sombre"
+      },
+      "status": {
+        "applying": "Application du thème..."
+      }
+    },
+    "notifications": {
+      "sectionTitle": "Paramètres de notification",
+      "intro": "Choisissez quelles notifications vous souhaitez recevoir lorsque d'autres utilisateurs interagissent avec votre contenu.",
+      "toggles": {
+        "likes": {
+          "label": "J'aime sur les publications",
+          "description": "Être notifié quand quelqu'un aime vos publications"
+        },
+        "comments": {
+          "label": "Commentaires",
+          "description": "Être notifié quand quelqu'un commente vos publications"
+        },
+        "follows": {
+          "label": "Nouveaux abonnés",
+          "description": "Être notifié quand quelqu'un vous suit"
+        },
+        "mentions": {
+          "label": "Mentions",
+          "description": "Être notifié quand quelqu'un vous mentionne avec @nomutilisateur"
+        },
+        "replies": {
+          "label": "Réponses aux commentaires",
+          "description": "Être notifié quand quelqu'un répond à vos commentaires"
+        },
+        "commentLikes": {
+          "label": "J'aime sur les commentaires",
+          "description": "Être notifié quand quelqu'un aime vos commentaires"
+        }
+      },
+      "actions": {
+        "save": "Enregistrer les paramètres de notification"
+      },
+      "feedback": {
+        "success": "Paramètres de notification mis à jour avec succès !",
+        "error": "Échec de la mise à jour des paramètres de notification"
+      }
+    },
+    "danger": {
+      "title": "Zone de danger",
+      "signOut": {
+        "title": "Se déconnecter",
+        "description": "Se déconnecter de votre compte sur cet appareil.",
+        "cta": "Se déconnecter"
+      },
+      "delete": {
+        "title": "Supprimer le compte",
+        "description": "Supprimer définitivement votre compte et toutes les données associées. Cette action ne peut pas être annulée.",
+        "cta": "Supprimer le compte"
+      },
+      "modal": {
+        "title": "Supprimer le compte",
+        "warningTitle": "Attention :",
+        "warningDescription": "Cette action ne peut pas être annulée. Cela supprimera définitivement votre compte et toutes les données associées.",
+        "prompt": "Veuillez entrer votre mot de passe pour confirmer la suppression du compte.",
+        "passwordLabel": "Mot de passe",
+        "passwordPlaceholder": "Entrez votre mot de passe",
+        "status": {
+          "deleting": "Suppression du compte..."
+        },
+        "confirm": "Supprimer le compte"
+      },
+      "feedback": {
+        "deleteError": "Échec de la suppression du compte"
+      }
+    }
+  },
+  "admin": {
+    "title": "Panneau d'administration",
+    "accessRequired": "Vous avez besoin d'un accès administrateur pour voir cette page.",
+    "meta": {
+      "documentTitle": "Administration - {{app}}"
+    },
+    "tabs": {
+      "users": "Utilisateurs",
+      "reports": "Signalements",
+      "posts": "Publications"
+    },
+    "actions": {
+      "search": "Rechercher",
+      "clear": "Effacer"
+    },
+    "pagination": {
+      "range": "{{start}}-{{end}} sur {{total}}",
+      "perPage": "{{count}} par page"
+    },
+    "errors": {
+      "loadUsers": "Échec du chargement des utilisateurs",
+      "loadReports": "Échec du chargement des signalements",
+      "loadPosts": "Échec du chargement des publications",
+      "deleteUser": "Échec de la suppression de l'utilisateur",
+      "banUser": "Échec du bannissement de l'utilisateur",
+      "unbanUser": "Échec de la levée du bannissement de l'utilisateur",
+      "deletePost": "Échec de la suppression de la publication",
+      "updateReport": "Échec de la mise à jour du signalement"
+    },
+    "confirmation": {
+      "title": "Confirmer l'action",
+      "confirm": "Confirmer"
+    },
+    "users": {
+      "heading": "Gérer les utilisateurs",
+      "searchPlaceholder": "Rechercher des utilisateurs...",
+      "empty": "Aucun utilisateur trouvé.",
+      "table": {
+        "username": "Nom d'utilisateur",
+        "email": "Email",
+        "admin": "Admin",
+        "banned": "Banni",
+        "actions": "Actions"
+      },
+      "actions": {
+        "ban": "Bannir",
+        "unban": "Lever le bannissement",
+        "delete": "Supprimer"
+      },
+      "confirm": {
+        "ban": "Bannir cet utilisateur ?",
+        "unban": "Lever le bannissement de cet utilisateur ?",
+        "delete": "Supprimer cet utilisateur ?"
+      },
+      "feedback": {
+        "deleteSuccess": "Utilisateur supprimé avec succès.",
+        "banSuccess": "Utilisateur banni avec succès.",
+        "unbanSuccess": "Bannissement levé avec succès."
+      }
+    },
+    "reports": {
+      "heading": "Modérer les signalements",
+      "searchPlaceholder": "Rechercher des signalements...",
+      "empty": "Aucun signalement trouvé.",
+      "filters": {
+        "all": "Tous les signalements",
+        "post": "Signalements de publications",
+        "comment": "Signalements de commentaires"
+      },
+      "table": {
+        "id": "ID",
+        "type": "Type",
+        "reason": "Raison",
+        "description": "Description",
+        "status": "Statut",
+        "actions": "Actions"
+      },
+      "types": {
+        "post": "Publication",
+        "comment": "Commentaire",
+        "unknown": "Inconnu"
+      },
+      "actions": {
+        "resolve": "Résoudre",
+        "dismiss": "Rejeter"
+      },
+      "confirm": {
+        "resolve": "Marquer ce signalement comme résolu ?",
+        "dismiss": "Rejeter ce signalement ?"
+      },
+      "feedback": {
+        "statusUpdated": "Statut du signalement mis à jour à {{status}}."
+      },
+      "status": {
+        "pending": "En attente",
+        "resolved": "Résolu",
+        "dismissed": "Rejeté",
+        "open": "Ouvert",
+        "inReview": "En cours d'examen"
+      }
+    },
+    "posts": {
+      "heading": "Gérer les publications",
+      "searchPlaceholder": "Rechercher des publications...",
+      "empty": "Aucune publication trouvée.",
+      "table": {
+        "id": "ID",
+        "snippet": "Extrait",
+        "user": "Utilisateur",
+        "actions": "Actions"
+      },
+      "actions": {
+        "delete": "Supprimer"
+      },
+      "confirm": {
+        "delete": "Supprimer cette publication ?"
+      },
+      "quickDelete": {
+        "label": "Suppression rapide par ID",
+        "placeholder": "Entrez l'ID de la publication",
+        "submit": "Supprimer la publication"
+      },
+      "feedback": {
+        "deleteSuccess": "Publication supprimée avec succès."
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "documentTitle": "Se connecter - {{app}}",
+      "title": "Se connecter",
+      "fields": {
+        "emailOrUsername": "Email ou nom d'utilisateur",
+        "emailOrUsernamePlaceholder": "Entrez votre email ou nom d'utilisateur",
+        "password": "Mot de passe",
+        "passwordPlaceholder": "Entrez votre mot de passe"
+      },
+      "remember": "Se souvenir de moi",
+      "cta": "Se connecter",
+      "status": {
+        "loggingIn": "Connexion..."
+      },
+      "github": "Se connecter avec GitHub",
+      "links": {
+        "forgotPassword": "Mot de passe oublié ?"
+      },
+      "errors": {
+        "generic": "Échec de la connexion"
+      },
+      "registerPrompt": "Vous n'avez pas de compte ?",
+      "registerLink": "S'inscrire"
+    },
+    "register": {
+      "documentTitle": "S'inscrire - {{app}}",
+      "title": "Créer votre compte",
+      "fields": {
+        "username": "Nom d'utilisateur",
+        "usernamePlaceholder": "Nom d'utilisateur (lettres, chiffres, points uniquement)",
+        "email": "Adresse email",
+        "emailPlaceholder": "Entrez votre email",
+        "password": "Mot de passe",
+        "passwordPlaceholder": "Entrez votre mot de passe",
+        "confirmPassword": "Confirmer le mot de passe",
+        "confirmPasswordPlaceholder": "Saisissez à nouveau votre mot de passe"
+      },
+      "cta": "Créer un compte",
+      "status": {
+        "registering": "Inscription..."
+      },
+      "validation": {
+        "passwordMismatch": "Les mots de passe ne correspondent pas.",
+        "usernameFormat": "Le nom d'utilisateur ne peut contenir que des lettres, des chiffres et des points."
+      },
+      "errors": {
+        "generic": "Échec de l'inscription"
+      },
+      "loginPrompt": "Vous avez déjà un compte ?",
+      "loginLink": "Se connecter"
+    }
+  },
+  "backend": {
+    "health": "Le serveur fonctionne"
+  }
+}

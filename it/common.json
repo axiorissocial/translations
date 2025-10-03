@@ -121,6 +121,7 @@
     "statuses": {
       "saving": "Salvando...",
       "deleting": "Eliminando...",
+      "github": "Registrati con GitHub",
       "replying": "Rispondendo...",
       "posting": "Pubblicando...",
       "updating": "Aggiornando...",
@@ -323,6 +324,37 @@
       "avatarRemoveError": "Impossibile rimuovere la foto profilo",
       "bannerUploadSuccess": "Profile banner updated successfully!",
       "bannerUploadError": "Failed to upload profile banner",
+    "hashtags": {
+      "trending": {
+        "heading": "Hashtag di tendenza",
+        "loading": "Caricamento delle tendenze...",
+        "retry": "Riprova",
+        "error": "Impossibile caricare gli hashtag di tendenza.",
+        "empty": "Nessun hashtag è ancora di tendenza.",
+        "localTitle": "Tendenze in {{region}}",
+        "globalTitle": "Tendenze globali",
+        "fallback": "Ancora nessun dato locale: mostriamo i trend globali.",
+        "updated": "Aggiornato {{time}}",
+        "usageCount_one": "{{count}} post",
+        "usageCount_other": "{{count}} post",
+        "lastUsed": "Ultimo utilizzo {{time}}"
+      },
+      "page": {
+        "documentTitle": "{{tag}} - {{app}}",
+        "subtitle": "Ultimi post con questo hashtag.",
+        "subtitleWithCount": "{{count}} post recenti",
+        "loading": "Caricamento dei post...",
+        "retry": "Riprova",
+        "error": "Non è stato possibile caricare i post per questo hashtag.",
+        "empty": {
+          "title": "Ancora nessun post",
+          "description": "Sii il primo a utilizzare questo hashtag."
+        },
+        "loadMore": "Carica altro",
+        "loadingMore": "Caricamento...",
+        "endOfResults": "Hai visto tutto per ora."
+      }
+    },
       "bannerRemoveSuccess": "Profile banner removed successfully!",
       "bannerRemoveError": "Failed to remove profile banner",
       "avatarGradientApplied": "Gradient applied to your avatar.",

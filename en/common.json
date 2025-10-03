@@ -175,6 +175,37 @@
     "heading": "Home",
     "subtitle": "Catch up with the latest from people you follow."
   },
+  "hashtags": {
+    "trending": {
+      "heading": "Trending hashtags",
+      "loading": "Loading trends...",
+      "retry": "Try again",
+      "error": "We couldn't load trending hashtags.",
+      "empty": "No hashtags are trending yet.",
+      "localTitle": "Trending in {{region}}",
+      "globalTitle": "Worldwide trends",
+      "fallback": "No local data yet—showing global highlights.",
+      "updated": "Updated {{time}}",
+      "usageCount_one": "{{count}} post",
+      "usageCount_other": "{{count}} posts",
+      "lastUsed": "Last used {{time}}"
+    },
+    "page": {
+      "documentTitle": "{{tag}} - {{app}}",
+      "subtitle": "Latest posts using this hashtag.",
+      "subtitleWithCount": "{{count}} posts recently",
+      "loading": "Loading posts...",
+      "retry": "Try again",
+      "error": "We couldn't load posts for this hashtag.",
+      "empty": {
+        "title": "No posts yet",
+        "description": "Be the first to share with this hashtag."
+      },
+      "loadMore": "Load more",
+      "loadingMore": "Loading...",
+      "endOfResults": "That's everything for now."
+    }
+  },
   "postPage": {
     "meta": {
       "defaultTitle": "Untitled post",
@@ -956,6 +987,19 @@
         "loggingIn": "Logging in..."
       },
       "github": "Log in with GitHub",
+      "githubStatus": {
+        "completing": "Finishing GitHub sign-in…",
+        "linked": "GitHub account linked successfully."
+      },
+      "githubErrors": {
+        "generic": "GitHub sign-in failed. Please try again.",
+        "github_not_configured": "GitHub sign-in is unavailable right now.",
+        "invalid_oauth_state": "The GitHub login session expired. Please try again.",
+        "missing_code": "GitHub did not return a login code. Please try again.",
+        "missing_session_user": "You need to be logged in to link GitHub.",
+        "already_linked_elsewhere": "That GitHub account is already linked to another profile.",
+        "github_oauth_failed": "GitHub sign-in failed. Please try again."
+      },
       "links": {
         "forgotPassword": "Forgot password?"
       },
@@ -981,6 +1025,20 @@
       "cta": "Create account",
       "status": {
         "registering": "Registering..."
+      },
+      "github": "Sign up with GitHub",
+      "githubStatus": {
+        "completing": "Creating your account with GitHub…",
+        "linked": "GitHub account linked successfully."
+      },
+      "githubErrors": {
+        "generic": "GitHub sign-up failed. Please try again.",
+        "github_not_configured": "GitHub sign-up is unavailable right now.",
+        "invalid_oauth_state": "The GitHub sign-up session expired. Please try again.",
+        "missing_code": "GitHub did not return a sign-up code. Please try again.",
+        "missing_session_user": "You need to be logged in to link GitHub.",
+        "already_linked_elsewhere": "That GitHub account is already linked to another profile.",
+        "github_oauth_failed": "GitHub sign-up failed. Please try again."
       },
       "validation": {
         "passwordMismatch": "Passwords do not match.",

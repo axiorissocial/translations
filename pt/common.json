@@ -107,6 +107,7 @@
     "statuses": {
       "saving": "Salvando...",
       "deleting": "Excluindo...",
+      "github": "Inscrever-se com GitHub",
       "replying": "Respondendo...",
       "posting": "Postando...",
       "updating": "Atualizando...",
@@ -316,6 +317,37 @@
       "minutes": "{{count}} min atrás",
       "hours": "{{count}} h atrás",
       "days": "{{count}} d atrás",
+    "hashtags": {
+      "trending": {
+        "heading": "Hashtags em alta",
+        "loading": "Carregando tendências...",
+        "retry": "Tentar novamente",
+        "error": "Não foi possível carregar os hashtags em alta.",
+        "empty": "Ainda não há hashtags em destaque.",
+        "localTitle": "Em alta em {{region}}",
+        "globalTitle": "Tendências globais",
+        "fallback": "Ainda sem dados locais — mostrando destaques globais.",
+        "updated": "Atualizado {{time}}",
+        "usageCount_one": "{{count}} publicação",
+        "usageCount_other": "{{count}} publicações",
+        "lastUsed": "Último uso {{time}}"
+      },
+      "page": {
+        "documentTitle": "{{tag}} - {{app}}",
+        "subtitle": "As publicações mais recentes com este hashtag.",
+        "subtitleWithCount": "{{count}} publicações recentes",
+        "loading": "Carregando publicações...",
+        "retry": "Tentar novamente",
+        "error": "Não foi possível carregar as publicações deste hashtag.",
+        "empty": {
+          "title": "Nenhuma publicação por enquanto",
+          "description": "Seja o primeiro a usar este hashtag."
+        },
+        "loadMore": "Carregar mais",
+        "loadingMore": "Carregando...",
+        "endOfResults": "Fim dos resultados."
+      }
+    },
       "edited": "(editado)"
     }
   },

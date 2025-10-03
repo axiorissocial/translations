@@ -121,6 +121,20 @@
     "statuses": {
       "saving": "Speichert...",
       "deleting": "Löscht...",
+      "github": "Mit GitHub registrieren",
+      "githubStatus": {
+        "completing": "GitHub-Anmeldung wird abgeschlossen…",
+        "linked": "GitHub-Konto erfolgreich verknüpft."
+      },
+      "githubErrors": {
+        "generic": "GitHub-Anmeldung fehlgeschlagen. Bitte versuche es erneut.",
+        "github_not_configured": "Die GitHub-Anmeldung ist derzeit nicht verfügbar.",
+        "invalid_oauth_state": "Die GitHub-Sitzung ist abgelaufen. Bitte versuche es erneut.",
+        "missing_code": "GitHub hat keinen Anmeldecode zurückgegeben. Bitte versuche es erneut.",
+        "missing_session_user": "Du musst angemeldet sein, um GitHub zu verknüpfen.",
+        "already_linked_elsewhere": "Dieses GitHub-Konto ist bereits mit einem anderen Profil verknüpft.",
+        "github_oauth_failed": "GitHub-Anmeldung fehlgeschlagen. Bitte versuche es erneut."
+      },
       "replying": "Antwortet...",
       "posting": "Postet...",
       "updating": "Aktualisiert...",
@@ -266,6 +280,19 @@
       "messaging": "Nachricht wird gesendet..."
     },
     "stats": {
+      "githubStatus": {
+        "completing": "Dein Konto wird mit GitHub erstellt…",
+        "linked": "GitHub-Konto erfolgreich verknüpft."
+      },
+      "githubErrors": {
+        "generic": "GitHub-Registrierung fehlgeschlagen. Bitte versuche es erneut.",
+        "github_not_configured": "Die GitHub-Registrierung ist derzeit nicht verfügbar.",
+        "invalid_oauth_state": "Die GitHub-Registrierungssitzung ist abgelaufen. Bitte versuche es erneut.",
+        "missing_code": "GitHub hat keinen Registrierungscode zurückgegeben. Bitte versuche es erneut.",
+        "missing_session_user": "Du musst angemeldet sein, um GitHub zu verknüpfen.",
+        "already_linked_elsewhere": "Dieses GitHub-Konto ist bereits mit einem anderen Profil verknüpft.",
+        "github_oauth_failed": "GitHub-Registrierung fehlgeschlagen. Bitte versuche es erneut."
+      },
       "posts": "Beiträge",
       "followers": "Follower",
       "following": "Folgt"
@@ -330,6 +357,37 @@
       "minutes": "Vor {{count}}m",
       "hours": "Vor {{count}}h",
       "days": "Vor {{count}}d",
+    "hashtags": {
+      "trending": {
+        "heading": "Trend-Hashtags",
+        "loading": "Trends werden geladen...",
+        "retry": "Erneut versuchen",
+        "error": "Trend-Hashtags konnten nicht geladen werden.",
+        "empty": "Derzeit sind keine Hashtags im Trend.",
+        "localTitle": "Im Trend in {{region}}",
+        "globalTitle": "Weltweite Trends",
+        "fallback": "Noch keine lokalen Daten – wir zeigen globale Highlights.",
+        "updated": "Aktualisiert {{time}}",
+        "usageCount_one": "{{count}} Beitrag",
+        "usageCount_other": "{{count}} Beiträge",
+        "lastUsed": "Zuletzt verwendet {{time}}"
+      },
+      "page": {
+        "documentTitle": "{{tag}} - {{app}}",
+        "subtitle": "Neueste Beiträge mit diesem Hashtag.",
+        "subtitleWithCount": "{{count}} Beiträge in letzter Zeit",
+        "loading": "Beiträge werden geladen...",
+        "retry": "Erneut versuchen",
+        "error": "Beiträge für diesen Hashtag konnten nicht geladen werden.",
+        "empty": {
+          "title": "Noch keine Beiträge",
+          "description": "Sei die erste Person, die diesen Hashtag verwendet."
+        },
+        "loadMore": "Mehr laden",
+        "loadingMore": "Laden...",
+        "endOfResults": "Das war alles."
+      }
+    },
       "edited": "(bearbeitet)"
     }
   },

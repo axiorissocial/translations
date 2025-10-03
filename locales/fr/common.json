@@ -19,6 +19,35 @@
       "loadMoreUsers": "Charger plus d'utilisateurs"
     },
     "emptyState": {
+      "gradients": {
+        "none": "Aucun dégradé",
+        "options": {
+          "aurora-sky": "Ciel d'aurore",
+          "sunset-haze": "Brume du coucher",
+          "forest-canopy": "Canopée forestière",
+          "ocean-breeze": "Brise océane",
+          "violet-dream": "Rêve violet",
+          "sunrise-glow": "Éclat de l'aube",
+          "neon-noir": "Néon noir",
+          "ember-heat": "Chaleur de braise",
+          "berry-splash": "Éclaboussure de baies",
+          "lunar-mist": "Brume lunaire"
+        }
+      },
+      "banner": {
+        "title": "Profile banner",
+        "alt": "Current profile banner",
+        "placeholder": "No banner selected",
+        "description": "Upload your own banner or select one of the gradients below.",
+        "upload": "Upload banner",
+        "remove": "Remove banner",
+        "gradientTitle": "Choose a default banner gradient",
+        "removeModal": {
+          "title": "Remove profile banner",
+          "description": "Are you sure you want to remove your banner image?",
+          "cta": "Remove banner"
+        }
+      },
       "title": "Commencer la recherche",
       "subtitle": "Entrez un mot-clé pour rechercher des publications et des utilisateurs"
     },
@@ -90,6 +119,20 @@
     "statuses": {
       "saving": "Enregistrement...",
       "deleting": "Suppression...",
+      "github": "Se connecter avec GitHub",
+      "githubStatus": {
+        "completing": "Finalisation de la connexion GitHub…",
+        "linked": "Compte GitHub lié avec succès."
+      },
+      "githubErrors": {
+        "generic": "La connexion avec GitHub a échoué. Veuillez réessayer.",
+        "github_not_configured": "La connexion avec GitHub n'est pas disponible pour le moment.",
+        "invalid_oauth_state": "La session GitHub a expiré. Veuillez réessayer.",
+        "missing_code": "GitHub n'a pas renvoyé de code de connexion. Veuillez réessayer.",
+        "missing_session_user": "Vous devez être connecté pour lier GitHub.",
+        "already_linked_elsewhere": "Ce compte GitHub est déjà lié à un autre profil.",
+        "github_oauth_failed": "La connexion avec GitHub a échoué. Veuillez réessayer."
+      },
       "replying": "Réponse...",
       "posting": "Publication...",
       "updating": "Mise à jour...",
@@ -234,6 +277,20 @@
     "statuses": {
       "messaging": "Envoi du message..."
     },
+      "github": "S'inscrire avec GitHub",
+      "githubStatus": {
+        "completing": "Création de votre compte avec GitHub…",
+        "linked": "Compte GitHub lié avec succès."
+      },
+      "githubErrors": {
+        "generic": "L'inscription avec GitHub a échoué. Veuillez réessayer.",
+        "github_not_configured": "L'inscription avec GitHub n'est pas disponible pour le moment.",
+        "invalid_oauth_state": "La session d'inscription GitHub a expiré. Veuillez réessayer.",
+        "missing_code": "GitHub n'a pas renvoyé de code d'inscription. Veuillez réessayer.",
+        "missing_session_user": "Vous devez être connecté pour lier GitHub.",
+        "already_linked_elsewhere": "Ce compte GitHub est déjà lié à un autre profil.",
+        "github_oauth_failed": "L'inscription avec GitHub a échoué. Veuillez réessayer."
+      },
     "stats": {
       "posts": "Publications",
       "followers": "Abonnés",
@@ -298,6 +355,37 @@
       "minutes": "il y a {{count}}m",
       "hours": "il y a {{count}}h",
       "days": "il y a {{count}}j",
+    "hashtags": {
+      "trending": {
+        "heading": "Hashtags tendance",
+        "loading": "Chargement des tendances...",
+        "retry": "Réessayer",
+        "error": "Impossible de charger les hashtags tendance.",
+        "empty": "Aucun hashtag n'est encore en tendance.",
+        "localTitle": "Tendances en {{region}}",
+        "globalTitle": "Tendances mondiales",
+        "fallback": "Pas encore de données locales — affichage des tendances mondiales.",
+        "updated": "Mise à jour {{time}}",
+        "usageCount_one": "{{count}} publication",
+        "usageCount_other": "{{count}} publications",
+        "lastUsed": "Dernière utilisation {{time}}"
+      },
+      "page": {
+        "documentTitle": "{{tag}} - {{app}}",
+        "subtitle": "Dernières publications utilisant ce hashtag.",
+        "subtitleWithCount": "{{count}} publications récentes",
+        "loading": "Chargement des publications...",
+        "retry": "Réessayer",
+        "error": "Impossible de charger les publications pour ce hashtag.",
+        "empty": {
+          "title": "Aucune publication",
+          "description": "Soyez la première personne à utiliser ce hashtag."
+        },
+        "loadMore": "Charger plus",
+        "loadingMore": "Chargement...",
+        "endOfResults": "Vous avez tout vu pour le moment."
+      }
+    },
       "edited": "(modifié)"
     }
   },
@@ -649,19 +737,7 @@
         "removing": "Suppression..."
       },
       "gradients": {
-        "none": "Aucun dégradé",
-        "options": {
-          "aurora-sky": "Ciel d'Aurore",
-          "sunset-haze": "Brume de Coucher de Soleil",
-          "forest-canopy": "Canopée Forêtière",
-          "ocean-breeze": "Brise Océanique",
-          "violet-dream": "Rêve Violet",
-          "sunrise-glow": "Lueur de l'Aube",
-          "neon-noir": "Néon Noir",
-          "ember-heat": "Chaleur de Braise",
-          "berry-splash": "Éclaboussure de Baie",
-          "lunar-mist": "Brume Lunaire"
-        }
+        "none": "Aucun dégradé"
       },
       "banner": {
         "title": "Profile banner",

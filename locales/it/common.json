@@ -12,8 +12,10 @@
       "searchingUsers": "Ricerca utenti..."
     },
     "emptyUsers": {
-      "subtitle": "Prova a cercare con parole chiave diverse",
-      "title": "Nessun utente trovato"
+      "remove": "Rimuovi",
+      "description": "Carica un avatar personalizzato o scegli uno dei nostri gradienti.",
+      "gradientTitle": "Scegli un gradiente avatar predefinito",
+      "subtitle": "Prova a cercare con parole chiave diverse"
     },
     "actions": {
       "loadMoreUsers": "Carica Altri Utenti"
@@ -23,6 +25,35 @@
       "subtitle": "Inserisci una parola chiave per cercare post e utenti"
     },
     "errors": {
+      "gradients": {
+        "none": "Nessun gradiente",
+        "options": {
+          "aurora-sky": "Cielo d'aurora",
+          "sunset-haze": "Foschia del tramonto",
+          "forest-canopy": "Chioma della foresta",
+          "ocean-breeze": "Brezza oceanica",
+          "violet-dream": "Sogno viola",
+          "sunrise-glow": "Bagliore dell'alba",
+          "neon-noir": "Neon noir",
+          "ember-heat": "Calore di brace",
+          "berry-splash": "Schizzo di frutti di bosco",
+          "lunar-mist": "Nebbia lunare"
+        }
+      },
+      "banner": {
+        "title": "Profile banner",
+        "alt": "Current profile banner",
+        "placeholder": "No banner selected",
+        "description": "Upload your own banner or select one of the gradients below.",
+        "upload": "Upload banner",
+        "remove": "Remove banner",
+        "gradientTitle": "Choose a default banner gradient",
+        "removeModal": {
+          "title": "Remove profile banner",
+          "description": "Are you sure you want to remove your banner image?",
+          "cta": "Remove banner"
+        }
+      },
       "searchFailed": "Ricerca utenti fallita"
     }
   },
@@ -90,6 +121,7 @@
     "statuses": {
       "saving": "Salvando...",
       "deleting": "Eliminando...",
+      "github": "Registrati con GitHub",
       "replying": "Rispondendo...",
       "posting": "Pubblicando...",
       "updating": "Aggiornando...",
@@ -295,10 +327,82 @@
     },
     "time": {
       "justNow": "Proprio ora",
+      "avatarRemoveError": "Impossibile rimuovere la foto profilo",
+      "bannerUploadSuccess": "Profile banner updated successfully!",
+      "bannerUploadError": "Failed to upload profile banner",
+    "hashtags": {
+      "trending": {
+        "heading": "Hashtag di tendenza",
+        "loading": "Caricamento delle tendenze...",
+        "retry": "Riprova",
+        "error": "Impossibile caricare gli hashtag di tendenza.",
+        "empty": "Nessun hashtag è ancora di tendenza.",
+        "localTitle": "Tendenze in {{region}}",
+        "globalTitle": "Tendenze globali",
+        "fallback": "Ancora nessun dato locale: mostriamo i trend globali.",
+        "updated": "Aggiornato {{time}}",
+        "usageCount_one": "{{count}} post",
+        "usageCount_other": "{{count}} post",
+        "lastUsed": "Ultimo utilizzo {{time}}"
+      },
+      "page": {
+        "documentTitle": "{{tag}} - {{app}}",
+        "subtitle": "Ultimi post con questo hashtag.",
+        "subtitleWithCount": "{{count}} post recenti",
+        "loading": "Caricamento dei post...",
+        "retry": "Riprova",
+        "error": "Non è stato possibile caricare i post per questo hashtag.",
+        "empty": {
+          "title": "Ancora nessun post",
+          "description": "Sii il primo a utilizzare questo hashtag."
+        },
+        "loadMore": "Carica altro",
+        "loadingMore": "Caricamento...",
+        "endOfResults": "Hai visto tutto per ora."
+      }
+    },
+      "bannerRemoveSuccess": "Profile banner removed successfully!",
+      "bannerRemoveError": "Failed to remove profile banner",
+      "avatarGradientApplied": "Gradient applied to your avatar.",
+      "avatarGradientCleared": "Avatar gradient removed.",
+      "avatarGradientError": "Failed to update avatar gradient.",
+      "bannerGradientApplied": "Gradient applied to your banner.",
+      "bannerGradientCleared": "Banner gradient removed.",
+      "bannerGradientError": "Failed to update banner gradient.",
       "hours": "{{count}}h fa",
       "days": "{{count}}g fa",
       "edited": "(modificato)",
       "minutes": "{{count}}m fa"
+    }
+  },
+  "time": {
+    "calendar": {
+      "today": "Oggi",
+      "yesterday": "Ieri",
+      "todayWithTime": "Oggi alle {{time}}",
+      "yesterdayWithTime": "Ieri alle {{time}}"
+    },
+    "relative": {
+      "justNow": "Proprio ora",
+      "seconds": "{{count}} secondi fa",
+      "minute": "1 minuto fa",
+      "minutes": "{{count}} minuti fa",
+      "hour": "1 ora fa",
+      "hours": "{{count}} ore fa",
+      "day": "1 giorno fa",
+      "days": "{{count}} giorni fa",
+      "week": "1 settimana fa",
+      "weeks": "{{count}} settimane fa",
+      "month": "1 mese fa",
+      "months": "{{count}} mesi fa",
+      "year": "1 anno fa",
+      "years": "{{count}} anni fa"
+    },
+    "formats": {
+      "dateTime": "{{date}} alle {{time}}"
+    },
+    "display": {
+      "absoluteWithRelative": "{{absolute}} · {{relative}}"
     }
   },
   "time": {
@@ -649,19 +753,7 @@
         "removing": "Rimuovendo..."
       },
       "gradients": {
-        "none": "Nessun gradiente",
-        "options": {
-          "aurora-sky": "Cielo d'Aurora",
-          "sunset-haze": "Nebbia del Tramonto",
-          "forest-canopy": "Baldacchino della Foresta",
-          "ocean-breeze": "Brezza Oceanica",
-          "violet-dream": "Sogno Violetto",
-          "sunrise-glow": "Bagliore dell'Alba",
-          "neon-noir": "Neon Noir",
-          "ember-heat": "Calore di Braci",
-          "berry-splash": "Spruzzata di Frutti di Bosco",
-          "lunar-mist": "Nebbia Lunare"
-        }
+        "none": "Nessun gradiente"
       },
       "banner": {
         "title": "Banner del profilo",

@@ -51,25 +51,28 @@ jobs:
       run: |
         echo "🔍 Scanning for TODO comments..."
         
-        # Search for TODO patterns in relevant files
-        TODO_COUNT=$(grep -r -i --include="*.js" --include="*.ts" --include="*.jsx" --include="*.tsx" --include="*.json" --include="*.md" --include="*.yml" --include="*.yaml" \
-          -E "(TODO|FIXME|HACK|XXX)" . \
+        # Search for actual TODO comments (not translation content)
+        # Only look in code files and exclude translation files and system TODO markers
+        TODO_COUNT=$(grep -r -i --include="*.js" --include="*.ts" --include="*.jsx" --include="*.tsx" --include="*.yml" --include="*.yaml" \
+          -E "(//|#)\s*(TODO|FIXME|HACK|XXX)" . \
           --exclude-dir=node_modules \
           --exclude-dir=.git \
           --exclude-dir=dist \
           --exclude-dir=build \
           --exclude-dir=coverage \
+          --exclude-dir=locales \
           --exclude="*.log" | wc -l)
         
         if [ "$TODO_COUNT" -gt 0 ]; then
           echo "❌ Found $TODO_COUNT TODO comment(s):"
-          grep -r -i --include="*.js" --include="*.ts" --include="*.jsx" --include="*.tsx" --include="*.json" --include="*.md" --include="*.yml" --include="*.yaml" \
-            -E "(TODO|FIXME|HACK|XXX)" . \
+          grep -r -i --include="*.js" --include="*.ts" --include="*.jsx" --include="*.tsx" --include="*.yml" --include="*.yaml" \
+            -E "(//|#)\s*(TODO|FIXME|HACK|XXX)" . \
             --exclude-dir=node_modules \
             --exclude-dir=.git \
             --exclude-dir=dist \
             --exclude-dir=build \
             --exclude-dir=coverage \
+            --exclude-dir=locales \
             --exclude="*.log" || true
           echo ""
           echo "💡 Please resolve all TODO comments before committing"

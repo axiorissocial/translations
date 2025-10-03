@@ -12,10 +12,8 @@
       "searchingUsers": "Suche Benutzer..."
     },
     "emptyUsers": {
-        "remove": "Entfernen",
-        "description": "Upload a custom avatar or choose one of our gradients.",
-        "gradientTitle": "Choose a default avatar gradient",
-      "subtitle": "Versuchen Sie die Suche mit anderen Stichwörtern"
+      "subtitle": "Versuchen Sie die Suche mit anderen Stichwörtern",
+      "title": "Keine Benutzer gefunden"
     },
     "actions": {
       "loadMoreUsers": "Weitere Benutzer laden"
@@ -25,23 +23,6 @@
       "subtitle": "Geben Sie ein Stichwort ein, um nach Beiträgen und Benutzern zu suchen"
     },
     "errors": {
-      "gradients": {
-        "none": "No gradient"
-      },
-      "banner": {
-        "title": "Profile banner",
-        "alt": "Current profile banner",
-        "placeholder": "No banner selected",
-        "description": "Upload your own banner or select one of the gradients below.",
-        "upload": "Upload banner",
-        "remove": "Remove banner",
-        "gradientTitle": "Choose a default banner gradient",
-        "removeModal": {
-          "title": "Remove profile banner",
-          "description": "Are you sure you want to remove your banner image?",
-          "cta": "Remove banner"
-        }
-      },
       "searchFailed": "Benutzersuche fehlgeschlagen"
     }
   },
@@ -117,10 +98,41 @@
       "no": "Nein"
     }
   },
+  "mediaModal": {
+    "types": {
+      "image": "Bild",
+      "video": "Video"
+    },
+    "position": "{{type}} {{index}} von {{total}}",
+    "actions": {
+      "download": "Herunterladen",
+      "preparing": "Wird vorbereitet..."
+    },
+    "errors": {
+      "downloadFailed": "Medium konnte nicht heruntergeladen werden."
+    }
+  },
   "feed": {
-    "empty": "Noch keine Beiträge vorhanden.",
-    "retry": "Wiederholen",
-    "newPost": "Neuer Beitrag"
+    "status": {
+      "loading": "Beiträge werden geladen...",
+      "end": "Du hast das Ende erreicht!"
+    },
+    "errors": {
+      "fetch": "Beiträge konnten nicht geladen werden.",
+      "generic": "Beim Laden der Beiträge ist ein Fehler aufgetreten."
+    },
+    "empty": {
+      "title": "Noch keine Beiträge",
+      "search": "Keine Beiträge für \"{{query}}\" gefunden.",
+      "user": "Dieser Benutzer hat noch nichts gepostet.",
+      "default": "Sei der Erste und teile etwas!"
+    },
+    "actions": {
+      "retry": "Erneut versuchen",
+      "create": "Beitrag erstellen",
+      "loadMore": "Mehr laden",
+      "loadingMore": "Lädt..."
+    }
   },
   "post": {
     "created": "Gepostet {{time}}",
@@ -136,6 +148,26 @@
     "reactionsPicker": {
       "add": "Mit {{emoji}} reagieren",
       "remove": "Deine {{emoji}}-Reaktion entfernen"
+    },
+    "labels": {
+      "pinned": "Angepinnt",
+      "title": "Titel:"
+    },
+    "media": {
+      "avatarAlt": "Avatar von {{name}}"
+    },
+    "actions": {
+      "editPost": "Beitrag bearbeiten",
+      "deletePost": "Beitrag löschen",
+      "reportPost": "Beitrag melden",
+      "viewInAdmin": "Im Adminbereich ansehen",
+      "readMore": "Mehr lesen"
+    },
+    "modals": {
+      "delete": {
+        "title": "Beitrag löschen",
+        "description": "Bist du sicher, dass du diesen Beitrag löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden."
+      }
     }
   },
   "home": {
@@ -255,29 +287,48 @@
     },
     "editor": {
       "supports": "Unterstützt **Markdown**, :Emojis: und @Erwähnungen",
-        "invalidImageSize": "Das Bild muss kleiner als 5 MB sein",
-        "invalidBannerSize": "Banner must be smaller than 8MB",
-        "replyPlaceholder": "Antwort an {{name}}..."
+      "replyPlaceholder": "Antwort an {{name}}...",
+      "charCount": "{{count}}/{{limit}} Zeichen"
     },
     "statuses": {
       "replying": "Antwortet..."
     },
     "time": {
       "justNow": "Gerade eben",
-      "avatarRemoveError": "Profilbild konnte nicht entfernt werden",
-      "bannerUploadSuccess": "Profile banner updated successfully!",
-      "bannerUploadError": "Failed to upload profile banner",
-      "bannerRemoveSuccess": "Profile banner removed successfully!",
-      "bannerRemoveError": "Failed to remove profile banner",
-      "avatarGradientApplied": "Gradient applied to your avatar.",
-      "avatarGradientCleared": "Avatar gradient removed.",
-      "avatarGradientError": "Failed to update avatar gradient.",
-      "bannerGradientApplied": "Gradient applied to your banner.",
-      "bannerGradientCleared": "Banner gradient removed.",
-      "bannerGradientError": "Failed to update banner gradient.",
-      "hours": "vor {{count}}h",
-      "days": "vor {{count}}d",
+      "minutes": "Vor {{count}}m",
+      "hours": "Vor {{count}}h",
+      "days": "Vor {{count}}d",
       "edited": "(bearbeitet)"
+    }
+  },
+  "time": {
+    "calendar": {
+      "today": "Heute",
+      "yesterday": "Gestern",
+      "todayWithTime": "Heute um {{time}}",
+      "yesterdayWithTime": "Gestern um {{time}}"
+    },
+    "relative": {
+      "justNow": "Gerade eben",
+      "seconds": "Vor {{count}} Sekunden",
+      "minute": "Vor 1 Minute",
+      "minutes": "Vor {{count}} Minuten",
+      "hour": "Vor 1 Stunde",
+      "hours": "Vor {{count}} Stunden",
+      "day": "Vor 1 Tag",
+      "days": "Vor {{count}} Tagen",
+      "week": "Vor 1 Woche",
+      "weeks": "Vor {{count}} Wochen",
+      "month": "Vor 1 Monat",
+      "months": "Vor {{count}} Monaten",
+      "year": "Vor 1 Jahr",
+      "years": "Vor {{count}} Jahren"
+    },
+    "formats": {
+      "dateTime": "{{date}} um {{time}}"
+    },
+    "display": {
+      "absoluteWithRelative": "{{absolute}} · {{relative}}"
     }
   },
   "createPost": {
@@ -327,8 +378,44 @@
     }
   },
   "editPost": {
-    "title": "Beitrag bearbeiten",
-    "submit": "Änderungen speichern"
+    "modalTitle": "Beitrag bearbeiten",
+    "fields": {
+      "titleLabel": "Titel (optional)",
+      "titlePlaceholder": "Beitragstitel eingeben...",
+      "contentLabel": "Inhalt",
+      "contentPlaceholder": "Woran denkst du?"
+    },
+    "toolbar": {
+      "bold": "Fett",
+      "italic": "Kursiv",
+      "strikethrough": "Durchgestrichen",
+      "upload": "Bild oder Video hochladen",
+      "emoji": "Emoji hinzufügen"
+    },
+    "tabs": {
+      "write": "Schreiben",
+      "preview": "Vorschau"
+    },
+    "preview": {
+      "empty": "Nichts zum Anzeigen..."
+    },
+    "charCount": "{{count}} Zeichen",
+    "media": {
+      "previewAlt": "Upload-Vorschau",
+      "remove": "Medienelement entfernen"
+    },
+    "errors": {
+      "emptyContent": "Der Inhalt darf nicht leer sein.",
+      "fileTooLarge": "Die Datei {{file}} ist zu groß (max. {{limit}}).",
+      "invalidType": "Die Datei {{file}} ist kein gültiges Bild oder Video.",
+      "maxFiles": "Pro Beitrag sind maximal {{limit}} Mediendateien erlaubt.",
+      "updateFailed": "Der Beitrag konnte nicht aktualisiert werden.",
+      "mediaUploadFailed": "Medien konnten nicht hochgeladen werden."
+    },
+    "actions": {
+      "update": "Beitrag aktualisieren",
+      "updating": "Beitrag wird aktualisiert..."
+    }
   },
   "report": {
     "title": "Inhalt melden",
@@ -337,7 +424,28 @@
       "reason": "Grund auswählen",
       "details": "Zusätzliche Details (optional)"
     },
+    "fields": {
+      "reasonLabel": "Grund",
+      "notesLabel": "Notizen (optional)"
+    },
+    "reasons": {
+      "spam": "Spam",
+      "harassment": "Belästigung",
+      "sexual": "Sexuelle Inhalte",
+      "illegal": "Illegale Inhalte",
+      "other": "Sonstiges"
+    },
+    "modalTitle": {
+      "post": "Beitrag melden",
+      "comment": "Kommentar melden"
+    },
     "submit": "Meldung senden",
+    "status": {
+      "submitting": "Wird gesendet..."
+    },
+    "errors": {
+      "submitFailed": "Meldung konnte nicht übermittelt werden"
+    },
     "success": "Danke! Ihre Meldung wurde eingereicht."
   },
   "messages": {
@@ -541,20 +649,32 @@
         "removing": "Entfernen..."
       },
       "gradients": {
-        "none": "No gradient"
+        "none": "Kein Farbverlauf",
+        "options": {
+          "aurora-sky": "Aurora-Himmel",
+          "sunset-haze": "Sonnenuntergangs-Dunst",
+          "forest-canopy": "Walddach",
+          "ocean-breeze": "Meeresbrise",
+          "violet-dream": "Violetter Traum",
+          "sunrise-glow": "Sonnenaufgangs-Schein",
+          "neon-noir": "Neon Noir",
+          "ember-heat": "Glut-Hitze",
+          "berry-splash": "Beeren-Spritzer",
+          "lunar-mist": "Mond-Nebel"
+        }
       },
       "banner": {
-        "title": "Profile banner",
-        "alt": "Current profile banner",
-        "placeholder": "No banner selected",
-        "description": "Upload your own banner or select one of the gradients below.",
-        "upload": "Upload banner",
-        "remove": "Remove banner",
-        "gradientTitle": "Choose a default banner gradient",
+        "title": "Profilbanner",
+        "alt": "Aktuelles Profilbanner",
+        "placeholder": "Kein Banner ausgewählt",
+        "description": "Laden Sie Ihr eigenes Banner hoch oder wählen Sie einen der untenstehenden Farbverläufe.",
+        "upload": "Banner hochladen",
+        "remove": "Banner entfernen",
+        "gradientTitle": "Standard-Banner-Farbverlauf auswählen",
         "removeModal": {
-          "title": "Remove profile banner",
-          "description": "Are you sure you want to remove your banner image?",
-          "cta": "Remove banner"
+          "title": "Profilbanner entfernen",
+          "description": "Sind Sie sicher, dass Sie Ihr Banner entfernen möchten?",
+          "cta": "Banner entfernen"
         }
       },
       "fields": {
@@ -586,7 +706,7 @@
       "errors": {
         "invalidImageType": "Bitte wählen Sie eine Bilddatei",
         "invalidImageSize": "Das Bild muss kleiner als 5MB sein",
-        "invalidBannerSize": "Banner must be smaller than 8MB"
+        "invalidBannerSize": "Banner muss kleiner als 8 MB sein"
       },
       "feedback": {
         "updateSuccess": "Profil erfolgreich aktualisiert!",
@@ -595,16 +715,16 @@
         "avatarUploadError": "Profilbild konnte nicht hochgeladen werden",
         "avatarRemoveSuccess": "Profilbild erfolgreich entfernt!",
         "avatarRemoveError": "Profilbild konnte nicht entfernt werden",
-        "bannerUploadSuccess": "Profile banner updated successfully!",
-        "bannerUploadError": "Failed to upload profile banner",
-        "bannerRemoveSuccess": "Profile banner removed successfully!",
-        "bannerRemoveError": "Failed to remove profile banner",
-        "avatarGradientApplied": "Gradient applied to your avatar.",
-        "avatarGradientCleared": "Avatar gradient removed.",
-        "avatarGradientError": "Failed to update avatar gradient.",
-        "bannerGradientApplied": "Gradient applied to your banner.",
-        "bannerGradientCleared": "Banner gradient removed.",
-        "bannerGradientError": "Failed to update banner gradient."
+        "bannerUploadSuccess": "Profilbanner erfolgreich aktualisiert!",
+        "bannerUploadError": "Profilbanner konnte nicht hochgeladen werden",
+        "bannerRemoveSuccess": "Profilbanner erfolgreich entfernt!",
+        "bannerRemoveError": "Profilbanner konnte nicht entfernt werden",
+        "avatarGradientApplied": "Farbverlauf wurde auf Ihren Avatar angewendet.",
+        "avatarGradientCleared": "Avatar-Farbverlauf entfernt.",
+        "avatarGradientError": "Avatar-Farbverlauf konnte nicht aktualisiert werden.",
+        "bannerGradientApplied": "Farbverlauf wurde auf Ihr Banner angewendet.",
+        "bannerGradientCleared": "Banner-Farbverlauf entfernt.",
+        "bannerGradientError": "Banner-Farbverlauf konnte nicht aktualisiert werden."
       }
     },
     "appearance": {
@@ -843,7 +963,20 @@
         "generic": "Anmeldung fehlgeschlagen"
       },
       "registerPrompt": "Haben Sie noch kein Konto?",
-      "registerLink": "Registrieren"
+      "registerLink": "Registrieren",
+      "githubStatus": {
+        "completing": "GitHub-Anmeldung abschließen…",
+        "linked": "GitHub-Konto erfolgreich verknüpft."
+      },
+      "githubErrors": {
+        "generic": "GitHub-Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+        "github_not_configured": "GitHub-Anmeldung ist derzeit nicht verfügbar.",
+        "invalid_oauth_state": "Die GitHub-Anmeldesitzung ist abgelaufen. Bitte versuchen Sie es erneut.",
+        "missing_code": "GitHub hat keinen Anmeldecode zurückgegeben. Bitte versuchen Sie es erneut.",
+        "missing_session_user": "Sie müssen angemeldet sein, um GitHub zu verknüpfen.",
+        "already_linked_elsewhere": "Dieses GitHub-Konto ist bereits mit einem anderen Profil verknüpft.",
+        "github_oauth_failed": "GitHub-Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut."
+      }
     },
     "register": {
       "documentTitle": "Registrieren - {{app}}",
@@ -870,10 +1003,55 @@
         "generic": "Registrierung fehlgeschlagen"
       },
       "loginPrompt": "Haben Sie bereits ein Konto?",
-      "loginLink": "Anmelden"
+      "loginLink": "Anmelden",
+      "github": "Mit GitHub registrieren",
+      "githubStatus": {
+        "completing": "Konto mit GitHub erstellen…",
+        "linked": "GitHub-Konto erfolgreich verknüpft."
+      },
+      "githubErrors": {
+        "generic": "GitHub-Registrierung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+        "github_not_configured": "GitHub-Registrierung ist derzeit nicht verfügbar.",
+        "invalid_oauth_state": "Die GitHub-Registrierungssitzung ist abgelaufen. Bitte versuchen Sie es erneut.",
+        "missing_code": "GitHub hat keinen Registrierungscode zurückgegeben. Bitte versuchen Sie es erneut.",
+        "missing_session_user": "Sie müssen angemeldet sein, um GitHub zu verknüpfen.",
+        "already_linked_elsewhere": "Dieses GitHub-Konto ist bereits mit einem anderen Profil verknüpft.",
+        "github_oauth_failed": "GitHub-Registrierung fehlgeschlagen. Bitte versuchen Sie es erneut."
+      }
     }
   },
   "backend": {
     "health": "Server läuft"
+  },
+  "hashtags": {
+    "trending": {
+      "heading": "Trending Hashtags",
+      "loading": "Trends werden geladen...",
+      "retry": "Erneut versuchen",
+      "error": "Trending Hashtags konnten nicht geladen werden.",
+      "empty": "Noch keine Hashtags im Trend.",
+      "localTitle": "Trending in {{region}}",
+      "globalTitle": "Weltweite Trends",
+      "fallback": "Noch keine lokalen Daten—zeige globale Highlights.",
+      "updated": "Aktualisiert {{time}}",
+      "usageCount_one": "{{count}} Beitrag",
+      "usageCount_other": "{{count}} Beiträge",
+      "lastUsed": "Zuletzt verwendet {{time}}"
+    },
+    "page": {
+      "documentTitle": "{{tag}} - {{app}}",
+      "subtitle": "Neueste Beiträge mit diesem Hashtag.",
+      "subtitleWithCount": "{{count}} kürzliche Beiträge",
+      "loading": "Beiträge werden geladen...",
+      "retry": "Erneut versuchen",
+      "error": "Beiträge für diesen Hashtag konnten nicht geladen werden.",
+      "empty": {
+        "title": "Noch keine Beiträge",
+        "description": "Seien Sie der Erste, der mit diesem Hashtag teilt."
+      },
+      "loadMore": "Mehr laden",
+      "loadingMore": "Wird geladen...",
+      "endOfResults": "Das ist vorerst alles."
+    }
   }
 }

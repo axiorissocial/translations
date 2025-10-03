@@ -8,9 +8,7 @@
       "posts": "Publications",
       "users": "Utilisateurs"
     },
-      "remove": "Supprimer",
-      "description": "Upload a custom avatar or choose one of our gradients.",
-      "gradientTitle": "Choose a default avatar gradient",
+    "status": {
       "searchingUsers": "Recherche d'utilisateurs..."
     },
     "emptyUsers": {
@@ -21,29 +19,13 @@
       "loadMoreUsers": "Charger plus d'utilisateurs"
     },
     "emptyState": {
-      "gradients": {
-        "none": "No gradient"
-      },
-      "banner": {
-        "title": "Profile banner",
-        "alt": "Current profile banner",
-        "placeholder": "No banner selected",
-        "description": "Upload your own banner or select one of the gradients below.",
-        "upload": "Upload banner",
-        "remove": "Remove banner",
-        "gradientTitle": "Choose a default banner gradient",
-        "removeModal": {
-          "title": "Remove profile banner",
-          "description": "Are you sure you want to remove your banner image?",
-          "cta": "Remove banner"
-        }
-      },
       "title": "Commencer la recherche",
       "subtitle": "Entrez un mot-clé pour rechercher des publications et des utilisateurs"
     },
     "errors": {
       "searchFailed": "Échec de la recherche d'utilisateurs"
-    },
+    }
+  },
   "app": {
     "name": "Axioris",
     "logoAlt": "Logo {{app}}"
@@ -116,10 +98,41 @@
       "no": "Non"
     }
   },
+  "mediaModal": {
+    "types": {
+      "image": "Image",
+      "video": "Vidéo"
+    },
+    "position": "{{type}} {{index}} sur {{total}}",
+    "actions": {
+      "download": "Télécharger",
+      "preparing": "Préparation..."
+    },
+    "errors": {
+      "downloadFailed": "Impossible de télécharger le média."
+    }
+  },
   "feed": {
-    "empty": "Aucune publication à afficher pour le moment.",
-    "retry": "Réessayer",
-    "newPost": "Nouvelle publication"
+    "status": {
+      "loading": "Chargement des publications...",
+      "end": "Vous êtes arrivé au bout !"
+    },
+    "errors": {
+      "fetch": "Impossible de charger les publications.",
+      "generic": "Une erreur est survenue lors du chargement des publications."
+    },
+    "empty": {
+      "title": "Aucune publication pour le moment",
+      "search": "Aucune publication trouvée pour \"{{query}}\".",
+      "user": "Cet utilisateur n'a pas encore publié.",
+      "default": "Soyez le premier à partager quelque chose !"
+    },
+    "actions": {
+      "retry": "Réessayer",
+      "create": "Créer une publication",
+      "loadMore": "Charger plus",
+      "loadingMore": "Chargement..."
+    }
   },
   "post": {
     "created": "Publié {{time}}",
@@ -135,6 +148,26 @@
     "reactionsPicker": {
       "add": "Réagir avec {{emoji}}",
       "remove": "Retirer votre réaction {{emoji}}"
+    },
+    "labels": {
+      "pinned": "Épinglée",
+      "title": "Titre :"
+    },
+    "media": {
+      "avatarAlt": "Avatar de {{name}}"
+    },
+    "actions": {
+      "editPost": "Modifier la publication",
+      "deletePost": "Supprimer la publication",
+      "reportPost": "Signaler la publication",
+      "viewInAdmin": "Voir dans l'administration",
+      "readMore": "Lire la suite"
+    },
+    "modals": {
+      "delete": {
+        "title": "Supprimer la publication",
+        "description": "Êtes-vous sûr de vouloir supprimer cette publication ? Cette action est irréversible."
+      }
     }
   },
   "home": {
@@ -254,29 +287,48 @@
     },
     "editor": {
       "supports": "Prend en charge **markdown**, :emojis:, et @mentions",
-        "invalidImageSize": "L'image doit faire moins de 5 Mo",
-        "invalidBannerSize": "Banner must be smaller than 8MB",
-        "replyPlaceholder": "Répondre à {{name}}..."
+      "replyPlaceholder": "Répondre à {{name}}...",
+      "charCount": "{{count}}/{{limit}} caractères"
     },
     "statuses": {
       "replying": "Réponse en cours..."
     },
     "time": {
       "justNow": "À l'instant",
-      "avatarRemoveError": "Échec de la suppression de la photo de profil",
-      "bannerUploadSuccess": "Profile banner updated successfully!",
-      "bannerUploadError": "Failed to upload profile banner",
-      "bannerRemoveSuccess": "Profile banner removed successfully!",
-      "bannerRemoveError": "Failed to remove profile banner",
-      "avatarGradientApplied": "Gradient applied to your avatar.",
-      "avatarGradientCleared": "Avatar gradient removed.",
-      "avatarGradientError": "Failed to update avatar gradient.",
-      "bannerGradientApplied": "Gradient applied to your banner.",
-      "bannerGradientCleared": "Banner gradient removed.",
-      "bannerGradientError": "Failed to update banner gradient.",
+      "minutes": "il y a {{count}}m",
       "hours": "il y a {{count}}h",
       "days": "il y a {{count}}j",
       "edited": "(modifié)"
+    }
+  },
+  "time": {
+    "calendar": {
+      "today": "Aujourd'hui",
+      "yesterday": "Hier",
+      "todayWithTime": "Aujourd'hui à {{time}}",
+      "yesterdayWithTime": "Hier à {{time}}"
+    },
+    "relative": {
+      "justNow": "À l'instant",
+      "seconds": "Il y a {{count}} secondes",
+      "minute": "Il y a 1 minute",
+      "minutes": "Il y a {{count}} minutes",
+      "hour": "Il y a 1 heure",
+      "hours": "Il y a {{count}} heures",
+      "day": "Il y a 1 jour",
+      "days": "Il y a {{count}} jours",
+      "week": "Il y a 1 semaine",
+      "weeks": "Il y a {{count}} semaines",
+      "month": "Il y a 1 mois",
+      "months": "Il y a {{count}} mois",
+      "year": "Il y a 1 an",
+      "years": "Il y a {{count}} ans"
+    },
+    "formats": {
+      "dateTime": "{{date}} à {{time}}"
+    },
+    "display": {
+      "absoluteWithRelative": "{{absolute}} · {{relative}}"
     }
   },
   "createPost": {
@@ -326,8 +378,44 @@
     }
   },
   "editPost": {
-    "title": "Modifier la publication",
-    "submit": "Enregistrer les modifications"
+    "modalTitle": "Modifier la publication",
+    "fields": {
+      "titleLabel": "Titre (optionnel)",
+      "titlePlaceholder": "Entrez le titre de la publication...",
+      "contentLabel": "Contenu",
+      "contentPlaceholder": "À quoi pensez-vous ?"
+    },
+    "toolbar": {
+      "bold": "Gras",
+      "italic": "Italique",
+      "strikethrough": "Barré",
+      "upload": "Téléverser une image ou une vidéo",
+      "emoji": "Ajouter un emoji"
+    },
+    "tabs": {
+      "write": "Écrire",
+      "preview": "Aperçu"
+    },
+    "preview": {
+      "empty": "Rien à afficher pour le moment..."
+    },
+    "charCount": "{{count}} caractères",
+    "media": {
+      "previewAlt": "Aperçu du téléversement",
+      "remove": "Supprimer l'élément multimédia"
+    },
+    "errors": {
+      "emptyContent": "Le contenu ne peut pas être vide.",
+      "fileTooLarge": "Le fichier {{file}} est trop volumineux (max {{limit}}).",
+      "invalidType": "Le fichier {{file}} n'est pas une image ou une vidéo valide.",
+      "maxFiles": "Un maximum de {{limit}} fichiers multimédias est autorisé par publication.",
+      "updateFailed": "Échec de la mise à jour de la publication.",
+      "mediaUploadFailed": "Échec du téléversement des médias."
+    },
+    "actions": {
+      "update": "Mettre à jour la publication",
+      "updating": "Mise à jour de la publication..."
+    }
   },
   "report": {
     "title": "Signaler le contenu",
@@ -336,7 +424,28 @@
       "reason": "Sélectionnez une raison",
       "details": "Détails supplémentaires (optionnel)"
     },
+    "fields": {
+      "reasonLabel": "Raison",
+      "notesLabel": "Notes (optionnel)"
+    },
+    "reasons": {
+      "spam": "Spam",
+      "harassment": "Harcèlement",
+      "sexual": "Contenu sexuel",
+      "illegal": "Contenu illégal",
+      "other": "Autre"
+    },
+    "modalTitle": {
+      "post": "Signaler la publication",
+      "comment": "Signaler le commentaire"
+    },
     "submit": "Envoyer le signalement",
+    "status": {
+      "submitting": "Envoi..."
+    },
+    "errors": {
+      "submitFailed": "Échec de l'envoi du signalement"
+    },
     "success": "Merci ! Votre signalement a été soumis."
   },
   "messages": {
@@ -527,8 +636,8 @@
         "alt": "Photo de profil actuelle",
         "upload": "Télécharger",
         "remove": "Supprimer",
-        "description": "Upload a custom avatar or choose one of our gradients.",
-        "gradientTitle": "Choose a default avatar gradient",
+        "description": "Téléversez un avatar personnalisé ou choisissez l'un de nos dégradés.",
+        "gradientTitle": "Choisissez un dégradé d'avatar par défaut",
         "removeModal": {
           "title": "Supprimer la photo de profil",
           "description": "Êtes-vous sûr de vouloir supprimer votre photo de profil ? Cette action ne peut pas être annulée.",
@@ -540,20 +649,32 @@
         "removing": "Suppression..."
       },
       "gradients": {
-        "none": "No gradient"
+        "none": "Aucun dégradé",
+        "options": {
+          "aurora-sky": "Ciel d'Aurore",
+          "sunset-haze": "Brume de Coucher de Soleil",
+          "forest-canopy": "Canopée Forêtière",
+          "ocean-breeze": "Brise Océanique",
+          "violet-dream": "Rêve Violet",
+          "sunrise-glow": "Lueur de l'Aube",
+          "neon-noir": "Néon Noir",
+          "ember-heat": "Chaleur de Braise",
+          "berry-splash": "Éclaboussure de Baie",
+          "lunar-mist": "Brume Lunaire"
+        }
       },
       "banner": {
         "title": "Profile banner",
         "alt": "Current profile banner",
         "placeholder": "No banner selected",
-        "description": "Upload your own banner or select one of the gradients below.",
-        "upload": "Upload banner",
-        "remove": "Remove banner",
-        "gradientTitle": "Choose a default banner gradient",
+        "description": "Téléversez votre propre bannière ou sélectionnez l'un des dégradés ci-dessous.",
+        "upload": "Téléverser une bannière",
+        "remove": "Supprimer la bannière",
+        "gradientTitle": "Choisissez un dégradé de bannière par défaut",
         "removeModal": {
-          "title": "Remove profile banner",
-          "description": "Are you sure you want to remove your banner image?",
-          "cta": "Remove banner"
+          "title": "Supprimer la bannière de profil",
+          "description": "Êtes-vous sûr de vouloir supprimer votre bannière ?",
+          "cta": "Supprimer la bannière"
         }
       },
       "fields": {
@@ -585,7 +706,7 @@
       "errors": {
         "invalidImageType": "Veuillez sélectionner un fichier image",
         "invalidImageSize": "L'image doit faire moins de 5 Mo",
-        "invalidBannerSize": "Banner must be smaller than 8MB"
+        "invalidBannerSize": "La bannière doit faire moins de 8 Mo"
       },
       "feedback": {
         "updateSuccess": "Profil mis à jour avec succès !",
@@ -594,16 +715,16 @@
         "avatarUploadError": "Échec du téléchargement de la photo de profil",
         "avatarRemoveSuccess": "Photo de profil supprimée avec succès !",
         "avatarRemoveError": "Échec de la suppression de la photo de profil",
-        "bannerUploadSuccess": "Profile banner updated successfully!",
-        "bannerUploadError": "Failed to upload profile banner",
-        "bannerRemoveSuccess": "Profile banner removed successfully!",
-        "bannerRemoveError": "Failed to remove profile banner",
-        "avatarGradientApplied": "Gradient applied to your avatar.",
-        "avatarGradientCleared": "Avatar gradient removed.",
-        "avatarGradientError": "Failed to update avatar gradient.",
-        "bannerGradientApplied": "Gradient applied to your banner.",
-        "bannerGradientCleared": "Banner gradient removed.",
-        "bannerGradientError": "Failed to update banner gradient."
+        "bannerUploadSuccess": "Bannière de profil mise à jour avec succès !",
+        "bannerUploadError": "Échec du téléversement de la bannière de profil",
+        "bannerRemoveSuccess": "Bannière de profil supprimée avec succès !",
+        "bannerRemoveError": "Échec de la suppression de la bannière de profil",
+        "avatarGradientApplied": "Dégradé appliqué à votre avatar.",
+        "avatarGradientCleared": "Dégradé d'avatar supprimé.",
+        "avatarGradientError": "Échec de la mise à jour du dégradé d'avatar.",
+        "bannerGradientApplied": "Dégradé appliqué à votre bannière.",
+        "bannerGradientCleared": "Dégradé de bannière supprimé.",
+        "bannerGradientError": "Échec de la mise à jour du dégradé de bannière."
       }
     },
     "appearance": {
@@ -842,7 +963,20 @@
         "generic": "Échec de la connexion"
       },
       "registerPrompt": "Vous n'avez pas de compte ?",
-      "registerLink": "S'inscrire"
+      "registerLink": "S'inscrire",
+      "githubStatus": {
+        "completing": "Finalisation de la connexion GitHub…",
+        "linked": "Compte GitHub lié avec succès."
+      },
+      "githubErrors": {
+        "generic": "La connexion GitHub a échoué. Veuillez réessayer.",
+        "github_not_configured": "La connexion GitHub n'est pas disponible pour le moment.",
+        "invalid_oauth_state": "La session de connexion GitHub a expiré. Veuillez réessayer.",
+        "missing_code": "GitHub n'a pas renvoyé de code de connexion. Veuillez réessayer.",
+        "missing_session_user": "Vous devez être connecté pour lier GitHub.",
+        "already_linked_elsewhere": "Ce compte GitHub est déjà lié à un autre profil.",
+        "github_oauth_failed": "La connexion GitHub a échoué. Veuillez réessayer."
+      }
     },
     "register": {
       "documentTitle": "S'inscrire - {{app}}",
@@ -869,10 +1003,55 @@
         "generic": "Échec de l'inscription"
       },
       "loginPrompt": "Vous avez déjà un compte ?",
-      "loginLink": "Se connecter"
+      "loginLink": "Se connecter",
+      "github": "S'inscrire avec GitHub",
+      "githubStatus": {
+        "completing": "Création de votre compte avec GitHub…",
+        "linked": "Compte GitHub lié avec succès."
+      },
+      "githubErrors": {
+        "generic": "L'inscription GitHub a échoué. Veuillez réessayer.",
+        "github_not_configured": "L'inscription GitHub n'est pas disponible pour le moment.",
+        "invalid_oauth_state": "La session d'inscription GitHub a expiré. Veuillez réessayer.",
+        "missing_code": "GitHub n'a pas renvoyé de code d'inscription. Veuillez réessayer.",
+        "missing_session_user": "Vous devez être connecté pour lier GitHub.",
+        "already_linked_elsewhere": "Ce compte GitHub est déjà lié à un autre profil.",
+        "github_oauth_failed": "L'inscription GitHub a échoué. Veuillez réessayer."
+      }
     }
   },
   "backend": {
     "health": "Le serveur fonctionne"
+  },
+  "hashtags": {
+    "trending": {
+      "heading": "Hashtags tendance",
+      "loading": "Chargement des tendances...",
+      "retry": "Réessayer",
+      "error": "Nous n'avons pas pu charger les hashtags tendance.",
+      "empty": "Aucun hashtag n'est encore tendance.",
+      "localTitle": "Tendance en {{region}}",
+      "globalTitle": "Tendances mondiales",
+      "fallback": "Pas encore de données locales—affichage des points forts mondiaux.",
+      "updated": "Mis à jour {{time}}",
+      "usageCount_one": "{{count}} publication",
+      "usageCount_other": "{{count}} publications",
+      "lastUsed": "Dernière utilisation {{time}}"
+    },
+    "page": {
+      "documentTitle": "{{tag}} - {{app}}",
+      "subtitle": "Dernières publications utilisant ce hashtag.",
+      "subtitleWithCount": "{{count}} publications récemment",
+      "loading": "Chargement des publications...",
+      "retry": "Réessayer",
+      "error": "Nous n'avons pas pu charger les publications pour ce hashtag.",
+      "empty": {
+        "title": "Aucune publication pour le moment",
+        "description": "Soyez le premier à partager avec ce hashtag."
+      },
+      "loadMore": "Charger plus",
+      "loadingMore": "Chargement...",
+      "endOfResults": "C'est tout pour le moment."
+    }
   }
 }

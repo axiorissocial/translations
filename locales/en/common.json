@@ -98,10 +98,41 @@
       "no": "No"
     }
   },
+  "mediaModal": {
+    "types": {
+      "image": "Image",
+      "video": "Video"
+    },
+    "position": "{{type}} {{index}} of {{total}}",
+    "actions": {
+      "download": "Download",
+      "preparing": "Preparing..."
+    },
+    "errors": {
+      "downloadFailed": "Failed to download media."
+    }
+  },
   "feed": {
-    "empty": "No posts to show yet.",
-    "retry": "Retry",
-    "newPost": "New post"
+    "status": {
+      "loading": "Loading posts...",
+      "end": "You've reached the end!"
+    },
+    "errors": {
+      "fetch": "Failed to load posts.",
+      "generic": "Something went wrong while loading posts."
+    },
+    "empty": {
+      "title": "No posts yet",
+      "search": "No posts found for \"{{query}}\".",
+      "user": "This user hasn't posted anything yet.",
+      "default": "Be the first to share something!"
+    },
+    "actions": {
+      "retry": "Try again",
+      "create": "Create Post",
+      "loadMore": "Load more",
+      "loadingMore": "Loading..."
+    }
   },
   "post": {
     "created": "Posted {{time}}",
@@ -117,12 +148,63 @@
     "reactionsPicker": {
       "add": "React with {{emoji}}",
       "remove": "Remove your {{emoji}} reaction"
+    },
+    "labels": {
+      "pinned": "Pinned",
+      "title": "Title:"
+    },
+    "media": {
+      "avatarAlt": "{{name}}'s avatar"
+    },
+    "actions": {
+      "editPost": "Edit post",
+      "deletePost": "Delete post",
+      "reportPost": "Report post",
+      "viewInAdmin": "View in admin",
+      "readMore": "Read more"
+    },
+    "modals": {
+      "delete": {
+        "title": "Delete post",
+        "description": "Are you sure you want to delete this post? This action cannot be undone."
+      }
     }
   },
   "home": {
     "documentTitle": "Home - {{app}}",
     "heading": "Home",
     "subtitle": "Catch up with the latest from people you follow."
+  },
+  "hashtags": {
+    "trending": {
+      "heading": "Trending hashtags",
+      "loading": "Loading trends...",
+      "retry": "Try again",
+      "error": "We couldn't load trending hashtags.",
+      "empty": "No hashtags are trending yet.",
+      "localTitle": "Trending in {{region}}",
+      "globalTitle": "Worldwide trends",
+      "fallback": "No local data yet—showing global highlights.",
+      "updated": "Updated {{time}}",
+      "usageCount_one": "{{count}} post",
+      "usageCount_other": "{{count}} posts",
+      "lastUsed": "Last used {{time}}"
+    },
+    "page": {
+      "documentTitle": "{{tag}} - {{app}}",
+      "subtitle": "Latest posts using this hashtag.",
+      "subtitleWithCount": "{{count}} posts recently",
+      "loading": "Loading posts...",
+      "retry": "Try again",
+      "error": "We couldn't load posts for this hashtag.",
+      "empty": {
+        "title": "No posts yet",
+        "description": "Be the first to share with this hashtag."
+      },
+      "loadMore": "Load more",
+      "loadingMore": "Loading...",
+      "endOfResults": "That's everything for now."
+    }
   },
   "postPage": {
     "meta": {
@@ -250,6 +332,36 @@
       "edited": "(edited)"
     }
   },
+  "time": {
+    "calendar": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "todayWithTime": "Today at {{time}}",
+      "yesterdayWithTime": "Yesterday at {{time}}"
+    },
+    "relative": {
+      "justNow": "Just now",
+      "seconds": "{{count}} seconds ago",
+      "minute": "1 minute ago",
+      "minutes": "{{count}} minutes ago",
+      "hour": "1 hour ago",
+      "hours": "{{count}} hours ago",
+      "day": "1 day ago",
+      "days": "{{count}} days ago",
+      "week": "1 week ago",
+      "weeks": "{{count}} weeks ago",
+      "month": "1 month ago",
+      "months": "{{count}} months ago",
+      "year": "1 year ago",
+      "years": "{{count}} years ago"
+    },
+    "formats": {
+      "dateTime": "{{date}} at {{time}}"
+    },
+    "display": {
+      "absoluteWithRelative": "{{absolute}} · {{relative}}"
+    }
+  },
   "createPost": {
     "documentTitle": "Create Post - {{app}}",
     "title": "Create a post",
@@ -297,8 +409,44 @@
     }
   },
   "editPost": {
-    "title": "Edit post",
-    "submit": "Save changes"
+    "modalTitle": "Edit post",
+    "fields": {
+      "titleLabel": "Title (optional)",
+      "titlePlaceholder": "Enter post title...",
+      "contentLabel": "Content",
+      "contentPlaceholder": "What's on your mind?"
+    },
+    "toolbar": {
+      "bold": "Bold",
+      "italic": "Italic",
+      "strikethrough": "Strikethrough",
+      "upload": "Upload image or video",
+      "emoji": "Add emoji"
+    },
+    "tabs": {
+      "write": "Write",
+      "preview": "Preview"
+    },
+    "preview": {
+      "empty": "Nothing to preview..."
+    },
+    "charCount": "{{count}} characters",
+    "media": {
+      "previewAlt": "Upload preview",
+      "remove": "Remove media item"
+    },
+    "errors": {
+      "emptyContent": "Content cannot be empty.",
+      "fileTooLarge": "File {{file}} is too large (max {{limit}}).",
+      "invalidType": "File {{file}} is not a valid image or video.",
+      "maxFiles": "A maximum of {{limit}} media files is allowed per post.",
+      "updateFailed": "Failed to update the post.",
+      "mediaUploadFailed": "Failed to upload media."
+    },
+    "actions": {
+      "update": "Update post",
+      "updating": "Updating post..."
+    }
   },
   "report": {
     "title": "Report content",
@@ -307,7 +455,28 @@
       "reason": "Select a reason",
       "details": "Additional details (optional)"
     },
+    "fields": {
+      "reasonLabel": "Reason",
+      "notesLabel": "Notes (optional)"
+    },
+    "reasons": {
+      "spam": "Spam",
+      "harassment": "Harassment",
+      "sexual": "Sexual content",
+      "illegal": "Illegal content",
+      "other": "Other"
+    },
+    "modalTitle": {
+      "post": "Report post",
+      "comment": "Report comment"
+    },
     "submit": "Send report",
+    "status": {
+      "submitting": "Submitting..."
+    },
+    "errors": {
+      "submitFailed": "Failed to submit report"
+    },
     "success": "Thanks! Your report has been submitted."
   },
   "messages": {
@@ -511,7 +680,19 @@
         "removing": "Removing..."
       },
       "gradients": {
-        "none": "No gradient"
+        "none": "No gradient",
+        "options": {
+          "aurora-sky": "Aurora Sky",
+          "sunset-haze": "Sunset Haze",
+          "forest-canopy": "Forest Canopy",
+          "ocean-breeze": "Ocean Breeze",
+          "violet-dream": "Violet Dream",
+          "sunrise-glow": "Sunrise Glow",
+          "neon-noir": "Neon Noir",
+          "ember-heat": "Ember Heat",
+          "berry-splash": "Berry Splash",
+          "lunar-mist": "Lunar Mist"
+        }
       },
       "banner": {
         "title": "Profile banner",
@@ -806,6 +987,19 @@
         "loggingIn": "Logging in..."
       },
       "github": "Log in with GitHub",
+      "githubStatus": {
+        "completing": "Finishing GitHub sign-in…",
+        "linked": "GitHub account linked successfully."
+      },
+      "githubErrors": {
+        "generic": "GitHub sign-in failed. Please try again.",
+        "github_not_configured": "GitHub sign-in is unavailable right now.",
+        "invalid_oauth_state": "The GitHub login session expired. Please try again.",
+        "missing_code": "GitHub did not return a login code. Please try again.",
+        "missing_session_user": "You need to be logged in to link GitHub.",
+        "already_linked_elsewhere": "That GitHub account is already linked to another profile.",
+        "github_oauth_failed": "GitHub sign-in failed. Please try again."
+      },
       "links": {
         "forgotPassword": "Forgot password?"
       },
@@ -831,6 +1025,20 @@
       "cta": "Create account",
       "status": {
         "registering": "Registering..."
+      },
+      "github": "Sign up with GitHub",
+      "githubStatus": {
+        "completing": "Creating your account with GitHub…",
+        "linked": "GitHub account linked successfully."
+      },
+      "githubErrors": {
+        "generic": "GitHub sign-up failed. Please try again.",
+        "github_not_configured": "GitHub sign-up is unavailable right now.",
+        "invalid_oauth_state": "The GitHub sign-up session expired. Please try again.",
+        "missing_code": "GitHub did not return a sign-up code. Please try again.",
+        "missing_session_user": "You need to be logged in to link GitHub.",
+        "already_linked_elsewhere": "That GitHub account is already linked to another profile.",
+        "github_oauth_failed": "GitHub sign-up failed. Please try again."
       },
       "validation": {
         "passwordMismatch": "Passwords do not match.",

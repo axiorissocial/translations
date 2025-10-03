@@ -12,10 +12,8 @@
       "searchingUsers": "Ricerca utenti..."
     },
     "emptyUsers": {
-        "remove": "Rimuovi",
-        "description": "Upload a custom avatar or choose one of our gradients.",
-        "gradientTitle": "Choose a default avatar gradient",
-      "subtitle": "Prova a cercare con parole chiave diverse"
+      "subtitle": "Prova a cercare con parole chiave diverse",
+      "title": "Nessun utente trovato"
     },
     "actions": {
       "loadMoreUsers": "Carica Altri Utenti"
@@ -25,23 +23,6 @@
       "subtitle": "Inserisci una parola chiave per cercare post e utenti"
     },
     "errors": {
-      "gradients": {
-        "none": "No gradient"
-      },
-      "banner": {
-        "title": "Profile banner",
-        "alt": "Current profile banner",
-        "placeholder": "No banner selected",
-        "description": "Upload your own banner or select one of the gradients below.",
-        "upload": "Upload banner",
-        "remove": "Remove banner",
-        "gradientTitle": "Choose a default banner gradient",
-        "removeModal": {
-          "title": "Remove profile banner",
-          "description": "Are you sure you want to remove your banner image?",
-          "cta": "Remove banner"
-        }
-      },
       "searchFailed": "Ricerca utenti fallita"
     }
   },
@@ -117,10 +98,41 @@
       "no": "No"
     }
   },
+  "mediaModal": {
+    "types": {
+      "image": "Immagine",
+      "video": "Video"
+    },
+    "position": "{{type}} {{index}} di {{total}}",
+    "actions": {
+      "download": "Scarica",
+      "preparing": "Preparazione..."
+    },
+    "errors": {
+      "downloadFailed": "Impossibile scaricare il file multimediale."
+    }
+  },
   "feed": {
-    "empty": "Nessun post da mostrare ancora.",
-    "retry": "Riprova",
-    "newPost": "Nuovo post"
+    "status": {
+      "loading": "Caricamento dei post...",
+      "end": "Hai raggiunto la fine!"
+    },
+    "errors": {
+      "fetch": "Impossibile caricare i post.",
+      "generic": "Si è verificato un errore durante il caricamento dei post."
+    },
+    "empty": {
+      "title": "Ancora nessun post",
+      "search": "Nessun post trovato per \"{{query}}\".",
+      "user": "Questo utente non ha ancora pubblicato nulla.",
+      "default": "Sii il primo a condividere qualcosa!"
+    },
+    "actions": {
+      "retry": "Riprova",
+      "create": "Crea post",
+      "loadMore": "Carica altro",
+      "loadingMore": "Caricamento..."
+    }
   },
   "post": {
     "created": "Pubblicato {{time}}",
@@ -136,6 +148,26 @@
     "reactionsPicker": {
       "add": "Reagisci con {{emoji}}",
       "remove": "Rimuovi la tua reazione {{emoji}}"
+    },
+    "labels": {
+      "pinned": "In evidenza",
+      "title": "Titolo:"
+    },
+    "media": {
+      "avatarAlt": "Avatar di {{name}}"
+    },
+    "actions": {
+      "editPost": "Modifica post",
+      "deletePost": "Elimina post",
+      "reportPost": "Segnala post",
+      "viewInAdmin": "Vedi nell'area admin",
+      "readMore": "Leggi di più"
+    },
+    "modals": {
+      "delete": {
+        "title": "Elimina post",
+        "description": "Sei sicuro di voler eliminare questo post? Quest'azione non può essere annullata."
+      }
     }
   },
   "home": {
@@ -207,13 +239,6 @@
       "followers": "Follower",
       "following": "Seguiti"
     },
-    "meta": {
-      "joined": "Iscritto il {{date}}"
-    },
-    "tabs": {
-      "posts": "Post",
-      "about": "Informazioni"
-    },
     "about": {
       "title": "Informazioni su {{name}}",
       "details": {
@@ -229,6 +254,13 @@
         "noBio": "Nessuna biografia disponibile ancora.",
         "unknown": "Sconosciuto"
       }
+    },
+    "meta": {
+      "joined": "Iscritto il {{date}}"
+    },
+    "tabs": {
+      "posts": "Post",
+      "about": "Informazioni"
     }
   },
   "comment": {
@@ -255,29 +287,48 @@
     },
     "editor": {
       "supports": "Supporta **markdown**, :emoji: e @menzioni",
-      "invalidImageSize": "L'immagine deve essere inferiore a 5 MB",
-      "invalidBannerSize": "Banner must be smaller than 8MB",
-      "replyPlaceholder": "Rispondi a {{name}}..."
+      "replyPlaceholder": "Rispondi a {{name}}...",
+      "charCount": "{{count}}/{{limit}} caratteri"
     },
     "statuses": {
       "replying": "Rispondendo..."
     },
     "time": {
       "justNow": "Proprio ora",
-      "avatarRemoveError": "Impossibile rimuovere la foto profilo",
-      "bannerUploadSuccess": "Profile banner updated successfully!",
-      "bannerUploadError": "Failed to upload profile banner",
-      "bannerRemoveSuccess": "Profile banner removed successfully!",
-      "bannerRemoveError": "Failed to remove profile banner",
-      "avatarGradientApplied": "Gradient applied to your avatar.",
-      "avatarGradientCleared": "Avatar gradient removed.",
-      "avatarGradientError": "Failed to update avatar gradient.",
-      "bannerGradientApplied": "Gradient applied to your banner.",
-      "bannerGradientCleared": "Banner gradient removed.",
-      "bannerGradientError": "Failed to update banner gradient.",
       "hours": "{{count}}h fa",
       "days": "{{count}}g fa",
-      "edited": "(modificato)"
+      "edited": "(modificato)",
+      "minutes": "{{count}}m fa"
+    }
+  },
+  "time": {
+    "calendar": {
+      "today": "Oggi",
+      "yesterday": "Ieri",
+      "todayWithTime": "Oggi alle {{time}}",
+      "yesterdayWithTime": "Ieri alle {{time}}"
+    },
+    "relative": {
+      "justNow": "Proprio ora",
+      "seconds": "{{count}} secondi fa",
+      "minute": "1 minuto fa",
+      "minutes": "{{count}} minuti fa",
+      "hour": "1 ora fa",
+      "hours": "{{count}} ore fa",
+      "day": "1 giorno fa",
+      "days": "{{count}} giorni fa",
+      "week": "1 settimana fa",
+      "weeks": "{{count}} settimane fa",
+      "month": "1 mese fa",
+      "months": "{{count}} mesi fa",
+      "year": "1 anno fa",
+      "years": "{{count}} anni fa"
+    },
+    "formats": {
+      "dateTime": "{{date}} alle {{time}}"
+    },
+    "display": {
+      "absoluteWithRelative": "{{absolute}} · {{relative}}"
     }
   },
   "createPost": {
@@ -327,8 +378,44 @@
     }
   },
   "editPost": {
-    "title": "Modifica post",
-    "submit": "Salva modifiche"
+    "modalTitle": "Modifica post",
+    "fields": {
+      "titleLabel": "Titolo (opzionale)",
+      "titlePlaceholder": "Inserisci il titolo del post...",
+      "contentLabel": "Contenuto",
+      "contentPlaceholder": "A cosa stai pensando?"
+    },
+    "toolbar": {
+      "bold": "Grassetto",
+      "italic": "Corsivo",
+      "strikethrough": "Barrato",
+      "upload": "Carica immagine o video",
+      "emoji": "Aggiungi emoji"
+    },
+    "tabs": {
+      "write": "Scrivi",
+      "preview": "Anteprima"
+    },
+    "preview": {
+      "empty": "Nulla da mostrare..."
+    },
+    "charCount": "{{count}} caratteri",
+    "media": {
+      "previewAlt": "Anteprima del caricamento",
+      "remove": "Rimuovi elemento multimediale"
+    },
+    "errors": {
+      "emptyContent": "Il contenuto non può essere vuoto.",
+      "fileTooLarge": "Il file {{file}} è troppo grande (max {{limit}}).",
+      "invalidType": "Il file {{file}} non è un'immagine o un video valido.",
+      "maxFiles": "È consentito un massimo di {{limit}} file multimediali per post.",
+      "updateFailed": "Impossibile aggiornare il post.",
+      "mediaUploadFailed": "Caricamento dei media non riuscito."
+    },
+    "actions": {
+      "update": "Aggiorna post",
+      "updating": "Aggiornamento del post..."
+    }
   },
   "report": {
     "title": "Segnala contenuto",
@@ -337,7 +424,28 @@
       "reason": "Seleziona un motivo",
       "details": "Dettagli aggiuntivi (opzionale)"
     },
+    "fields": {
+      "reasonLabel": "Motivo",
+      "notesLabel": "Note (opzionale)"
+    },
+    "reasons": {
+      "spam": "Spam",
+      "harassment": "Molestie",
+      "sexual": "Contenuto sessuale",
+      "illegal": "Contenuto illegale",
+      "other": "Altro"
+    },
+    "modalTitle": {
+      "post": "Segnala post",
+      "comment": "Segnala commento"
+    },
     "submit": "Invia segnalazione",
+    "status": {
+      "submitting": "Invio in corso..."
+    },
+    "errors": {
+      "submitFailed": "Impossibile inviare la segnalazione"
+    },
     "success": "Grazie! La tua segnalazione è stata inviata."
   },
   "messages": {
@@ -541,20 +649,32 @@
         "removing": "Rimuovendo..."
       },
       "gradients": {
-        "none": "No gradient"
+        "none": "Nessun gradiente",
+        "options": {
+          "aurora-sky": "Cielo d'Aurora",
+          "sunset-haze": "Nebbia del Tramonto",
+          "forest-canopy": "Baldacchino della Foresta",
+          "ocean-breeze": "Brezza Oceanica",
+          "violet-dream": "Sogno Violetto",
+          "sunrise-glow": "Bagliore dell'Alba",
+          "neon-noir": "Neon Noir",
+          "ember-heat": "Calore di Braci",
+          "berry-splash": "Spruzzata di Frutti di Bosco",
+          "lunar-mist": "Nebbia Lunare"
+        }
       },
       "banner": {
-        "title": "Profile banner",
-        "alt": "Current profile banner",
-        "placeholder": "No banner selected",
-        "description": "Upload your own banner or select one of the gradients below.",
-        "upload": "Upload banner",
-        "remove": "Remove banner",
-        "gradientTitle": "Choose a default banner gradient",
+        "title": "Banner del profilo",
+        "alt": "Banner del profilo attuale",
+        "placeholder": "Nessun banner selezionato",
+        "description": "Carica il tuo banner oppure seleziona uno dei gradienti qui sotto.",
+        "upload": "Carica banner",
+        "remove": "Rimuovi banner",
+        "gradientTitle": "Scegli un gradiente banner predefinito",
         "removeModal": {
-          "title": "Remove profile banner",
-          "description": "Are you sure you want to remove your banner image?",
-          "cta": "Remove banner"
+          "title": "Rimuovi banner profilo",
+          "description": "Sei sicuro di voler rimuovere il tuo banner?",
+          "cta": "Rimuovi banner"
         }
       },
       "fields": {
@@ -586,7 +706,7 @@
       "errors": {
         "invalidImageType": "Seleziona un file immagine",
         "invalidImageSize": "L'immagine deve essere più piccola di 5MB",
-        "invalidBannerSize": "Banner must be smaller than 8MB"
+        "invalidBannerSize": "Il banner deve essere più piccolo di 8 MB"
       },
       "feedback": {
         "updateSuccess": "Profilo aggiornato con successo!",
@@ -595,16 +715,16 @@
         "avatarUploadError": "Impossibile caricare la foto profilo",
         "avatarRemoveSuccess": "Foto profilo rimossa con successo!",
         "avatarRemoveError": "Impossibile rimuovere la foto profilo",
-        "bannerUploadSuccess": "Profile banner updated successfully!",
-        "bannerUploadError": "Failed to upload profile banner",
-        "bannerRemoveSuccess": "Profile banner removed successfully!",
-        "bannerRemoveError": "Failed to remove profile banner",
-        "avatarGradientApplied": "Gradient applied to your avatar.",
-        "avatarGradientCleared": "Avatar gradient removed.",
-        "avatarGradientError": "Failed to update avatar gradient.",
-        "bannerGradientApplied": "Gradient applied to your banner.",
-        "bannerGradientCleared": "Banner gradient removed.",
-        "bannerGradientError": "Failed to update banner gradient."
+        "bannerUploadSuccess": "Banner del profilo aggiornato con successo!",
+        "bannerUploadError": "Impossibile caricare il banner del profilo",
+        "bannerRemoveSuccess": "Banner del profilo rimosso con successo!",
+        "bannerRemoveError": "Impossibile rimuovere il banner del profilo",
+        "avatarGradientApplied": "Gradiente applicato al tuo avatar.",
+        "avatarGradientCleared": "Gradiente avatar rimosso.",
+        "avatarGradientError": "Impossibile aggiornare il gradiente avatar.",
+        "bannerGradientApplied": "Gradiente applicato al tuo banner.",
+        "bannerGradientCleared": "Gradiente banner rimosso.",
+        "bannerGradientError": "Impossibile aggiornare il gradiente banner."
       }
     },
     "appearance": {
@@ -843,7 +963,20 @@
         "generic": "Accesso fallito"
       },
       "registerPrompt": "Non hai un account?",
-      "registerLink": "Registrati"
+      "registerLink": "Registrati",
+      "githubStatus": {
+        "completing": "Completamento accesso GitHub…",
+        "linked": "Account GitHub collegato con successo."
+      },
+      "githubErrors": {
+        "generic": "Accesso GitHub fallito. Riprova.",
+        "github_not_configured": "L'accesso GitHub non è disponibile al momento.",
+        "invalid_oauth_state": "La sessione di accesso GitHub è scaduta. Riprova.",
+        "missing_code": "GitHub non ha restituito un codice di accesso. Riprova.",
+        "missing_session_user": "Devi essere loggato per collegare GitHub.",
+        "already_linked_elsewhere": "Quell'account GitHub è già collegato a un altro profilo.",
+        "github_oauth_failed": "Accesso GitHub fallito. Riprova."
+      }
     },
     "register": {
       "documentTitle": "Registrati - {{app}}",
@@ -870,10 +1003,55 @@
         "generic": "Registrazione fallita"
       },
       "loginPrompt": "Hai già un account?",
-      "loginLink": "Accedi"
+      "loginLink": "Accedi",
+      "github": "Registrati con GitHub",
+      "githubStatus": {
+        "completing": "Creazione del tuo account con GitHub…",
+        "linked": "Account GitHub collegato con successo."
+      },
+      "githubErrors": {
+        "generic": "Registrazione GitHub fallita. Riprova.",
+        "github_not_configured": "La registrazione GitHub non è disponibile al momento.",
+        "invalid_oauth_state": "La sessione di registrazione GitHub è scaduta. Riprova.",
+        "missing_code": "GitHub non ha restituito un codice di registrazione. Riprova.",
+        "missing_session_user": "Devi essere loggato per collegare GitHub.",
+        "already_linked_elsewhere": "Quell'account GitHub è già collegato a un altro profilo.",
+        "github_oauth_failed": "Registrazione GitHub fallita. Riprova."
+      }
     }
   },
   "backend": {
     "health": "Il server è in funzione"
+  },
+  "hashtags": {
+    "trending": {
+      "heading": "Hashtag di tendenza",
+      "loading": "Caricamento tendenze...",
+      "retry": "Riprova",
+      "error": "Non siamo riusciti a caricare gli hashtag di tendenza.",
+      "empty": "Nessun hashtag è ancora di tendenza.",
+      "localTitle": "Di tendenza in {{region}}",
+      "globalTitle": "Tendenze mondiali",
+      "fallback": "Nessun dato locale ancora—mostrando i punti salienti globali.",
+      "updated": "Aggiornato {{time}}",
+      "usageCount_one": "{{count}} post",
+      "usageCount_other": "{{count}} post",
+      "lastUsed": "Ultimo utilizzo {{time}}"
+    },
+    "page": {
+      "documentTitle": "{{tag}} - {{app}}",
+      "subtitle": "Ultimi post che usano questo hashtag.",
+      "subtitleWithCount": "{{count}} post recenti",
+      "loading": "Caricamento post...",
+      "retry": "Riprova",
+      "error": "Non siamo riusciti a caricare i post per questo hashtag.",
+      "empty": {
+        "title": "Nessun post ancora",
+        "description": "Sii il primo a condividere con questo hashtag."
+      },
+      "loadMore": "Carica altro",
+      "loadingMore": "Caricamento...",
+      "endOfResults": "Per ora è tutto."
+    }
   }
 }

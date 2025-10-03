@@ -13,8 +13,8 @@
     },
     "emptyUsers": {
         "remove": "Entfernen",
-        "description": "Upload a custom avatar or choose one of our gradients.",
-        "gradientTitle": "Choose a default avatar gradient",
+  "description": "Laden Sie einen benutzerdefinierten Avatar hoch oder wählen Sie einen unserer Farbverläufe.",
+  "gradientTitle": "Standard-Avatar-Farbverlauf auswählen",
       "subtitle": "Versuchen Sie die Suche mit anderen Stichwörtern"
     },
     "actions": {
@@ -681,20 +681,20 @@
         "removing": "Entfernen..."
       },
       "gradients": {
-        "none": "No gradient"
+        "none": "Kein Farbverlauf"
       },
       "banner": {
-        "title": "Profile banner",
-        "alt": "Current profile banner",
-        "placeholder": "No banner selected",
-        "description": "Upload your own banner or select one of the gradients below.",
-        "upload": "Upload banner",
-        "remove": "Remove banner",
-        "gradientTitle": "Choose a default banner gradient",
+        "title": "Profilbanner",
+        "alt": "Aktuelles Profilbanner",
+        "placeholder": "Kein Banner ausgewählt",
+        "description": "Laden Sie Ihr eigenes Banner hoch oder wählen Sie einen der untenstehenden Farbverläufe.",
+        "upload": "Banner hochladen",
+        "remove": "Banner entfernen",
+        "gradientTitle": "Standard-Banner-Farbverlauf auswählen",
         "removeModal": {
-          "title": "Remove profile banner",
-          "description": "Are you sure you want to remove your banner image?",
-          "cta": "Remove banner"
+          "title": "Profilbanner entfernen",
+          "description": "Sind Sie sicher, dass Sie Ihr Banner entfernen möchten?",
+          "cta": "Banner entfernen"
         }
       },
       "fields": {
@@ -726,7 +726,7 @@
       "errors": {
         "invalidImageType": "Bitte wählen Sie eine Bilddatei",
         "invalidImageSize": "Das Bild muss kleiner als 5MB sein",
-        "invalidBannerSize": "Banner must be smaller than 8MB"
+        "invalidBannerSize": "Banner muss kleiner als 8 MB sein"
       },
       "feedback": {
         "updateSuccess": "Profil erfolgreich aktualisiert!",
@@ -735,16 +735,16 @@
         "avatarUploadError": "Profilbild konnte nicht hochgeladen werden",
         "avatarRemoveSuccess": "Profilbild erfolgreich entfernt!",
         "avatarRemoveError": "Profilbild konnte nicht entfernt werden",
-        "bannerUploadSuccess": "Profile banner updated successfully!",
-        "bannerUploadError": "Failed to upload profile banner",
-        "bannerRemoveSuccess": "Profile banner removed successfully!",
-        "bannerRemoveError": "Failed to remove profile banner",
-        "avatarGradientApplied": "Gradient applied to your avatar.",
-        "avatarGradientCleared": "Avatar gradient removed.",
-        "avatarGradientError": "Failed to update avatar gradient.",
-        "bannerGradientApplied": "Gradient applied to your banner.",
-        "bannerGradientCleared": "Banner gradient removed.",
-        "bannerGradientError": "Failed to update banner gradient."
+        "bannerUploadSuccess": "Profilbanner erfolgreich aktualisiert!",
+        "bannerUploadError": "Profilbanner konnte nicht hochgeladen werden",
+        "bannerRemoveSuccess": "Profilbanner erfolgreich entfernt!",
+        "bannerRemoveError": "Profilbanner konnte nicht entfernt werden",
+        "avatarGradientApplied": "Farbverlauf wurde auf Ihren Avatar angewendet.",
+        "avatarGradientCleared": "Avatar-Farbverlauf entfernt.",
+        "avatarGradientError": "Avatar-Farbverlauf konnte nicht aktualisiert werden.",
+        "bannerGradientApplied": "Farbverlauf wurde auf Ihr Banner angewendet.",
+        "bannerGradientCleared": "Banner-Farbverlauf entfernt.",
+        "bannerGradientError": "Banner-Farbverlauf konnte nicht aktualisiert werden."
       }
     },
     "appearance": {

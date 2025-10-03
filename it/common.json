@@ -13,8 +13,8 @@
     },
     "emptyUsers": {
         "remove": "Rimuovi",
-        "description": "Upload a custom avatar or choose one of our gradients.",
-        "gradientTitle": "Choose a default avatar gradient",
+  "description": "Carica un avatar personalizzato o scegli uno dei nostri gradienti.",
+  "gradientTitle": "Scegli un gradiente avatar predefinito",
       "subtitle": "Prova a cercare con parole chiave diverse"
     },
     "actions": {
@@ -684,20 +684,20 @@
         "removing": "Rimuovendo..."
       },
       "gradients": {
-        "none": "No gradient"
+        "none": "Nessun gradiente"
       },
       "banner": {
-        "title": "Profile banner",
-        "alt": "Current profile banner",
-        "placeholder": "No banner selected",
-        "description": "Upload your own banner or select one of the gradients below.",
-        "upload": "Upload banner",
-        "remove": "Remove banner",
-        "gradientTitle": "Choose a default banner gradient",
+        "title": "Banner del profilo",
+        "alt": "Banner del profilo attuale",
+        "placeholder": "Nessun banner selezionato",
+        "description": "Carica il tuo banner oppure seleziona uno dei gradienti qui sotto.",
+        "upload": "Carica banner",
+        "remove": "Rimuovi banner",
+        "gradientTitle": "Scegli un gradiente banner predefinito",
         "removeModal": {
-          "title": "Remove profile banner",
-          "description": "Are you sure you want to remove your banner image?",
-          "cta": "Remove banner"
+          "title": "Rimuovi banner profilo",
+          "description": "Sei sicuro di voler rimuovere il tuo banner?",
+          "cta": "Rimuovi banner"
         }
       },
       "fields": {
@@ -729,7 +729,7 @@
       "errors": {
         "invalidImageType": "Seleziona un file immagine",
         "invalidImageSize": "L'immagine deve essere più piccola di 5MB",
-        "invalidBannerSize": "Banner must be smaller than 8MB"
+        "invalidBannerSize": "Il banner deve essere più piccolo di 8 MB"
       },
       "feedback": {
         "updateSuccess": "Profilo aggiornato con successo!",
@@ -738,16 +738,16 @@
         "avatarUploadError": "Impossibile caricare la foto profilo",
         "avatarRemoveSuccess": "Foto profilo rimossa con successo!",
         "avatarRemoveError": "Impossibile rimuovere la foto profilo",
-        "bannerUploadSuccess": "Profile banner updated successfully!",
-        "bannerUploadError": "Failed to upload profile banner",
-        "bannerRemoveSuccess": "Profile banner removed successfully!",
-        "bannerRemoveError": "Failed to remove profile banner",
-        "avatarGradientApplied": "Gradient applied to your avatar.",
-        "avatarGradientCleared": "Avatar gradient removed.",
-        "avatarGradientError": "Failed to update avatar gradient.",
-        "bannerGradientApplied": "Gradient applied to your banner.",
-        "bannerGradientCleared": "Banner gradient removed.",
-        "bannerGradientError": "Failed to update banner gradient."
+        "bannerUploadSuccess": "Banner del profilo aggiornato con successo!",
+        "bannerUploadError": "Impossibile caricare il banner del profilo",
+        "bannerRemoveSuccess": "Banner del profilo rimosso con successo!",
+        "bannerRemoveError": "Impossibile rimuovere il banner del profilo",
+        "avatarGradientApplied": "Gradiente applicato al tuo avatar.",
+        "avatarGradientCleared": "Gradiente avatar rimosso.",
+        "avatarGradientError": "Impossibile aggiornare il gradiente avatar.",
+        "bannerGradientApplied": "Gradiente applicato al tuo banner.",
+        "bannerGradientCleared": "Gradiente banner rimosso.",
+        "bannerGradientError": "Impossibile aggiornare il gradiente banner."
       }
     },
     "appearance": {

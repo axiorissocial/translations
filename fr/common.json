@@ -667,8 +667,8 @@
         "alt": "Photo de profil actuelle",
         "upload": "Télécharger",
         "remove": "Supprimer",
-        "description": "Upload a custom avatar or choose one of our gradients.",
-        "gradientTitle": "Choose a default avatar gradient",
+  "description": "Téléversez un avatar personnalisé ou choisissez l'un de nos dégradés.",
+  "gradientTitle": "Choisissez un dégradé d'avatar par défaut",
         "removeModal": {
           "title": "Supprimer la photo de profil",
           "description": "Êtes-vous sûr de vouloir supprimer votre photo de profil ? Cette action ne peut pas être annulée.",
@@ -680,20 +680,20 @@
         "removing": "Suppression..."
       },
       "gradients": {
-        "none": "No gradient"
+        "none": "Aucun dégradé"
       },
       "banner": {
         "title": "Profile banner",
         "alt": "Current profile banner",
         "placeholder": "No banner selected",
-        "description": "Upload your own banner or select one of the gradients below.",
-        "upload": "Upload banner",
-        "remove": "Remove banner",
-        "gradientTitle": "Choose a default banner gradient",
+        "description": "Téléversez votre propre bannière ou sélectionnez l'un des dégradés ci-dessous.",
+        "upload": "Téléverser une bannière",
+        "remove": "Supprimer la bannière",
+        "gradientTitle": "Choisissez un dégradé de bannière par défaut",
         "removeModal": {
-          "title": "Remove profile banner",
-          "description": "Are you sure you want to remove your banner image?",
-          "cta": "Remove banner"
+          "title": "Supprimer la bannière de profil",
+          "description": "Êtes-vous sûr de vouloir supprimer votre bannière ?",
+          "cta": "Supprimer la bannière"
         }
       },
       "fields": {
@@ -725,7 +725,7 @@
       "errors": {
         "invalidImageType": "Veuillez sélectionner un fichier image",
         "invalidImageSize": "L'image doit faire moins de 5 Mo",
-        "invalidBannerSize": "Banner must be smaller than 8MB"
+        "invalidBannerSize": "La bannière doit faire moins de 8 Mo"
       },
       "feedback": {
         "updateSuccess": "Profil mis à jour avec succès !",
@@ -734,16 +734,16 @@
         "avatarUploadError": "Échec du téléchargement de la photo de profil",
         "avatarRemoveSuccess": "Photo de profil supprimée avec succès !",
         "avatarRemoveError": "Échec de la suppression de la photo de profil",
-        "bannerUploadSuccess": "Profile banner updated successfully!",
-        "bannerUploadError": "Failed to upload profile banner",
-        "bannerRemoveSuccess": "Profile banner removed successfully!",
-        "bannerRemoveError": "Failed to remove profile banner",
-        "avatarGradientApplied": "Gradient applied to your avatar.",
-        "avatarGradientCleared": "Avatar gradient removed.",
-        "avatarGradientError": "Failed to update avatar gradient.",
-        "bannerGradientApplied": "Gradient applied to your banner.",
-        "bannerGradientCleared": "Banner gradient removed.",
-        "bannerGradientError": "Failed to update banner gradient."
+        "bannerUploadSuccess": "Bannière de profil mise à jour avec succès !",
+        "bannerUploadError": "Échec du téléversement de la bannière de profil",
+        "bannerRemoveSuccess": "Bannière de profil supprimée avec succès !",
+        "bannerRemoveError": "Échec de la suppression de la bannière de profil",
+        "avatarGradientApplied": "Dégradé appliqué à votre avatar.",
+        "avatarGradientCleared": "Dégradé d'avatar supprimé.",
+        "avatarGradientError": "Échec de la mise à jour du dégradé d'avatar.",
+        "bannerGradientApplied": "Dégradé appliqué à votre bannière.",
+        "bannerGradientCleared": "Dégradé de bannière supprimé.",
+        "bannerGradientError": "Échec de la mise à jour du dégradé de bannière."
       }
     },
     "appearance": {

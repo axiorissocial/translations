@@ -13,8 +13,6 @@
     },
     "emptyUsers": {
       "title": "Nenhum usuário encontrado",
-        "description": "Upload a custom avatar or choose one of our gradients.",
-        "gradientTitle": "Choose a default avatar gradient",
       "subtitle": "Tente pesquisar com palavras-chave diferentes"
     },
     "actions": {
@@ -117,10 +115,41 @@
       "no": "Não"
     }
   },
+  "mediaModal": {
+    "types": {
+      "image": "Imagem",
+      "video": "Vídeo"
+    },
+    "position": "{{type}} {{index}} de {{total}}",
+    "actions": {
+      "download": "Baixar",
+      "preparing": "Preparando..."
+    },
+    "errors": {
+      "downloadFailed": "Não foi possível baixar a mídia."
+    }
+  },
   "feed": {
-    "empty": "Nenhum post para mostrar ainda.",
-    "retry": "Tentar novamente",
-    "newPost": "Novo post"
+    "status": {
+      "loading": "Carregando posts...",
+      "end": "Você chegou ao fim!"
+    },
+    "errors": {
+      "fetch": "Não foi possível carregar os posts.",
+      "generic": "Ocorreu um erro ao carregar os posts."
+    },
+    "empty": {
+      "title": "Ainda não há posts",
+      "search": "Nenhum post encontrado para \"{{query}}\".",
+      "user": "Este usuário ainda não publicou nada.",
+      "default": "Seja o primeiro a compartilhar algo!"
+    },
+    "actions": {
+      "retry": "Tentar novamente",
+      "create": "Criar post",
+      "loadMore": "Carregar mais",
+      "loadingMore": "Carregando..."
+    }
   },
   "post": {
     "created": "Postado {{time}}",
@@ -136,6 +165,26 @@
     "reactionsPicker": {
       "add": "Reagir com {{emoji}}",
       "remove": "Remover sua reação {{emoji}}"
+    },
+    "labels": {
+      "pinned": "Fixado",
+      "title": "Título:"
+    },
+    "media": {
+      "avatarAlt": "Avatar de {{name}}"
+    },
+    "actions": {
+      "editPost": "Editar post",
+      "deletePost": "Excluir post",
+      "reportPost": "Denunciar post",
+      "viewInAdmin": "Ver no painel administrativo",
+      "readMore": "Ler mais"
+    },
+    "modals": {
+      "delete": {
+        "title": "Excluir post",
+        "description": "Tem certeza de que deseja excluir este post? Essa ação não pode ser desfeita."
+      }
     }
   },
   "home": {
@@ -264,20 +313,40 @@
     },
     "time": {
       "justNow": "Agora mesmo",
-      "avatarRemoveError": "Falha ao remover a foto de perfil",
-      "bannerUploadSuccess": "Profile banner updated successfully!",
-      "bannerUploadError": "Failed to upload profile banner",
-      "bannerRemoveSuccess": "Profile banner removed successfully!",
-      "bannerRemoveError": "Failed to remove profile banner",
-      "avatarGradientApplied": "Gradient applied to your avatar.",
-      "avatarGradientCleared": "Avatar gradient removed.",
-      "avatarGradientError": "Failed to update avatar gradient.",
-      "bannerGradientApplied": "Gradient applied to your banner.",
-      "bannerGradientCleared": "Banner gradient removed.",
-      "bannerGradientError": "Failed to update banner gradient.",
-      "hours": "{{count}}h atrás",
-      "days": "{{count}}d atrás",
+      "minutes": "{{count}} min atrás",
+      "hours": "{{count}} h atrás",
+      "days": "{{count}} d atrás",
       "edited": "(editado)"
+    }
+  },
+  "time": {
+    "calendar": {
+      "today": "Hoje",
+      "yesterday": "Ontem",
+      "todayWithTime": "Hoje às {{time}}",
+      "yesterdayWithTime": "Ontem às {{time}}"
+    },
+    "relative": {
+      "justNow": "Agora mesmo",
+      "seconds": "Há {{count}} segundos",
+      "minute": "Há 1 minuto",
+      "minutes": "Há {{count}} minutos",
+      "hour": "Há 1 hora",
+      "hours": "Há {{count}} horas",
+      "day": "Há 1 dia",
+      "days": "Há {{count}} dias",
+      "week": "Há 1 semana",
+      "weeks": "Há {{count}} semanas",
+      "month": "Há 1 mês",
+      "months": "Há {{count}} meses",
+      "year": "Há 1 ano",
+      "years": "Há {{count}} anos"
+    },
+    "formats": {
+      "dateTime": "{{date}} às {{time}}"
+    },
+    "display": {
+      "absoluteWithRelative": "{{absolute}} · {{relative}}"
     }
   },
   "createPost": {
@@ -327,8 +396,44 @@
     }
   },
   "editPost": {
-    "title": "Editar post",
-    "submit": "Salvar alterações"
+    "modalTitle": "Editar post",
+    "fields": {
+      "titleLabel": "Título (opcional)",
+      "titlePlaceholder": "Digite o título do post...",
+      "contentLabel": "Conteúdo",
+      "contentPlaceholder": "O que você está pensando?"
+    },
+    "toolbar": {
+      "bold": "Negrito",
+      "italic": "Itálico",
+      "strikethrough": "Tachado",
+      "upload": "Enviar imagem ou vídeo",
+      "emoji": "Adicionar emoji"
+    },
+    "tabs": {
+      "write": "Escrever",
+      "preview": "Pré-visualizar"
+    },
+    "preview": {
+      "empty": "Nada para pré-visualizar..."
+    },
+    "charCount": "{{count}} caracteres",
+    "media": {
+      "previewAlt": "Pré-visualização do upload",
+      "remove": "Remover item de mídia"
+    },
+    "errors": {
+      "emptyContent": "O conteúdo não pode estar vazio.",
+      "fileTooLarge": "O arquivo {{file}} é muito grande (máx. {{limit}}).",
+      "invalidType": "O arquivo {{file}} não é uma imagem ou vídeo válido.",
+      "maxFiles": "É permitido no máximo {{limit}} arquivos de mídia por post.",
+      "updateFailed": "Não foi possível atualizar o post.",
+      "mediaUploadFailed": "Não foi possível enviar os arquivos de mídia."
+    },
+    "actions": {
+      "update": "Atualizar post",
+      "updating": "Atualizando post..."
+    }
   },
   "report": {
     "title": "Denunciar conteúdo",
@@ -337,7 +442,28 @@
       "reason": "Selecione um motivo",
       "details": "Detalhes adicionais (opcional)"
     },
+    "fields": {
+      "reasonLabel": "Motivo",
+      "notesLabel": "Notas (opcional)"
+    },
+    "reasons": {
+      "spam": "Spam",
+      "harassment": "Assédio",
+      "sexual": "Conteúdo sexual",
+      "illegal": "Conteúdo ilegal",
+      "other": "Outro"
+    },
+    "modalTitle": {
+      "post": "Denunciar post",
+      "comment": "Denunciar comentário"
+    },
     "submit": "Enviar denúncia",
+    "status": {
+      "submitting": "Enviando..."
+    },
+    "errors": {
+      "submitFailed": "Não foi possível enviar a denúncia"
+    },
     "success": "Obrigado! Sua denúncia foi enviada."
   },
   "messages": {
@@ -528,6 +654,8 @@
         "alt": "Foto do perfil atual",
         "upload": "Enviar",
         "remove": "Remover",
+        "description": "Envie um avatar personalizado ou escolha um de nossos degradês.",
+        "gradientTitle": "Escolha um degradê padrão para o avatar",
         "removeModal": {
           "title": "Remover foto do perfil",
           "description": "Tem certeza de que deseja remover sua foto do perfil? Esta ação não pode ser desfeita.",
@@ -537,6 +665,35 @@
       "statuses": {
         "uploading": "Enviando...",
         "removing": "Removendo..."
+      },
+      "gradients": {
+        "none": "Sem gradiente",
+        "options": {
+          "aurora-sky": "Céu de aurora",
+          "sunset-haze": "Bruma do pôr do sol",
+          "forest-canopy": "Dossel da floresta",
+          "ocean-breeze": "Brisa oceânica",
+          "violet-dream": "Sonho violeta",
+          "sunrise-glow": "Brilho do amanhecer",
+          "neon-noir": "Neon noir",
+          "ember-heat": "Calor de brasa",
+          "berry-splash": "Explosão de frutas vermelhas",
+          "lunar-mist": "Névoa lunar"
+        }
+      },
+      "banner": {
+        "title": "Banner do perfil",
+        "alt": "Banner do perfil atual",
+        "placeholder": "Nenhum banner selecionado",
+        "description": "Envie seu próprio banner ou escolha um dos degradês abaixo.",
+        "upload": "Enviar banner",
+        "remove": "Remover banner",
+        "gradientTitle": "Escolha um degradê padrão para o banner",
+        "removeModal": {
+          "title": "Remover banner do perfil",
+          "description": "Tem certeza de que deseja remover seu banner? Esta ação não pode ser desfeita.",
+          "cta": "Remover banner"
+        }
       },
       "fields": {
         "displayName": {
@@ -566,7 +723,8 @@
       },
       "errors": {
         "invalidImageType": "Selecione um arquivo de imagem",
-        "invalidImageSize": "A imagem deve ser menor que 5MB"
+        "invalidImageSize": "A imagem deve ser menor que 5MB",
+        "invalidBannerSize": "O banner deve ser menor que 8 MB"
       },
       "feedback": {
         "updateSuccess": "Perfil atualizado com sucesso!",
@@ -574,7 +732,17 @@
         "avatarUploadSuccess": "Foto do perfil atualizada com sucesso!",
         "avatarUploadError": "Falha ao enviar foto do perfil",
         "avatarRemoveSuccess": "Foto do perfil removida com sucesso!",
-        "avatarRemoveError": "Falha ao remover foto do perfil"
+        "avatarRemoveError": "Falha ao remover foto do perfil",
+        "bannerUploadSuccess": "Banner do perfil atualizado com sucesso!",
+        "bannerUploadError": "Falha ao enviar o banner do perfil",
+        "bannerRemoveSuccess": "Banner do perfil removido com sucesso!",
+        "bannerRemoveError": "Falha ao remover o banner do perfil",
+        "avatarGradientApplied": "Degradê aplicado ao seu avatar.",
+        "avatarGradientCleared": "Degradê do avatar removido.",
+        "avatarGradientError": "Falha ao atualizar o degradê do avatar.",
+        "bannerGradientApplied": "Degradê aplicado ao seu banner.",
+        "bannerGradientCleared": "Degradê do banner removido.",
+        "bannerGradientError": "Falha ao atualizar o degradê do banner."
       }
     },
     "appearance": {

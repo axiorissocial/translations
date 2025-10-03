@@ -26,7 +26,19 @@
     },
     "errors": {
       "gradients": {
-        "none": "No gradient"
+        "none": "Kein Verlauf",
+        "options": {
+          "aurora-sky": "Polarlicht-Himmel",
+          "sunset-haze": "Abendrot-Nebel",
+          "forest-canopy": "Waldkronendach",
+          "ocean-breeze": "Meeresbrise",
+          "violet-dream": "Violetter Traum",
+          "sunrise-glow": "Morgendämmerungs-Glanz",
+          "neon-noir": "Neon Noir",
+          "ember-heat": "Glutwärme",
+          "berry-splash": "Beerenspritzer",
+          "lunar-mist": "Mondnebel"
+        }
       },
       "banner": {
         "title": "Profile banner",
@@ -117,10 +129,41 @@
       "no": "Nein"
     }
   },
+  "mediaModal": {
+    "types": {
+      "image": "Bild",
+      "video": "Video"
+    },
+    "position": "{{type}} {{index}} von {{total}}",
+    "actions": {
+      "download": "Herunterladen",
+      "preparing": "Wird vorbereitet..."
+    },
+    "errors": {
+      "downloadFailed": "Medium konnte nicht heruntergeladen werden."
+    }
+  },
   "feed": {
-    "empty": "Noch keine Beiträge vorhanden.",
-    "retry": "Wiederholen",
-    "newPost": "Neuer Beitrag"
+    "status": {
+      "loading": "Beiträge werden geladen...",
+      "end": "Du hast das Ende erreicht!"
+    },
+    "errors": {
+      "fetch": "Beiträge konnten nicht geladen werden.",
+      "generic": "Beim Laden der Beiträge ist ein Fehler aufgetreten."
+    },
+    "empty": {
+      "title": "Noch keine Beiträge",
+      "search": "Keine Beiträge für \"{{query}}\" gefunden.",
+      "user": "Dieser Benutzer hat noch nichts gepostet.",
+      "default": "Sei der Erste und teile etwas!"
+    },
+    "actions": {
+      "retry": "Erneut versuchen",
+      "create": "Beitrag erstellen",
+      "loadMore": "Mehr laden",
+      "loadingMore": "Lädt..."
+    }
   },
   "post": {
     "created": "Gepostet {{time}}",
@@ -136,6 +179,26 @@
     "reactionsPicker": {
       "add": "Mit {{emoji}} reagieren",
       "remove": "Deine {{emoji}}-Reaktion entfernen"
+    },
+    "labels": {
+      "pinned": "Angepinnt",
+      "title": "Titel:"
+    },
+    "media": {
+      "avatarAlt": "Avatar von {{name}}"
+    },
+    "actions": {
+      "editPost": "Beitrag bearbeiten",
+      "deletePost": "Beitrag löschen",
+      "reportPost": "Beitrag melden",
+      "viewInAdmin": "Im Adminbereich ansehen",
+      "readMore": "Mehr lesen"
+    },
+    "modals": {
+      "delete": {
+        "title": "Beitrag löschen",
+        "description": "Bist du sicher, dass du diesen Beitrag löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden."
+      }
     }
   },
   "home": {
@@ -264,20 +327,40 @@
     },
     "time": {
       "justNow": "Gerade eben",
-      "avatarRemoveError": "Profilbild konnte nicht entfernt werden",
-      "bannerUploadSuccess": "Profile banner updated successfully!",
-      "bannerUploadError": "Failed to upload profile banner",
-      "bannerRemoveSuccess": "Profile banner removed successfully!",
-      "bannerRemoveError": "Failed to remove profile banner",
-      "avatarGradientApplied": "Gradient applied to your avatar.",
-      "avatarGradientCleared": "Avatar gradient removed.",
-      "avatarGradientError": "Failed to update avatar gradient.",
-      "bannerGradientApplied": "Gradient applied to your banner.",
-      "bannerGradientCleared": "Banner gradient removed.",
-      "bannerGradientError": "Failed to update banner gradient.",
-      "hours": "vor {{count}}h",
-      "days": "vor {{count}}d",
+      "minutes": "Vor {{count}}m",
+      "hours": "Vor {{count}}h",
+      "days": "Vor {{count}}d",
       "edited": "(bearbeitet)"
+    }
+  },
+  "time": {
+    "calendar": {
+      "today": "Heute",
+      "yesterday": "Gestern",
+      "todayWithTime": "Heute um {{time}}",
+      "yesterdayWithTime": "Gestern um {{time}}"
+    },
+    "relative": {
+      "justNow": "Gerade eben",
+      "seconds": "Vor {{count}} Sekunden",
+      "minute": "Vor 1 Minute",
+      "minutes": "Vor {{count}} Minuten",
+      "hour": "Vor 1 Stunde",
+      "hours": "Vor {{count}} Stunden",
+      "day": "Vor 1 Tag",
+      "days": "Vor {{count}} Tagen",
+      "week": "Vor 1 Woche",
+      "weeks": "Vor {{count}} Wochen",
+      "month": "Vor 1 Monat",
+      "months": "Vor {{count}} Monaten",
+      "year": "Vor 1 Jahr",
+      "years": "Vor {{count}} Jahren"
+    },
+    "formats": {
+      "dateTime": "{{date}} um {{time}}"
+    },
+    "display": {
+      "absoluteWithRelative": "{{absolute}} · {{relative}}"
     }
   },
   "createPost": {
@@ -327,8 +410,44 @@
     }
   },
   "editPost": {
-    "title": "Beitrag bearbeiten",
-    "submit": "Änderungen speichern"
+    "modalTitle": "Beitrag bearbeiten",
+    "fields": {
+      "titleLabel": "Titel (optional)",
+      "titlePlaceholder": "Beitragstitel eingeben...",
+      "contentLabel": "Inhalt",
+      "contentPlaceholder": "Woran denkst du?"
+    },
+    "toolbar": {
+      "bold": "Fett",
+      "italic": "Kursiv",
+      "strikethrough": "Durchgestrichen",
+      "upload": "Bild oder Video hochladen",
+      "emoji": "Emoji hinzufügen"
+    },
+    "tabs": {
+      "write": "Schreiben",
+      "preview": "Vorschau"
+    },
+    "preview": {
+      "empty": "Nichts zum Anzeigen..."
+    },
+    "charCount": "{{count}} Zeichen",
+    "media": {
+      "previewAlt": "Upload-Vorschau",
+      "remove": "Medienelement entfernen"
+    },
+    "errors": {
+      "emptyContent": "Der Inhalt darf nicht leer sein.",
+      "fileTooLarge": "Die Datei {{file}} ist zu groß (max. {{limit}}).",
+      "invalidType": "Die Datei {{file}} ist kein gültiges Bild oder Video.",
+      "maxFiles": "Pro Beitrag sind maximal {{limit}} Mediendateien erlaubt.",
+      "updateFailed": "Der Beitrag konnte nicht aktualisiert werden.",
+      "mediaUploadFailed": "Medien konnten nicht hochgeladen werden."
+    },
+    "actions": {
+      "update": "Beitrag aktualisieren",
+      "updating": "Beitrag wird aktualisiert..."
+    }
   },
   "report": {
     "title": "Inhalt melden",
@@ -337,7 +456,28 @@
       "reason": "Grund auswählen",
       "details": "Zusätzliche Details (optional)"
     },
+    "fields": {
+      "reasonLabel": "Grund",
+      "notesLabel": "Notizen (optional)"
+    },
+    "reasons": {
+      "spam": "Spam",
+      "harassment": "Belästigung",
+      "sexual": "Sexuelle Inhalte",
+      "illegal": "Illegale Inhalte",
+      "other": "Sonstiges"
+    },
+    "modalTitle": {
+      "post": "Beitrag melden",
+      "comment": "Kommentar melden"
+    },
     "submit": "Meldung senden",
+    "status": {
+      "submitting": "Wird gesendet..."
+    },
+    "errors": {
+      "submitFailed": "Meldung konnte nicht übermittelt werden"
+    },
     "success": "Danke! Ihre Meldung wurde eingereicht."
   },
   "messages": {

@@ -22,7 +22,19 @@
     },
     "emptyState": {
       "gradients": {
-        "none": "No gradient"
+        "none": "Aucun dégradé",
+        "options": {
+          "aurora-sky": "Ciel d'aurore",
+          "sunset-haze": "Brume du coucher",
+          "forest-canopy": "Canopée forestière",
+          "ocean-breeze": "Brise océane",
+          "violet-dream": "Rêve violet",
+          "sunrise-glow": "Éclat de l'aube",
+          "neon-noir": "Néon noir",
+          "ember-heat": "Chaleur de braise",
+          "berry-splash": "Éclaboussure de baies",
+          "lunar-mist": "Brume lunaire"
+        }
       },
       "banner": {
         "title": "Profile banner",
@@ -116,10 +128,41 @@
       "no": "Non"
     }
   },
+  "mediaModal": {
+    "types": {
+      "image": "Image",
+      "video": "Vidéo"
+    },
+    "position": "{{type}} {{index}} sur {{total}}",
+    "actions": {
+      "download": "Télécharger",
+      "preparing": "Préparation..."
+    },
+    "errors": {
+      "downloadFailed": "Impossible de télécharger le média."
+    }
+  },
   "feed": {
-    "empty": "Aucune publication à afficher pour le moment.",
-    "retry": "Réessayer",
-    "newPost": "Nouvelle publication"
+    "status": {
+      "loading": "Chargement des publications...",
+      "end": "Vous êtes arrivé au bout !"
+    },
+    "errors": {
+      "fetch": "Impossible de charger les publications.",
+      "generic": "Une erreur est survenue lors du chargement des publications."
+    },
+    "empty": {
+      "title": "Aucune publication pour le moment",
+      "search": "Aucune publication trouvée pour \"{{query}}\".",
+      "user": "Cet utilisateur n'a pas encore publié.",
+      "default": "Soyez le premier à partager quelque chose !"
+    },
+    "actions": {
+      "retry": "Réessayer",
+      "create": "Créer une publication",
+      "loadMore": "Charger plus",
+      "loadingMore": "Chargement..."
+    }
   },
   "post": {
     "created": "Publié {{time}}",
@@ -135,6 +178,26 @@
     "reactionsPicker": {
       "add": "Réagir avec {{emoji}}",
       "remove": "Retirer votre réaction {{emoji}}"
+    },
+    "labels": {
+      "pinned": "Épinglée",
+      "title": "Titre :"
+    },
+    "media": {
+      "avatarAlt": "Avatar de {{name}}"
+    },
+    "actions": {
+      "editPost": "Modifier la publication",
+      "deletePost": "Supprimer la publication",
+      "reportPost": "Signaler la publication",
+      "viewInAdmin": "Voir dans l'administration",
+      "readMore": "Lire la suite"
+    },
+    "modals": {
+      "delete": {
+        "title": "Supprimer la publication",
+        "description": "Êtes-vous sûr de vouloir supprimer cette publication ? Cette action est irréversible."
+      }
     }
   },
   "home": {
@@ -263,20 +326,40 @@
     },
     "time": {
       "justNow": "À l'instant",
-      "avatarRemoveError": "Échec de la suppression de la photo de profil",
-      "bannerUploadSuccess": "Profile banner updated successfully!",
-      "bannerUploadError": "Failed to upload profile banner",
-      "bannerRemoveSuccess": "Profile banner removed successfully!",
-      "bannerRemoveError": "Failed to remove profile banner",
-      "avatarGradientApplied": "Gradient applied to your avatar.",
-      "avatarGradientCleared": "Avatar gradient removed.",
-      "avatarGradientError": "Failed to update avatar gradient.",
-      "bannerGradientApplied": "Gradient applied to your banner.",
-      "bannerGradientCleared": "Banner gradient removed.",
-      "bannerGradientError": "Failed to update banner gradient.",
+      "minutes": "il y a {{count}}m",
       "hours": "il y a {{count}}h",
       "days": "il y a {{count}}j",
       "edited": "(modifié)"
+    }
+  },
+  "time": {
+    "calendar": {
+      "today": "Aujourd'hui",
+      "yesterday": "Hier",
+      "todayWithTime": "Aujourd'hui à {{time}}",
+      "yesterdayWithTime": "Hier à {{time}}"
+    },
+    "relative": {
+      "justNow": "À l'instant",
+      "seconds": "Il y a {{count}} secondes",
+      "minute": "Il y a 1 minute",
+      "minutes": "Il y a {{count}} minutes",
+      "hour": "Il y a 1 heure",
+      "hours": "Il y a {{count}} heures",
+      "day": "Il y a 1 jour",
+      "days": "Il y a {{count}} jours",
+      "week": "Il y a 1 semaine",
+      "weeks": "Il y a {{count}} semaines",
+      "month": "Il y a 1 mois",
+      "months": "Il y a {{count}} mois",
+      "year": "Il y a 1 an",
+      "years": "Il y a {{count}} ans"
+    },
+    "formats": {
+      "dateTime": "{{date}} à {{time}}"
+    },
+    "display": {
+      "absoluteWithRelative": "{{absolute}} · {{relative}}"
     }
   },
   "createPost": {
@@ -326,8 +409,44 @@
     }
   },
   "editPost": {
-    "title": "Modifier la publication",
-    "submit": "Enregistrer les modifications"
+    "modalTitle": "Modifier la publication",
+    "fields": {
+      "titleLabel": "Titre (optionnel)",
+      "titlePlaceholder": "Entrez le titre de la publication...",
+      "contentLabel": "Contenu",
+      "contentPlaceholder": "À quoi pensez-vous ?"
+    },
+    "toolbar": {
+      "bold": "Gras",
+      "italic": "Italique",
+      "strikethrough": "Barré",
+      "upload": "Téléverser une image ou une vidéo",
+      "emoji": "Ajouter un emoji"
+    },
+    "tabs": {
+      "write": "Écrire",
+      "preview": "Aperçu"
+    },
+    "preview": {
+      "empty": "Rien à afficher pour le moment..."
+    },
+    "charCount": "{{count}} caractères",
+    "media": {
+      "previewAlt": "Aperçu du téléversement",
+      "remove": "Supprimer l'élément multimédia"
+    },
+    "errors": {
+      "emptyContent": "Le contenu ne peut pas être vide.",
+      "fileTooLarge": "Le fichier {{file}} est trop volumineux (max {{limit}}).",
+      "invalidType": "Le fichier {{file}} n'est pas une image ou une vidéo valide.",
+      "maxFiles": "Un maximum de {{limit}} fichiers multimédias est autorisé par publication.",
+      "updateFailed": "Échec de la mise à jour de la publication.",
+      "mediaUploadFailed": "Échec du téléversement des médias."
+    },
+    "actions": {
+      "update": "Mettre à jour la publication",
+      "updating": "Mise à jour de la publication..."
+    }
   },
   "report": {
     "title": "Signaler le contenu",
@@ -336,7 +455,28 @@
       "reason": "Sélectionnez une raison",
       "details": "Détails supplémentaires (optionnel)"
     },
+    "fields": {
+      "reasonLabel": "Raison",
+      "notesLabel": "Notes (optionnel)"
+    },
+    "reasons": {
+      "spam": "Spam",
+      "harassment": "Harcèlement",
+      "sexual": "Contenu sexuel",
+      "illegal": "Contenu illégal",
+      "other": "Autre"
+    },
+    "modalTitle": {
+      "post": "Signaler la publication",
+      "comment": "Signaler le commentaire"
+    },
     "submit": "Envoyer le signalement",
+    "status": {
+      "submitting": "Envoi..."
+    },
+    "errors": {
+      "submitFailed": "Échec de l'envoi du signalement"
+    },
     "success": "Merci ! Votre signalement a été soumis."
   },
   "messages": {

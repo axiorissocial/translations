@@ -98,10 +98,41 @@
       "no": "No"
     }
   },
+  "mediaModal": {
+    "types": {
+      "image": "Imagen",
+      "video": "Video"
+    },
+    "position": "{{type}} {{index}} de {{total}}",
+    "actions": {
+      "download": "Descargar",
+      "preparing": "Preparando..."
+    },
+    "errors": {
+      "downloadFailed": "No se pudo descargar el archivo multimedia."
+    }
+  },
   "feed": {
-    "empty": "Todavía no hay publicaciones.",
-    "retry": "Reintentar",
-    "newPost": "Nueva publicación"
+    "status": {
+      "loading": "Cargando publicaciones...",
+      "end": "¡Has llegado al final!"
+    },
+    "errors": {
+      "fetch": "No se pudieron cargar las publicaciones.",
+      "generic": "Ocurrió un error al cargar las publicaciones."
+    },
+    "empty": {
+      "title": "Aún no hay publicaciones",
+      "search": "No se encontraron publicaciones para \"{{query}}\".",
+      "user": "Este usuario aún no ha publicado nada.",
+      "default": "¡Sé la primera persona en compartir algo!"
+    },
+    "actions": {
+      "retry": "Reintentar",
+      "create": "Crear publicación",
+      "loadMore": "Cargar más",
+      "loadingMore": "Cargando..."
+    }
   },
   "post": {
     "created": "Publicado {{time}}",
@@ -117,6 +148,26 @@
     "reactionsPicker": {
       "add": "Reaccionar con {{emoji}}",
       "remove": "Quitar tu reacción {{emoji}}"
+    },
+    "labels": {
+      "pinned": "Fijado",
+      "title": "Título:"
+    },
+    "media": {
+      "avatarAlt": "Avatar de {{name}}"
+    },
+    "actions": {
+      "editPost": "Editar publicación",
+      "deletePost": "Eliminar publicación",
+      "reportPost": "Reportar publicación",
+      "viewInAdmin": "Ver en administración",
+      "readMore": "Leer más"
+    },
+    "modals": {
+      "delete": {
+        "title": "Eliminar publicación",
+        "description": "¿Seguro que quieres eliminar esta publicación? Esta acción no se puede deshacer."
+      }
     }
   },
   "home": {
@@ -250,6 +301,36 @@
       "edited": "(editado)"
     }
   },
+  "time": {
+    "calendar": {
+      "today": "Hoy",
+      "yesterday": "Ayer",
+      "todayWithTime": "Hoy a las {{time}}",
+      "yesterdayWithTime": "Ayer a las {{time}}"
+    },
+    "relative": {
+      "justNow": "Justo ahora",
+      "seconds": "Hace {{count}} segundos",
+      "minute": "Hace 1 minuto",
+      "minutes": "Hace {{count}} minutos",
+      "hour": "Hace 1 hora",
+      "hours": "Hace {{count}} horas",
+      "day": "Hace 1 día",
+      "days": "Hace {{count}} días",
+      "week": "Hace 1 semana",
+      "weeks": "Hace {{count}} semanas",
+      "month": "Hace 1 mes",
+      "months": "Hace {{count}} meses",
+      "year": "Hace 1 año",
+      "years": "Hace {{count}} años"
+    },
+    "formats": {
+      "dateTime": "{{date}} a las {{time}}"
+    },
+    "display": {
+      "absoluteWithRelative": "{{absolute}} · {{relative}}"
+    }
+  },
   "createPost": {
     "documentTitle": "Crear publicación - {{app}}",
     "title": "Crear una publicación",
@@ -297,8 +378,44 @@
     }
   },
   "editPost": {
-    "title": "Editar publicación",
-    "submit": "Guardar cambios"
+    "modalTitle": "Editar publicación",
+    "fields": {
+      "titleLabel": "Título (opcional)",
+      "titlePlaceholder": "Introduce el título de la publicación...",
+      "contentLabel": "Contenido",
+      "contentPlaceholder": "¿En qué estás pensando?"
+    },
+    "toolbar": {
+      "bold": "Negrita",
+      "italic": "Cursiva",
+      "strikethrough": "Tachado",
+      "upload": "Subir imagen o video",
+      "emoji": "Agregar emoji"
+    },
+    "tabs": {
+      "write": "Escribir",
+      "preview": "Vista previa"
+    },
+    "preview": {
+      "empty": "Nada para previsualizar..."
+    },
+    "charCount": "{{count}} caracteres",
+    "media": {
+      "previewAlt": "Vista previa de la carga",
+      "remove": "Eliminar elemento multimedia"
+    },
+    "errors": {
+      "emptyContent": "El contenido no puede estar vacío.",
+      "fileTooLarge": "El archivo {{file}} es demasiado grande (máx. {{limit}}).",
+      "invalidType": "El archivo {{file}} no es una imagen o video válido.",
+      "maxFiles": "Se permiten como máximo {{limit}} archivos multimedia por publicación.",
+      "updateFailed": "No se pudo actualizar la publicación.",
+      "mediaUploadFailed": "No se pudieron subir los archivos multimedia."
+    },
+    "actions": {
+      "update": "Actualizar publicación",
+      "updating": "Actualizando publicación..."
+    }
   },
   "report": {
     "title": "Reportar contenido",
@@ -307,7 +424,28 @@
       "reason": "Selecciona un motivo",
       "details": "Detalles adicionales (opcional)"
     },
+    "fields": {
+      "reasonLabel": "Motivo",
+      "notesLabel": "Notas (opcional)"
+    },
+    "reasons": {
+      "spam": "Spam",
+      "harassment": "Acoso",
+      "sexual": "Contenido sexual",
+      "illegal": "Contenido ilegal",
+      "other": "Otro"
+    },
+    "modalTitle": {
+      "post": "Reportar publicación",
+      "comment": "Reportar comentario"
+    },
     "submit": "Enviar reporte",
+    "status": {
+      "submitting": "Enviando..."
+    },
+    "errors": {
+      "submitFailed": "No se pudo enviar el reporte"
+    },
     "success": "¡Gracias! Tu reporte ha sido enviado."
   },
   "messages": {
@@ -498,8 +636,8 @@
         "alt": "Foto de perfil actual",
         "upload": "Subir",
         "remove": "Eliminar",
-        "description": "Upload a custom avatar or choose one of our gradients.",
-        "gradientTitle": "Choose a default avatar gradient",
+  "description": "Sube un avatar personalizado o elige uno de nuestros degradados.",
+  "gradientTitle": "Elige un degradado predeterminado para el avatar",
         "removeModal": {
           "title": "Eliminar foto de perfil",
           "description": "¿Seguro que quieres eliminar tu foto de perfil? Esta acción no se puede deshacer.",
@@ -511,20 +649,32 @@
         "removing": "Eliminando..."
       },
       "gradients": {
-        "none": "No gradient"
+        "none": "Sin degradado",
+        "options": {
+          "aurora-sky": "Cielo de aurora",
+          "sunset-haze": "Bruma del atardecer",
+          "forest-canopy": "Copa del bosque",
+          "ocean-breeze": "Brisa oceánica",
+          "violet-dream": "Sueño violeta",
+          "sunrise-glow": "Brillo del amanecer",
+          "neon-noir": "Neón noir",
+          "ember-heat": "Calor de ascuas",
+          "berry-splash": "Salpicadura de bayas",
+          "lunar-mist": "Niebla lunar"
+        }
       },
       "banner": {
-        "title": "Perfil banner",
-        "alt": "Current profile banner",
-        "placeholder": "No banner selected",
-        "description": "Upload your own banner or select one of the gradients below.",
-        "upload": "Upload banner",
-        "remove": "Remove banner",
-        "gradientTitle": "Choose a default banner gradient",
+        "title": "Banner del perfil",
+        "alt": "Banner del perfil actual",
+        "placeholder": "Ningún banner seleccionado",
+        "description": "Sube tu propio banner o elige uno de los degradados a continuación.",
+        "upload": "Subir banner",
+        "remove": "Eliminar banner",
+        "gradientTitle": "Elige un degradado predeterminado para el banner",
         "removeModal": {
-          "title": "Remove profile banner",
-          "description": "Are you sure you want to remove your banner image?",
-          "cta": "Remove banner"
+          "title": "Eliminar banner del perfil",
+          "description": "¿Seguro que quieres eliminar tu banner? Esta acción no se puede deshacer.",
+          "cta": "Eliminar banner"
         }
       },
       "fields": {
@@ -556,7 +706,7 @@
       "errors": {
         "invalidImageType": "Selecciona un archivo de imagen",
         "invalidImageSize": "La imagen debe ser menor de 5 MB",
-        "invalidBannerSize": "Banner must be smaller than 8MB"
+  "invalidBannerSize": "El banner debe ser menor de 8 MB"
       },
       "feedback": {
         "updateSuccess": "¡Perfil actualizado correctamente!",
@@ -565,16 +715,16 @@
         "avatarUploadError": "No se pudo subir la foto de perfil",
         "avatarRemoveSuccess": "¡Foto de perfil eliminada correctamente!",
         "avatarRemoveError": "Error al eliminar la foto de perfil",
-        "bannerUploadSuccess": "Profile banner updated successfully!",
-        "bannerUploadError": "Failed to upload profile banner",
-        "bannerRemoveSuccess": "Profile banner removed successfully!",
-        "bannerRemoveError": "Failed to remove profile banner",
-        "avatarGradientApplied": "Gradient applied to your avatar.",
-        "avatarGradientCleared": "Avatar gradient removed.",
-        "avatarGradientError": "Failed to update avatar gradient.",
-        "bannerGradientApplied": "Gradient applied to your banner.",
-        "bannerGradientCleared": "Banner gradient removed.",
-        "bannerGradientError": "Failed to update banner gradient."
+  "bannerUploadSuccess": "¡Banner del perfil actualizado correctamente!",
+  "bannerUploadError": "No se pudo subir el banner del perfil",
+  "bannerRemoveSuccess": "¡Banner del perfil eliminado correctamente!",
+  "bannerRemoveError": "No se pudo eliminar el banner del perfil",
+  "avatarGradientApplied": "Degradado aplicado a tu avatar.",
+  "avatarGradientCleared": "Degradado del avatar eliminado.",
+  "avatarGradientError": "No se pudo actualizar el degradado del avatar.",
+  "bannerGradientApplied": "Degradado aplicado a tu banner.",
+  "bannerGradientCleared": "Degradado del banner eliminado.",
+  "bannerGradientError": "No se pudo actualizar el degradado del banner."
       }
     },
     "appearance": {

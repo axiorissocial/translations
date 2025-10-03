@@ -26,7 +26,19 @@
     },
     "errors": {
       "gradients": {
-        "none": "No gradient"
+        "none": "Nessun gradiente",
+        "options": {
+          "aurora-sky": "Cielo d'aurora",
+          "sunset-haze": "Foschia del tramonto",
+          "forest-canopy": "Chioma della foresta",
+          "ocean-breeze": "Brezza oceanica",
+          "violet-dream": "Sogno viola",
+          "sunrise-glow": "Bagliore dell'alba",
+          "neon-noir": "Neon noir",
+          "ember-heat": "Calore di brace",
+          "berry-splash": "Schizzo di frutti di bosco",
+          "lunar-mist": "Nebbia lunare"
+        }
       },
       "banner": {
         "title": "Profile banner",
@@ -117,10 +129,41 @@
       "no": "No"
     }
   },
+  "mediaModal": {
+    "types": {
+      "image": "Immagine",
+      "video": "Video"
+    },
+    "position": "{{type}} {{index}} di {{total}}",
+    "actions": {
+      "download": "Scarica",
+      "preparing": "Preparazione..."
+    },
+    "errors": {
+      "downloadFailed": "Impossibile scaricare il file multimediale."
+    }
+  },
   "feed": {
-    "empty": "Nessun post da mostrare ancora.",
-    "retry": "Riprova",
-    "newPost": "Nuovo post"
+    "status": {
+      "loading": "Caricamento dei post...",
+      "end": "Hai raggiunto la fine!"
+    },
+    "errors": {
+      "fetch": "Impossibile caricare i post.",
+      "generic": "Si è verificato un errore durante il caricamento dei post."
+    },
+    "empty": {
+      "title": "Ancora nessun post",
+      "search": "Nessun post trovato per \"{{query}}\".",
+      "user": "Questo utente non ha ancora pubblicato nulla.",
+      "default": "Sii il primo a condividere qualcosa!"
+    },
+    "actions": {
+      "retry": "Riprova",
+      "create": "Crea post",
+      "loadMore": "Carica altro",
+      "loadingMore": "Caricamento..."
+    }
   },
   "post": {
     "created": "Pubblicato {{time}}",
@@ -136,6 +179,26 @@
     "reactionsPicker": {
       "add": "Reagisci con {{emoji}}",
       "remove": "Rimuovi la tua reazione {{emoji}}"
+    },
+    "labels": {
+      "pinned": "In evidenza",
+      "title": "Titolo:"
+    },
+    "media": {
+      "avatarAlt": "Avatar di {{name}}"
+    },
+    "actions": {
+      "editPost": "Modifica post",
+      "deletePost": "Elimina post",
+      "reportPost": "Segnala post",
+      "viewInAdmin": "Vedi nell'area admin",
+      "readMore": "Leggi di più"
+    },
+    "modals": {
+      "delete": {
+        "title": "Elimina post",
+        "description": "Sei sicuro di voler eliminare questo post? Quest'azione non può essere annullata."
+      }
     }
   },
   "home": {
@@ -207,13 +270,6 @@
       "followers": "Follower",
       "following": "Seguiti"
     },
-    "meta": {
-      "joined": "Iscritto il {{date}}"
-    },
-    "tabs": {
-      "posts": "Post",
-      "about": "Informazioni"
-    },
     "about": {
       "title": "Informazioni su {{name}}",
       "details": {
@@ -280,6 +336,36 @@
       "edited": "(modificato)"
     }
   },
+  "time": {
+    "calendar": {
+      "today": "Oggi",
+      "yesterday": "Ieri",
+      "todayWithTime": "Oggi alle {{time}}",
+      "yesterdayWithTime": "Ieri alle {{time}}"
+    },
+    "relative": {
+      "justNow": "Proprio ora",
+      "seconds": "{{count}} secondi fa",
+      "minute": "1 minuto fa",
+      "minutes": "{{count}} minuti fa",
+      "hour": "1 ora fa",
+      "hours": "{{count}} ore fa",
+      "day": "1 giorno fa",
+      "days": "{{count}} giorni fa",
+      "week": "1 settimana fa",
+      "weeks": "{{count}} settimane fa",
+      "month": "1 mese fa",
+      "months": "{{count}} mesi fa",
+      "year": "1 anno fa",
+      "years": "{{count}} anni fa"
+    },
+    "formats": {
+      "dateTime": "{{date}} alle {{time}}"
+    },
+    "display": {
+      "absoluteWithRelative": "{{absolute}} · {{relative}}"
+    }
+  },
   "createPost": {
     "documentTitle": "Crea Post - {{app}}",
     "title": "Crea un post",
@@ -327,8 +413,44 @@
     }
   },
   "editPost": {
-    "title": "Modifica post",
-    "submit": "Salva modifiche"
+    "modalTitle": "Modifica post",
+    "fields": {
+      "titleLabel": "Titolo (opzionale)",
+      "titlePlaceholder": "Inserisci il titolo del post...",
+      "contentLabel": "Contenuto",
+      "contentPlaceholder": "A cosa stai pensando?"
+    },
+    "toolbar": {
+      "bold": "Grassetto",
+      "italic": "Corsivo",
+      "strikethrough": "Barrato",
+      "upload": "Carica immagine o video",
+      "emoji": "Aggiungi emoji"
+    },
+    "tabs": {
+      "write": "Scrivi",
+      "preview": "Anteprima"
+    },
+    "preview": {
+      "empty": "Nulla da mostrare..."
+    },
+    "charCount": "{{count}} caratteri",
+    "media": {
+      "previewAlt": "Anteprima del caricamento",
+      "remove": "Rimuovi elemento multimediale"
+    },
+    "errors": {
+      "emptyContent": "Il contenuto non può essere vuoto.",
+      "fileTooLarge": "Il file {{file}} è troppo grande (max {{limit}}).",
+      "invalidType": "Il file {{file}} non è un'immagine o un video valido.",
+      "maxFiles": "È consentito un massimo di {{limit}} file multimediali per post.",
+      "updateFailed": "Impossibile aggiornare il post.",
+      "mediaUploadFailed": "Caricamento dei media non riuscito."
+    },
+    "actions": {
+      "update": "Aggiorna post",
+      "updating": "Aggiornamento del post..."
+    }
   },
   "report": {
     "title": "Segnala contenuto",
@@ -337,7 +459,28 @@
       "reason": "Seleziona un motivo",
       "details": "Dettagli aggiuntivi (opzionale)"
     },
+    "fields": {
+      "reasonLabel": "Motivo",
+      "notesLabel": "Note (opzionale)"
+    },
+    "reasons": {
+      "spam": "Spam",
+      "harassment": "Molestie",
+      "sexual": "Contenuto sessuale",
+      "illegal": "Contenuto illegale",
+      "other": "Altro"
+    },
+    "modalTitle": {
+      "post": "Segnala post",
+      "comment": "Segnala commento"
+    },
     "submit": "Invia segnalazione",
+    "status": {
+      "submitting": "Invio in corso..."
+    },
+    "errors": {
+      "submitFailed": "Impossibile inviare la segnalazione"
+    },
     "success": "Grazie! La tua segnalazione è stata inviata."
   },
   "messages": {

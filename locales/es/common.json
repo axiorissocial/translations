@@ -91,19 +91,6 @@
       "saving": "Guardando...",
       "deleting": "Eliminando...",
       "replying": "Respondiendo...",
-      "githubStatus": {
-        "completing": "Finalizando el inicio de sesión con GitHub…",
-        "linked": "Cuenta de GitHub vinculada correctamente."
-      },
-      "githubErrors": {
-        "generic": "No se pudo iniciar sesión con GitHub. Inténtalo de nuevo.",
-        "github_not_configured": "La opción de iniciar sesión con GitHub no está disponible en este momento.",
-        "invalid_oauth_state": "La sesión de GitHub expiró. Inténtalo de nuevo.",
-        "missing_code": "GitHub no devolvió un código de inicio de sesión. Inténtalo de nuevo.",
-        "missing_session_user": "Debes iniciar sesión para vincular GitHub.",
-        "already_linked_elsewhere": "Esa cuenta de GitHub ya está vinculada a otro perfil.",
-        "github_oauth_failed": "No se pudo iniciar sesión con GitHub. Inténtalo de nuevo."
-      },
       "posting": "Publicando...",
       "updating": "Actualizando...",
       "loading": "Cargando...",
@@ -311,37 +298,6 @@
       "minutes": "Hace {{count}} min",
       "hours": "Hace {{count}} h",
       "days": "Hace {{count}} d",
-    "hashtags": {
-      "trending": {
-        "heading": "Hashtags en tendencia",
-        "loading": "Cargando tendencias...",
-        "retry": "Intentar de nuevo",
-        "error": "No pudimos cargar los hashtags en tendencia.",
-        "empty": "Todavía no hay hashtags en tendencia.",
-        "localTitle": "Tendencias en {{region}}",
-        "globalTitle": "Tendencias globales",
-        "fallback": "Aún no hay datos locales; mostramos los destacados globales.",
-        "updated": "Actualizado {{time}}",
-        "usageCount_one": "{{count}} publicación",
-        "usageCount_other": "{{count}} publicaciones",
-        "lastUsed": "Último uso {{time}}"
-      },
-      "page": {
-        "documentTitle": "{{tag}} - {{app}}",
-        "subtitle": "Últimas publicaciones que usan este hashtag.",
-        "subtitleWithCount": "{{count}} publicaciones recientes",
-        "loading": "Cargando publicaciones...",
-        "retry": "Intentar de nuevo",
-        "error": "No pudimos cargar las publicaciones de este hashtag.",
-        "empty": {
-          "title": "Aún no hay publicaciones",
-          "description": "Sé la primera persona en usar este hashtag."
-        },
-        "loadMore": "Cargar más",
-        "loadingMore": "Cargando...",
-        "endOfResults": "Eso es todo por ahora."
-      }
-    },
       "edited": "(editado)"
     }
   },

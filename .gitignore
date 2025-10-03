@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# GitHub Actions artifacts
+.github/workflows/*.log
+
+# Translation validation temp files
+*.tmp.json
+validation-report.json
+
+# OS specific files
+Thumbs.db
+.AppleDouble
+.LSOverride

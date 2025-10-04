@@ -629,6 +629,33 @@
         "passwordLength": "Le nouveau mot de passe doit contenir au moins 6 caractères"
       }
     },
+    "linkedAccounts": {
+      "title": "Comptes Liés",
+      "description": "Connectez des comptes externes pour activer des options de connexion supplémentaires.",
+      "noAccountsLinked": "Aucun compte lié",
+      "github": {
+        "title": "GitHub",
+        "notLinked": "Aucun compte GitHub lié",
+        "linkDescription": "Liez votre compte GitHub pour activer la connexion GitHub.",
+        "link": "Lier GitHub",
+        "unlink": "Délier",
+        "linking": "Liaison en cours...",
+        "unlinking": "Déconnexion en cours...",
+        "linkSuccess": "Compte GitHub lié avec succès !",
+        "unlinkSuccess": "Compte GitHub délié avec succès !",
+        "linkError": "Échec de la liaison du compte GitHub",
+        "unlinkError": "Échec de la déconnexion du compte GitHub",
+        "errors": {
+          "generic": "Opération GitHub échouée. Veuillez réessayer.",
+          "github_not_configured": "L'intégration GitHub n'est pas disponible pour le moment.",
+          "invalid_oauth_state": "La session GitHub a expiré. Veuillez réessayer.",
+          "missing_code": "GitHub n'a pas renvoyé de code valide. Veuillez réessayer.",
+          "missing_session_user": "Vous devez être connecté pour lier GitHub.",
+          "already_linked_elsewhere": "Ce compte GitHub est déjà lié à un autre profil.",
+          "github_oauth_failed": "Opération GitHub échouée. Veuillez réessayer."
+        }
+      }
+    },
     "profile": {
       "sectionTitle": "Paramètres du profil",
       "picture": {
@@ -651,16 +678,16 @@
       "gradients": {
         "none": "Aucun dégradé",
         "options": {
-          "aurora-sky": "TODO_TRANSLATE: Aurora Sky",
-          "sunset-haze": "TODO_TRANSLATE: Sunset Haze",
-          "forest-canopy": "TODO_TRANSLATE: Forest Canopy",
-          "ocean-breeze": "TODO_TRANSLATE: Ocean Breeze",
-          "violet-dream": "TODO_TRANSLATE: Violet Dream",
-          "sunrise-glow": "TODO_TRANSLATE: Sunrise Glow",
-          "neon-noir": "TODO_TRANSLATE: Neon Noir",
-          "ember-heat": "TODO_TRANSLATE: Ember Heat",
-          "berry-splash": "TODO_TRANSLATE: Berry Splash",
-          "lunar-mist": "TODO_TRANSLATE: Lunar Mist"
+          "aurora-sky": "Ciel Aurore",
+          "sunset-haze": "Brume de Coucher",
+          "forest-canopy": "Canopée Forêtière",
+          "ocean-breeze": "Brise Océanique",
+          "violet-dream": "Rêve Violet",
+          "sunrise-glow": "Lueur de l'Aube",
+          "neon-noir": "Néon Noir",
+          "ember-heat": "Chaleur de Braise",
+          "berry-splash": "Éclaboussure de Baies",
+          "lunar-mist": "Brume Lunaire"
         }
       },
       "banner": {

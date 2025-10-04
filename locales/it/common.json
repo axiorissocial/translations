@@ -13,7 +13,7 @@
     },
     "emptyUsers": {
       "subtitle": "Prova a cercare con parole chiave diverse",
-      "title": "TODO_TRANSLATE: No users found"
+      "title": "Nessun utente trovato"
     },
     "actions": {
       "loadMoreUsers": "Carica Altri Utenti"
@@ -629,6 +629,33 @@
         "passwordLength": "La nuova password deve essere di almeno 6 caratteri"
       }
     },
+    "linkedAccounts": {
+      "title": "Account Collegati",
+      "description": "Collega account esterni per abilitare opzioni di accesso aggiuntive.",
+      "noAccountsLinked": "Nessun account collegato",
+      "github": {
+        "title": "GitHub",
+        "notLinked": "Nessun account GitHub collegato",
+        "linkDescription": "Collega il tuo account GitHub per abilitare l'accesso con GitHub.",
+        "link": "Collega GitHub",
+        "unlink": "Scollega",
+        "linking": "Collegamento...",
+        "unlinking": "Scollegamento...",
+        "linkSuccess": "Account GitHub collegato con successo!",
+        "unlinkSuccess": "Account GitHub scollegato con successo!",
+        "linkError": "Errore nel collegamento dell'account GitHub",
+        "unlinkError": "Errore nello scollegamento dell'account GitHub",
+        "errors": {
+          "generic": "Operazione GitHub fallita. Riprova.",
+          "github_not_configured": "L'integrazione GitHub non è disponibile al momento.",
+          "invalid_oauth_state": "La sessione GitHub è scaduta. Riprova.",
+          "missing_code": "GitHub non ha restituito un codice valido. Riprova.",
+          "missing_session_user": "Devi essere loggato per collegare GitHub.",
+          "already_linked_elsewhere": "Quell'account GitHub è già collegato a un altro profilo.",
+          "github_oauth_failed": "Operazione GitHub fallita. Riprova."
+        }
+      }
+    },
     "profile": {
       "sectionTitle": "Impostazioni profilo",
       "picture": {
@@ -651,16 +678,16 @@
       "gradients": {
         "none": "Nessun gradiente",
         "options": {
-          "aurora-sky": "TODO_TRANSLATE: Aurora Sky",
-          "sunset-haze": "TODO_TRANSLATE: Sunset Haze",
-          "forest-canopy": "TODO_TRANSLATE: Forest Canopy",
-          "ocean-breeze": "TODO_TRANSLATE: Ocean Breeze",
-          "violet-dream": "TODO_TRANSLATE: Violet Dream",
-          "sunrise-glow": "TODO_TRANSLATE: Sunrise Glow",
-          "neon-noir": "TODO_TRANSLATE: Neon Noir",
-          "ember-heat": "TODO_TRANSLATE: Ember Heat",
-          "berry-splash": "TODO_TRANSLATE: Berry Splash",
-          "lunar-mist": "TODO_TRANSLATE: Lunar Mist"
+          "aurora-sky": "Cielo Aurora",
+          "sunset-haze": "Foschia del Tramonto",
+          "forest-canopy": "Chioma Forestale",
+          "ocean-breeze": "Brezza Oceanica",
+          "violet-dream": "Sogno Violetto",
+          "sunrise-glow": "Bagliore dell'Alba",
+          "neon-noir": "Neon Noir",
+          "ember-heat": "Calore di Brace",
+          "berry-splash": "Spruzzi di Bacche",
+          "lunar-mist": "Nebbia Lunare"
         }
       },
       "banner": {

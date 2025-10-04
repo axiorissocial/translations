@@ -660,6 +660,33 @@
         "passwordLength": "New password must be at least 6 characters"
       }
     },
+    "linkedAccounts": {
+      "title": "Linked Accounts",
+      "description": "Connect external accounts to enable additional sign-in options.",
+      "noAccountsLinked": "No accounts linked",
+      "github": {
+        "title": "GitHub",
+        "notLinked": "No GitHub account linked",
+        "linkDescription": "Link your GitHub account to enable GitHub sign-in.",
+        "link": "Link GitHub",
+        "unlink": "Unlink",
+        "linking": "Linking...",
+        "unlinking": "Unlinking...",
+        "linkSuccess": "GitHub account linked successfully!",
+        "unlinkSuccess": "GitHub account unlinked successfully!",
+        "linkError": "Failed to link GitHub account",
+        "unlinkError": "Failed to unlink GitHub account",
+        "errors": {
+          "generic": "GitHub operation failed. Please try again.",
+          "github_not_configured": "GitHub integration is unavailable right now.",
+          "invalid_oauth_state": "The GitHub session expired. Please try again.",
+          "missing_code": "GitHub did not return a valid code. Please try again.",
+          "missing_session_user": "You need to be logged in to link GitHub.",
+          "already_linked_elsewhere": "That GitHub account is already linked to another profile.",
+          "github_oauth_failed": "GitHub operation failed. Please try again."
+        }
+      }
+    },
     "profile": {
       "sectionTitle": "Profile settings",
       "picture": {

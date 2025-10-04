@@ -13,7 +13,7 @@
     },
     "emptyUsers": {
       "subtitle": "Versuchen Sie die Suche mit anderen Stichwörtern",
-      "title": "TODO_TRANSLATE: No users found"
+      "title": "Keine Benutzer gefunden"
     },
     "actions": {
       "loadMoreUsers": "Weitere Benutzer laden"
@@ -629,6 +629,33 @@
         "passwordLength": "Das neue Passwort muss mindestens 6 Zeichen lang sein"
       }
     },
+    "linkedAccounts": {
+      "title": "Verknüpfte Konten",
+      "description": "Verbinden Sie externe Konten, um zusätzliche Anmeldeoptionen zu aktivieren.",
+      "noAccountsLinked": "Keine Konten verknüpft",
+      "github": {
+        "title": "GitHub",
+        "notLinked": "Kein GitHub-Konto verknüpft",
+        "linkDescription": "Verknüpfen Sie Ihr GitHub-Konto, um die GitHub-Anmeldung zu ermöglichen.",
+        "link": "GitHub verknüpfen",
+        "unlink": "Verknüpfung aufheben",
+        "linking": "Verknüpfe...",
+        "unlinking": "Verknüpfung wird aufgehoben...",
+        "linkSuccess": "GitHub-Konto erfolgreich verknüpft!",
+        "unlinkSuccess": "GitHub-Konto erfolgreich entkoppelt!",
+        "linkError": "Fehler beim Verknüpfen des GitHub-Kontos",
+        "unlinkError": "Fehler beim Aufheben der GitHub-Verknüpfung",
+        "errors": {
+          "generic": "GitHub-Vorgang fehlgeschlagen. Bitte versuchen Sie es erneut.",
+          "github_not_configured": "GitHub-Integration ist derzeit nicht verfügbar.",
+          "invalid_oauth_state": "Die GitHub-Sitzung ist abgelaufen. Bitte versuchen Sie es erneut.",
+          "missing_code": "GitHub hat keinen gültigen Code zurückgegeben. Bitte versuchen Sie es erneut.",
+          "missing_session_user": "Sie müssen angemeldet sein, um GitHub zu verknüpfen.",
+          "already_linked_elsewhere": "Dieses GitHub-Konto ist bereits mit einem anderen Profil verknüpft.",
+          "github_oauth_failed": "GitHub-Vorgang fehlgeschlagen. Bitte versuchen Sie es erneut."
+        }
+      }
+    },
     "profile": {
       "sectionTitle": "Profileinstellungen",
       "picture": {
@@ -651,16 +678,16 @@
       "gradients": {
         "none": "Kein Farbverlauf",
         "options": {
-          "aurora-sky": "TODO_TRANSLATE: Aurora Sky",
-          "sunset-haze": "TODO_TRANSLATE: Sunset Haze",
-          "forest-canopy": "TODO_TRANSLATE: Forest Canopy",
-          "ocean-breeze": "TODO_TRANSLATE: Ocean Breeze",
-          "violet-dream": "TODO_TRANSLATE: Violet Dream",
-          "sunrise-glow": "TODO_TRANSLATE: Sunrise Glow",
-          "neon-noir": "TODO_TRANSLATE: Neon Noir",
-          "ember-heat": "TODO_TRANSLATE: Ember Heat",
-          "berry-splash": "TODO_TRANSLATE: Berry Splash",
-          "lunar-mist": "TODO_TRANSLATE: Lunar Mist"
+          "aurora-sky": "Aurora-Himmel",
+          "sunset-haze": "Sonnenuntergang-Dunst",
+          "forest-canopy": "Waldkrone",
+          "ocean-breeze": "Meeresbrise",
+          "violet-dream": "Violetter Traum",
+          "sunrise-glow": "Sonnenaufgang-Glühen",
+          "neon-noir": "Neon-Noir",
+          "ember-heat": "Glut-Hitze",
+          "berry-splash": "Beeren-Spritzer",
+          "lunar-mist": "Mondnebel"
         }
       },
       "banner": {

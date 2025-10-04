@@ -629,6 +629,33 @@
         "passwordLength": "La nueva contraseña debe tener al menos 6 caracteres"
       }
     },
+    "linkedAccounts": {
+      "title": "Cuentas Vinculadas",
+      "description": "Conecta cuentas externas para habilitar opciones de inicio de sesión adicionales.",
+      "noAccountsLinked": "No hay cuentas vinculadas",
+      "github": {
+        "title": "GitHub",
+        "notLinked": "Ninguna cuenta de GitHub vinculada",
+        "linkDescription": "Vincula tu cuenta de GitHub para habilitar el inicio de sesión con GitHub.",
+        "link": "Vincular GitHub",
+        "unlink": "Desvincular",
+        "linking": "Vinculando...",
+        "unlinking": "Desvinculando...",
+        "linkSuccess": "¡Cuenta de GitHub vinculada exitosamente!",
+        "unlinkSuccess": "¡Cuenta de GitHub desvinculada exitosamente!",
+        "linkError": "Error al vincular la cuenta de GitHub",
+        "unlinkError": "Error al desvincular la cuenta de GitHub",
+        "errors": {
+          "generic": "Operación de GitHub fallida. Inténtalo de nuevo.",
+          "github_not_configured": "La integración de GitHub no está disponible ahora.",
+          "invalid_oauth_state": "La sesión de GitHub expiró. Inténtalo de nuevo.",
+          "missing_code": "GitHub no devolvió un código válido. Inténtalo de nuevo.",
+          "missing_session_user": "Debes iniciar sesión para vincular GitHub.",
+          "already_linked_elsewhere": "Esa cuenta de GitHub ya está vinculada a otro perfil.",
+          "github_oauth_failed": "Operación de GitHub fallida. Inténtalo de nuevo."
+        }
+      }
+    },
     "profile": {
       "sectionTitle": "Ajustes del perfil",
       "picture": {

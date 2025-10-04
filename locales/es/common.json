@@ -626,8 +626,11 @@
       },
       "validation": {
         "passwordMismatch": "Las nuevas contraseñas no coinciden",
-        "passwordLength": "La nueva contraseña debe tener al menos 6 caracteres"
-      }
+        "passwordLength": "La nueva contraseña debe tener al menos 6 caracteres",
+        "currentPasswordRequired": "Se requiere la contraseña actual para cambiar la contraseña"
+      },
+      "oauthPasswordInfo": "Como te registraste con GitHub, puedes establecer una nueva contraseña sin ingresar tu contraseña actual.",
+      "oauthFirstPasswordInfo": "Establece tu primera contraseña para habilitar el inicio de sesión por contraseña además de GitHub. Después de establecerla una vez, necesitarás ingresar tu contraseña actual para cambios futuros."
     },
     "linkedAccounts": {
       "title": "Cuentas Vinculadas",

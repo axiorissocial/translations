@@ -657,8 +657,11 @@
       },
       "validation": {
         "passwordMismatch": "New passwords do not match",
-        "passwordLength": "New password must be at least 6 characters"
-      }
+        "passwordLength": "New password must be at least 6 characters",
+        "currentPasswordRequired": "Current password is required to change password"
+      },
+      "oauthPasswordInfo": "Since you signed up with GitHub, you can set a new password without entering your current password.",
+      "oauthFirstPasswordInfo": "Set your first password to enable password-based login in addition to GitHub. After setting it once, you'll need to enter your current password for future changes."
     },
     "linkedAccounts": {
       "title": "Linked Accounts",

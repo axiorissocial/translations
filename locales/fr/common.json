@@ -626,8 +626,11 @@
       },
       "validation": {
         "passwordMismatch": "Les nouveaux mots de passe ne correspondent pas",
-        "passwordLength": "Le nouveau mot de passe doit contenir au moins 6 caractères"
-      }
+        "passwordLength": "Le nouveau mot de passe doit contenir au moins 6 caractères",
+        "currentPasswordRequired": "Le mot de passe actuel est requis pour changer le mot de passe"
+      },
+      "oauthPasswordInfo": "Puisque vous vous êtes inscrit avec GitHub, vous pouvez définir un nouveau mot de passe sans saisir votre mot de passe actuel.",
+      "oauthFirstPasswordInfo": "Définissez votre premier mot de passe pour activer la connexion par mot de passe en plus de GitHub. Après l'avoir défini une fois, vous devrez saisir votre mot de passe actuel pour les modifications futures."
     },
     "linkedAccounts": {
       "title": "Comptes Liés",

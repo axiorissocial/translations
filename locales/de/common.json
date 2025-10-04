@@ -626,8 +626,11 @@
       },
       "validation": {
         "passwordMismatch": "Die neuen Passwörter stimmen nicht überein",
-        "passwordLength": "Das neue Passwort muss mindestens 6 Zeichen lang sein"
-      }
+        "passwordLength": "Das neue Passwort muss mindestens 6 Zeichen lang sein",
+        "currentPasswordRequired": "Das aktuelle Passwort ist erforderlich, um das Passwort zu ändern"
+      },
+      "oauthPasswordInfo": "Da Sie sich mit GitHub angemeldet haben, können Sie ein neues Passwort festlegen, ohne Ihr aktuelles Passwort einzugeben.",
+      "oauthFirstPasswordInfo": "Legen Sie Ihr erstes Passwort fest, um passwortbasierte Anmeldung zusätzlich zu GitHub zu ermöglichen. Nach dem ersten Festlegen müssen Sie Ihr aktuelles Passwort für zukünftige Änderungen eingeben."
     },
     "linkedAccounts": {
       "title": "Verknüpfte Konten",

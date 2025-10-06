@@ -263,6 +263,12 @@
       }
     }
   },
+  "errorPage": {
+    "documentTitle": "Error {{code}} - {{app}}",
+    "defaultMessage": "The page you're looking for couldn't be found or an error occurred.",
+    "logoAlt": "{{app}} logo",
+    "returnHome": "Return to Home"
+  },
   "comment": {
     "placeholder": "Escreva um comentário...",
     "submit": "Comentar",

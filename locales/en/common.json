@@ -77,6 +77,8 @@
     "loadMore": "Load more",
     "loading": "Loading...",
     "error": "Something went wrong",
+    "back": "Back",
+    "close": "Close",
     "language": "Language",
     "languages": {
       "en": "English",
@@ -95,6 +97,8 @@
       "posting": "Posting...",
       "updating": "Updating...",
       "loading": "Loading...",
+      "verifying": "Verifying...",
+      "processing": "Processing...",
       "yes": "Yes",
       "no": "No"
     }
@@ -1105,7 +1109,17 @@
         "forgotPassword": "Forgot password?"
       },
       "errors": {
-        "generic": "Login failed"
+        "generic": "Login failed",
+        "invalid2FA": "Invalid 2FA code"
+      },
+      "twoFactor": {
+        "title": "Two-Factor Authentication",
+        "description": "Enter the 6-digit code from your authenticator app",
+        "code": "Authentication Code",
+        "recoveryCode": "Recovery Code",
+        "verify": "Verify",
+        "useRecoveryCode": "Use a recovery code instead",
+        "useAuthenticator": "Use authenticator app code"
       },
       "registerPrompt": "Don't have an account?",
       "registerLink": "Sign up"

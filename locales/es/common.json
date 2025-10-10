@@ -17,6 +17,7 @@
     },
     "actions": {
       "loadMoreUsers": "Cargar más usuarios"
+      ,"search": "Buscar"
     },
     "emptyState": {
       "title": "Empieza a buscar",

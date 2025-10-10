@@ -16,8 +16,8 @@
       "title": "Keine Benutzer gefunden"
     },
     "actions": {
-      "loadMoreUsers": "Weitere Benutzer laden"
-      ,"search": "Suchen"
+      "loadMoreUsers": "Weitere Benutzer laden",
+      "search": "Suchen"
     },
     "emptyState": {
       "title": "Suche starten",
@@ -664,6 +664,28 @@
           "already_linked_elsewhere": "Dieses GitHub-Konto ist bereits mit einem anderen Profil verknüpft.",
           "github_oauth_failed": "GitHub-Vorgang fehlgeschlagen. Bitte versuchen Sie es erneut."
         }
+      },
+      "google": {
+        "title": "Google",
+        "notLinked": "Kein Google-Konto verknüpft",
+        "linkDescription": "Verknüpfen Sie Ihr Google-Konto, um die Google-Anmeldung zu aktivieren.",
+        "link": "Google verknüpfen",
+        "unlink": "Verknüpfung aufheben",
+        "linking": "Verknüpfe...",
+        "unlinking": "Verknüpfung wird aufgehoben...",
+        "linkSuccess": "Google-Konto erfolgreich verknüpft!",
+        "unlinkSuccess": "Google-Kontoverknüpfung erfolgreich aufgehoben!",
+        "linkError": "Google-Konto konnte nicht verknüpft werden",
+        "unlinkError": "Google-Kontoverknüpfung konnte nicht aufgehoben werden",
+        "errors": {
+          "generic": "Google-Vorgang fehlgeschlagen. Bitte versuchen Sie es erneut.",
+          "google_not_configured": "Google-Integration ist derzeit nicht verfügbar.",
+          "invalid_oauth_state": "Die Google-Sitzung ist abgelaufen. Bitte versuchen Sie es erneut.",
+          "missing_code": "Google hat keinen gültigen Code zurückgegeben. Bitte versuchen Sie es erneut.",
+          "missing_session_user": "Sie müssen angemeldet sein, um Google zu verknüpfen.",
+          "already_linked_elsewhere": "Dieses Google-Konto ist bereits mit einem anderen Profil verknüpft.",
+          "google_oauth_failed": "Google-Vorgang fehlgeschlagen. Bitte versuchen Sie es erneut."
+        }
       }
     },
     "profile": {
@@ -1012,7 +1034,8 @@
         "missing_session_user": "Sie müssen angemeldet sein, um GitHub zu verknüpfen.",
         "already_linked_elsewhere": "Dieses GitHub-Konto ist bereits mit einem anderen Profil verknüpft.",
         "github_oauth_failed": "GitHub-Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut."
-      }
+      },
+      "orWith": "Oder anmelden mit"
     },
     "register": {
       "documentTitle": "Registrieren - {{app}}",
@@ -1052,7 +1075,8 @@
         "missing_session_user": "Sie müssen angemeldet sein, um GitHub zu verknüpfen.",
         "already_linked_elsewhere": "Dieses GitHub-Konto ist bereits mit einem anderen Profil verknüpft.",
         "github_oauth_failed": "GitHub-Registrierung fehlgeschlagen. Bitte versuchen Sie es erneut."
-      }
+      },
+      "orWith": "Oder registrieren mit"
     }
   },
   "backend": {

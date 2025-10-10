@@ -16,8 +16,8 @@
       "subtitle": "Prueba con palabras clave diferentes"
     },
     "actions": {
-      "loadMoreUsers": "Cargar más usuarios"
-      ,"search": "Buscar"
+      "loadMoreUsers": "Cargar más usuarios",
+      "search": "Buscar"
     },
     "emptyState": {
       "title": "Empieza a buscar",
@@ -664,6 +664,28 @@
           "already_linked_elsewhere": "Esa cuenta de GitHub ya está vinculada a otro perfil.",
           "github_oauth_failed": "Operación de GitHub fallida. Inténtalo de nuevo."
         }
+      },
+      "google": {
+        "title": "Google",
+        "notLinked": "No hay cuenta de Google vinculada",
+        "linkDescription": "Vincula tu cuenta de Google para habilitar el inicio de sesión con Google.",
+        "link": "Vincular Google",
+        "unlink": "Desvincular",
+        "linking": "Vinculando...",
+        "unlinking": "Desvinculando...",
+        "linkSuccess": "¡Cuenta de Google vinculada exitosamente!",
+        "unlinkSuccess": "¡Cuenta de Google desvinculada exitosamente!",
+        "linkError": "Error al vincular la cuenta de Google",
+        "unlinkError": "Error al desvincular la cuenta de Google",
+        "errors": {
+          "generic": "Operación de Google fallida. Inténtalo de nuevo.",
+          "google_not_configured": "La integración con Google no está disponible en este momento.",
+          "invalid_oauth_state": "La sesión de Google expiró. Inténtalo de nuevo.",
+          "missing_code": "Google no devolvió un código válido. Inténtalo de nuevo.",
+          "missing_session_user": "Debes iniciar sesión para vincular Google.",
+          "already_linked_elsewhere": "Esa cuenta de Google ya está vinculada a otro perfil.",
+          "google_oauth_failed": "Operación de Google fallida. Inténtalo de nuevo."
+        }
       }
     },
     "profile": {
@@ -1012,7 +1034,8 @@
         "missing_session_user": "Debes iniciar sesión para vincular GitHub.",
         "already_linked_elsewhere": "Esa cuenta de GitHub ya está vinculada a otro perfil.",
         "github_oauth_failed": "Error en el inicio de sesión de GitHub. Inténtalo de nuevo."
-      }
+      },
+      "orWith": "O inicia sesión con"
     },
     "register": {
       "documentTitle": "Registrarse - {{app}}",
@@ -1052,7 +1075,8 @@
         "generic": "No se pudo completar el registro"
       },
       "loginPrompt": "¿Ya tienes cuenta?",
-      "loginLink": "Inicia sesión"
+      "loginLink": "Inicia sesión",
+      "orWith": "O regístrate con"
     }
   },
   "backend": {

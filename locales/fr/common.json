@@ -16,8 +16,8 @@
       "subtitle": "Essayez de rechercher avec des mots-clés différents"
     },
     "actions": {
-      "loadMoreUsers": "Charger plus d'utilisateurs"
-      ,"search": "Rechercher"
+      "loadMoreUsers": "Charger plus d'utilisateurs",
+      "search": "Rechercher"
     },
     "emptyState": {
       "title": "Commencer la recherche",
@@ -664,6 +664,28 @@
           "already_linked_elsewhere": "Ce compte GitHub est déjà lié à un autre profil.",
           "github_oauth_failed": "Opération GitHub échouée. Veuillez réessayer."
         }
+      },
+      "google": {
+        "title": "Google",
+        "notLinked": "Aucun compte Google lié",
+        "linkDescription": "Liez votre compte Google pour activer la connexion Google.",
+        "link": "Lier Google",
+        "unlink": "Dissocier",
+        "linking": "Liaison en cours...",
+        "unlinking": "Dissociation en cours...",
+        "linkSuccess": "Compte Google lié avec succès !",
+        "unlinkSuccess": "Compte Google dissocié avec succès !",
+        "linkError": "Échec de la liaison du compte Google",
+        "unlinkError": "Échec de la dissociation du compte Google",
+        "errors": {
+          "generic": "Opération Google échouée. Veuillez réessayer.",
+          "google_not_configured": "L'intégration Google n'est pas disponible pour le moment.",
+          "invalid_oauth_state": "La session Google a expiré. Veuillez réessayer.",
+          "missing_code": "Google n'a pas renvoyé de code valide. Veuillez réessayer.",
+          "missing_session_user": "Vous devez être connecté pour lier Google.",
+          "already_linked_elsewhere": "Ce compte Google est déjà lié à un autre profil.",
+          "google_oauth_failed": "Opération Google échouée. Veuillez réessayer."
+        }
       }
     },
     "profile": {
@@ -1012,7 +1034,8 @@
         "missing_session_user": "Vous devez être connecté pour lier GitHub.",
         "already_linked_elsewhere": "Ce compte GitHub est déjà lié à un autre profil.",
         "github_oauth_failed": "La connexion GitHub a échoué. Veuillez réessayer."
-      }
+      },
+      "orWith": "Ou se connecter avec"
     },
     "register": {
       "documentTitle": "S'inscrire - {{app}}",
@@ -1052,7 +1075,8 @@
         "missing_session_user": "Vous devez être connecté pour lier GitHub.",
         "already_linked_elsewhere": "Ce compte GitHub est déjà lié à un autre profil.",
         "github_oauth_failed": "L'inscription GitHub a échoué. Veuillez réessayer."
-      }
+      },
+      "orWith": "Ou s'inscrire avec"
     }
   },
   "backend": {

@@ -16,8 +16,8 @@
       "title": "Nessun utente trovato"
     },
     "actions": {
-      "loadMoreUsers": "Carica Altri Utenti"
-      ,"search": "Cerca"
+      "loadMoreUsers": "Carica Altri Utenti",
+      "search": "Cerca"
     },
     "emptyState": {
       "title": "Inizia a cercare",
@@ -664,6 +664,28 @@
           "already_linked_elsewhere": "Quell'account GitHub è già collegato a un altro profilo.",
           "github_oauth_failed": "Operazione GitHub fallita. Riprova."
         }
+      },
+      "google": {
+        "title": "Google",
+        "notLinked": "Nessun account Google collegato",
+        "linkDescription": "Collega il tuo account Google per abilitare l'accesso con Google.",
+        "link": "Collega Google",
+        "unlink": "Scollega",
+        "linking": "Collegamento in corso...",
+        "unlinking": "Scollegamento in corso...",
+        "linkSuccess": "Account Google collegato con successo!",
+        "unlinkSuccess": "Account Google scollegato con successo!",
+        "linkError": "Impossibile collegare l'account Google",
+        "unlinkError": "Impossibile scollegare l'account Google",
+        "errors": {
+          "generic": "Operazione Google fallita. Riprova.",
+          "google_not_configured": "L'integrazione con Google non è disponibile al momento.",
+          "invalid_oauth_state": "La sessione Google è scaduta. Riprova.",
+          "missing_code": "Google non ha restituito un codice valido. Riprova.",
+          "missing_session_user": "Devi essere connesso per collegare Google.",
+          "already_linked_elsewhere": "Questo account Google è già collegato a un altro profilo.",
+          "google_oauth_failed": "Operazione Google fallita. Riprova."
+        }
       }
     },
     "profile": {
@@ -1012,7 +1034,8 @@
         "missing_session_user": "Devi essere loggato per collegare GitHub.",
         "already_linked_elsewhere": "Quell'account GitHub è già collegato a un altro profilo.",
         "github_oauth_failed": "Accesso GitHub fallito. Riprova."
-      }
+      },
+      "orWith": "Oppure accedi con"
     },
     "register": {
       "documentTitle": "Registrati - {{app}}",
@@ -1052,7 +1075,8 @@
         "missing_session_user": "Devi essere loggato per collegare GitHub.",
         "already_linked_elsewhere": "Quell'account GitHub è già collegato a un altro profilo.",
         "github_oauth_failed": "Registrazione GitHub fallita. Riprova."
-      }
+      },
+      "orWith": "Oppure registrati con"
     }
   },
   "backend": {

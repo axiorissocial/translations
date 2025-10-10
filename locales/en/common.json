@@ -16,8 +16,8 @@
       "subtitle": "Try searching with different keywords"
     },
     "actions": {
-      "loadMoreUsers": "Load More Users"
-      ,"search": "Search"
+      "loadMoreUsers": "Load More Users",
+      "search": "Search"
     },
     "emptyState": {
       "title": "Start searching",

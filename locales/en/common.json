@@ -882,6 +882,40 @@
         "error": "Failed to update notification settings"
       }
     },
+    "twoFactor": {
+      "title": "Two-Factor Authentication",
+      "description": "Add an extra layer of security to your account with two-factor authentication using an authenticator app.",
+      "enabled": "2FA Enabled",
+      "disabled": "2FA Disabled",
+      "disabledDescription": "Secure your account with an authenticator app",
+      "recoveryCodesRemaining": "{{count}} recovery codes remaining",
+      "actions": {
+        "enable": "Enable 2FA",
+        "disable": "Disable 2FA",
+        "regenerateCodes": "Regenerate Recovery Codes"
+      },
+      "setup": {
+        "title": "Set Up Two-Factor Authentication",
+        "instructions": "Scan the QR code below with your authenticator app (Google Authenticator, Authy, etc.) or manually enter the secret key.",
+        "manualEntry": "Or enter this code manually:",
+        "verifyCode": "Verification Code",
+        "verifyInstructions": "Enter the 6-digit code from your authenticator app to verify and enable 2FA.",
+        "enable": "Enable 2FA"
+      },
+      "recoveryCodes": {
+        "title": "Recovery Codes",
+        "warning": "Save these recovery codes in a safe place. Each code can only be used once to sign in if you lose access to your authenticator app.",
+        "description": "Keep these codes safe - you can use them to sign in if you lose your phone.",
+        "copy": "Copy Codes",
+        "copied": "Recovery codes copied to clipboard!"
+      },
+      "disable": {
+        "title": "Disable Two-Factor Authentication",
+        "warning": "Disabling 2FA will make your account less secure. You'll only need your password to sign in.",
+        "code": "2FA Code (optional)",
+        "codeOptional": "Enter your current 2FA code if available"
+      }
+    },
     "danger": {
       "title": "Danger zone",
       "signOut": {

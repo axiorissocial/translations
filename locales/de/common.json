@@ -850,6 +850,40 @@
         "error": "Benachrichtigungseinstellungen konnten nicht aktualisiert werden"
       }
     },
+    "twoFactor": {
+      "title": "Zwei-Faktor-Authentifizierung",
+      "description": "Fügen Sie Ihrem Konto eine zusätzliche Sicherheitsebene mit Zwei-Faktor-Authentifizierung über eine Authenticator-App hinzu.",
+      "enabled": "2FA Aktiviert",
+      "disabled": "2FA Deaktiviert",
+      "disabledDescription": "Sichern Sie Ihr Konto mit einer Authenticator-App",
+      "recoveryCodesRemaining": "{{count}} Wiederherstellungscodes verbleibend",
+      "actions": {
+        "enable": "2FA Aktivieren",
+        "disable": "2FA Deaktivieren",
+        "regenerateCodes": "Wiederherstellungscodes Neu Generieren"
+      },
+      "setup": {
+        "title": "Zwei-Faktor-Authentifizierung Einrichten",
+        "instructions": "Scannen Sie den QR-Code mit Ihrer Authenticator-App (Google Authenticator, Authy, etc.) oder geben Sie den geheimen Schlüssel manuell ein.",
+        "manualEntry": "Oder geben Sie diesen Code manuell ein:",
+        "verifyCode": "Bestätigungscode",
+        "verifyInstructions": "Geben Sie den 6-stelligen Code aus Ihrer Authenticator-App ein, um 2FA zu überprüfen und zu aktivieren.",
+        "enable": "2FA Aktivieren"
+      },
+      "recoveryCodes": {
+        "title": "Wiederherstellungscodes",
+        "warning": "Bewahren Sie diese Wiederherstellungscodes an einem sicheren Ort auf. Jeder Code kann nur einmal verwendet werden, um sich anzumelden, wenn Sie den Zugriff auf Ihre Authenticator-App verlieren.",
+        "description": "Bewahren Sie diese Codes sicher auf - Sie können sie verwenden, um sich anzumelden, wenn Sie Ihr Telefon verlieren.",
+        "copy": "Codes Kopieren",
+        "copied": "Wiederherstellungscodes in die Zwischenablage kopiert!"
+      },
+      "disable": {
+        "title": "Zwei-Faktor-Authentifizierung Deaktivieren",
+        "warning": "Das Deaktivieren von 2FA macht Ihr Konto weniger sicher. Sie benötigen nur Ihr Passwort, um sich anzumelden.",
+        "code": "2FA-Code (optional)",
+        "codeOptional": "Geben Sie Ihren aktuellen 2FA-Code ein, falls verfügbar"
+      }
+    },
     "danger": {
       "title": "Gefahrenzone",
       "signOut": {

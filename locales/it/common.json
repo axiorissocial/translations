@@ -850,6 +850,40 @@
         "error": "Impossibile aggiornare le impostazioni notifiche"
       }
     },
+    "twoFactor": {
+      "title": "Autenticazione a Due Fattori",
+      "description": "Aggiungi un ulteriore livello di sicurezza al tuo account con l'autenticazione a due fattori utilizzando un'app di autenticazione.",
+      "enabled": "2FA Attivato",
+      "disabled": "2FA Disattivato",
+      "disabledDescription": "Proteggi il tuo account con un'app di autenticazione",
+      "recoveryCodesRemaining": "{{count}} codici di recupero rimanenti",
+      "actions": {
+        "enable": "Attiva 2FA",
+        "disable": "Disattiva 2FA",
+        "regenerateCodes": "Rigenera Codici di Recupero"
+      },
+      "setup": {
+        "title": "Configura Autenticazione a Due Fattori",
+        "instructions": "Scansiona il codice QR con la tua app di autenticazione (Google Authenticator, Authy, ecc.) o inserisci manualmente la chiave segreta.",
+        "manualEntry": "Oppure inserisci questo codice manualmente:",
+        "verifyCode": "Codice di Verifica",
+        "verifyInstructions": "Inserisci il codice a 6 cifre dalla tua app di autenticazione per verificare e attivare 2FA.",
+        "enable": "Attiva 2FA"
+      },
+      "recoveryCodes": {
+        "title": "Codici di Recupero",
+        "warning": "Conserva questi codici di recupero in un luogo sicuro. Ogni codice può essere utilizzato una sola volta per accedere se perdi l'accesso alla tua app di autenticazione.",
+        "description": "Conserva questi codici al sicuro - puoi usarli per accedere se perdi il telefono.",
+        "copy": "Copia Codici",
+        "copied": "Codici di recupero copiati negli appunti!"
+      },
+      "disable": {
+        "title": "Disattiva Autenticazione a Due Fattori",
+        "warning": "Disattivare 2FA renderà il tuo account meno sicuro. Avrai bisogno solo della tua password per accedere.",
+        "code": "Codice 2FA (opzionale)",
+        "codeOptional": "Inserisci il tuo codice 2FA corrente se disponibile"
+      }
+    },
     "danger": {
       "title": "Zona di pericolo",
       "signOut": {

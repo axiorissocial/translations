@@ -850,6 +850,40 @@
         "error": "No se pudieron actualizar los ajustes de notificaciones"
       }
     },
+    "twoFactor": {
+      "title": "Autenticación de Dos Factores",
+      "description": "Añade una capa adicional de seguridad a tu cuenta con autenticación de dos factores usando una aplicación de autenticación.",
+      "enabled": "2FA Activado",
+      "disabled": "2FA Desactivado",
+      "disabledDescription": "Asegura tu cuenta con una aplicación de autenticación",
+      "recoveryCodesRemaining": "{{count}} códigos de recuperación restantes",
+      "actions": {
+        "enable": "Activar 2FA",
+        "disable": "Desactivar 2FA",
+        "regenerateCodes": "Regenerar Códigos de Recuperación"
+      },
+      "setup": {
+        "title": "Configurar Autenticación de Dos Factores",
+        "instructions": "Escanea el código QR con tu aplicación de autenticación (Google Authenticator, Authy, etc.) o ingresa la clave secreta manualmente.",
+        "manualEntry": "O ingresa este código manualmente:",
+        "verifyCode": "Código de Verificación",
+        "verifyInstructions": "Ingresa el código de 6 dígitos de tu aplicación de autenticación para verificar y activar 2FA.",
+        "enable": "Activar 2FA"
+      },
+      "recoveryCodes": {
+        "title": "Códigos de Recuperación",
+        "warning": "Guarda estos códigos de recuperación en un lugar seguro. Cada código solo se puede usar una vez para iniciar sesión si pierdes el acceso a tu aplicación de autenticación.",
+        "description": "Mantén estos códigos seguros: puedes usarlos para iniciar sesión si pierdes tu teléfono.",
+        "copy": "Copiar Códigos",
+        "copied": "¡Códigos de recuperación copiados al portapapeles!"
+      },
+      "disable": {
+        "title": "Desactivar Autenticación de Dos Factores",
+        "warning": "Desactivar 2FA hará que tu cuenta sea menos segura. Solo necesitarás tu contraseña para iniciar sesión.",
+        "code": "Código 2FA (opcional)",
+        "codeOptional": "Ingresa tu código 2FA actual si está disponible"
+      }
+    },
     "danger": {
       "title": "Zona de peligro",
       "signOut": {

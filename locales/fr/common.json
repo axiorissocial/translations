@@ -850,6 +850,40 @@
         "error": "Échec de la mise à jour des paramètres de notification"
       }
     },
+    "twoFactor": {
+      "title": "Authentification à Deux Facteurs",
+      "description": "Ajoutez une couche supplémentaire de sécurité à votre compte avec l'authentification à deux facteurs en utilisant une application d'authentification.",
+      "enabled": "2FA Activé",
+      "disabled": "2FA Désactivé",
+      "disabledDescription": "Sécurisez votre compte avec une application d'authentification",
+      "recoveryCodesRemaining": "{{count}} codes de récupération restants",
+      "actions": {
+        "enable": "Activer 2FA",
+        "disable": "Désactiver 2FA",
+        "regenerateCodes": "Régénérer les Codes de Récupération"
+      },
+      "setup": {
+        "title": "Configurer l'Authentification à Deux Facteurs",
+        "instructions": "Scannez le code QR ci-dessous avec votre application d'authentification (Google Authenticator, Authy, etc.) ou saisissez manuellement la clé secrète.",
+        "manualEntry": "Ou entrez ce code manuellement :",
+        "verifyCode": "Code de Vérification",
+        "verifyInstructions": "Entrez le code à 6 chiffres de votre application d'authentification pour vérifier et activer 2FA.",
+        "enable": "Activer 2FA"
+      },
+      "recoveryCodes": {
+        "title": "Codes de Récupération",
+        "warning": "Conservez ces codes de récupération dans un endroit sûr. Chaque code ne peut être utilisé qu'une seule fois pour vous connecter si vous perdez l'accès à votre application d'authentification.",
+        "description": "Conservez ces codes en sécurité - vous pouvez les utiliser pour vous connecter si vous perdez votre téléphone.",
+        "copy": "Copier les Codes",
+        "copied": "Codes de récupération copiés dans le presse-papiers !"
+      },
+      "disable": {
+        "title": "Désactiver l'Authentification à Deux Facteurs",
+        "warning": "Désactiver 2FA rendra votre compte moins sécurisé. Vous n'aurez besoin que de votre mot de passe pour vous connecter.",
+        "code": "Code 2FA (optionnel)",
+        "codeOptional": "Entrez votre code 2FA actuel s'il est disponible"
+      }
+    },
     "danger": {
       "title": "Zone de danger",
       "signOut": {

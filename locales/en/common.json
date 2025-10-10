@@ -696,6 +696,29 @@
           "github_oauth_failed": "GitHub operation failed. Please try again."
         }
       }
+      ,
+      "google": {
+        "title": "Google",
+        "notLinked": "No Google account linked",
+        "linkDescription": "Link your Google account to enable Google sign-in.",
+        "link": "Link Google",
+        "unlink": "Unlink",
+        "linking": "Linking...",
+        "unlinking": "Unlinking...",
+        "linkSuccess": "Google account linked successfully!",
+        "unlinkSuccess": "Google account unlinked successfully!",
+        "linkError": "Failed to link Google account",
+        "unlinkError": "Failed to unlink Google account",
+        "errors": {
+          "generic": "Google operation failed. Please try again.",
+          "google_not_configured": "Google integration is unavailable right now.",
+          "invalid_oauth_state": "The Google session expired. Please try again.",
+          "missing_code": "Google did not return a valid code. Please try again.",
+          "missing_session_user": "You need to be logged in to link Google.",
+          "already_linked_elsewhere": "That Google account is already linked to another profile.",
+          "google_oauth_failed": "Google operation failed. Please try again."
+        }
+      }
     },
     "profile": {
       "sectionTitle": "Profile settings",
@@ -1023,11 +1046,11 @@
       "status": {
         "loggingIn": "Logging in..."
       },
-      "github": "Log in with GitHub",
       "githubStatus": {
         "completing": "Finishing GitHub sign-in…",
         "linked": "GitHub account linked successfully."
       },
+      "orWith": "Or login with",
       "githubErrors": {
         "generic": "GitHub sign-in failed. Please try again.",
         "github_not_configured": "GitHub sign-in is unavailable right now.",
@@ -1063,11 +1086,11 @@
       "status": {
         "registering": "Registering..."
       },
-      "github": "Sign up with GitHub",
       "githubStatus": {
         "completing": "Creating your account with GitHub…",
         "linked": "GitHub account linked successfully."
       },
+      "orWith": "Or register with",
       "githubErrors": {
         "generic": "GitHub sign-up failed. Please try again.",
         "github_not_configured": "GitHub sign-up is unavailable right now.",

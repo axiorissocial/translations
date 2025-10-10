@@ -992,7 +992,6 @@
       "status": {
         "loggingIn": "Entrando..."
       },
-      "github": "Entrar com GitHub",
       "links": {
         "forgotPassword": "Esqueceu a senha?"
       },
@@ -1041,7 +1040,6 @@
       },
       "loginPrompt": "Já tem uma conta?",
       "loginLink": "Entrar",
-      "github": "Cadastrar com GitHub",
       "githubStatus": {
         "completing": "Criando sua conta com GitHub…",
         "linked": "Conta GitHub vinculada com sucesso."

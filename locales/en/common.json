@@ -251,6 +251,13 @@
       "description": "Please try again later or go back.",
       "back": "Go back"
     },
+    "banned": {
+      "title": "Account Banned",
+      "username": "Username",
+      "bannedOn": "Banned on",
+      "reason": "Reason",
+      "message": "This account has been banned and cannot access the platform."
+    },
     "media": {
       "bannerAlt": "{{name}}'s profile banner",
       "avatarAlt": "{{name}}'s avatar"

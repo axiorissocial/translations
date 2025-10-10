@@ -220,6 +220,13 @@
       "description": "Veuillez réessayer plus tard ou revenir en arrière.",
       "back": "Retour"
     },
+    "banned": {
+      "title": "Compte Banni",
+      "username": "Nom d'utilisateur",
+      "bannedOn": "Banni le",
+      "reason": "Raison",
+      "message": "Ce compte a été banni et ne peut plus accéder à la plateforme."
+    },
     "media": {
       "bannerAlt": "Bannière de profil de {{name}}",
       "avatarAlt": "Avatar de {{name}}"

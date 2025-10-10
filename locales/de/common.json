@@ -220,6 +220,13 @@
       "description": "Bitte versuchen Sie es später erneut oder gehen Sie zurück.",
       "back": "Zurück"
     },
+    "banned": {
+      "title": "Konto gesperrt",
+      "username": "Benutzername",
+      "bannedOn": "Gesperrt am",
+      "reason": "Grund",
+      "message": "Dieses Konto wurde gesperrt und kann nicht mehr auf die Plattform zugreifen."
+    },
     "media": {
       "bannerAlt": "{{name}}s Profilbanner",
       "avatarAlt": "{{name}}s Avatar"

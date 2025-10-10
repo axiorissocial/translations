@@ -220,6 +220,13 @@
       "description": "Riprova più tardi o torna indietro.",
       "back": "Indietro"
     },
+    "banned": {
+      "title": "Account Bannato",
+      "username": "Nome utente",
+      "bannedOn": "Bannato il",
+      "reason": "Motivo",
+      "message": "Questo account è stato bannato e non può accedere alla piattaforma."
+    },
     "media": {
       "bannerAlt": "Banner del profilo di {{name}}",
       "avatarAlt": "Avatar di {{name}}"
